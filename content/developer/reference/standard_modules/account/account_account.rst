@@ -8,6 +8,7 @@ Account
     :main:
 
     .. autofield:: name
+    .. autofield:: parent_id
     .. autofield:: currency_id
     .. autofield:: code
     .. autofield:: account_type
