@@ -59,13 +59,13 @@ Automatic update
 ~~~~~~~~~~~~~~~~
 
 When you activate a second currency for the first time, :guilabel:`Automatic Currency Rates` appears
-under :menuselection:`Accounting Dashboard --> Configuration --> Settings --> Currencies`. By
-default, you have to click on the **Update now** button (:guilabel:`🗘`) to update the rates.
+under :menuselection:`Accounting --> Configuration --> Settings` in the :guilabel:`Currencies`
+section. Click the :icon:`os-refresh-data` :guilabel:`Update now` icon to update the rates.
 
-Odoo can update the rates at regular intervals. To do so, change the :guilabel:`Interval` from
-:guilabel:`Manually` to :guilabel:`Daily`, :guilabel:`Weekly`, or :guilabel:`Monthly`. You can also
-select the web service from which you want to retrieve the latest currency rates by clicking on the
-:guilabel:`Service` field.
+Rates can be updated at regular intervals automatically. To do so, change the
+:guilabel:`Interval` from :guilabel:`Manually` to :guilabel:`Daily`, :guilabel:`Weekly`, or
+:guilabel:`Monthly`. You can also select the web service from which you want to retrieve the latest
+currency rates by clicking the :guilabel:`Service` field.
 
 .. _multi-currency/config-exch-diff:
 
@@ -75,9 +75,10 @@ Exchange difference entries
 Odoo automatically records exchange differences entries on dedicated accounts, in a dedicated
 journal.
 
-You can define which journal and accounts to use to **post exchange difference entries** by
-going to :menuselection:`Accounting --> Configuration --> Settings --> Default Accounts` and editing
-the :guilabel:`Journal`, :guilabel:`Gain Account`, and :guilabel:`Loss Account`.
+To define which journal and accounts to use to post exchange difference entries, go to
+:menuselection:`Accounting --> Configuration --> Settings`, scroll to the
+:guilabel:`Default Accounts` section, and edit the :guilabel:`Journal`, the :guilabel:`Gain` and
+:guilabel:`Loss accounts`.
 
 .. example::
    If you receive a payment for a customer invoice one month after it was issued, the exchange rate
@@ -94,7 +95,7 @@ Each account can have a set currency. By doing so, all moves relevant to the acc
 have that account's currency.
 
 To do so, go to :menuselection:`Accounting --> Configuration --> Charts of Accounts` and select a
-currency in the field :guilabel:`Account Currency`. If left empty, all active currencies are handled
+currency in the field :guilabel:`Currency`. If left empty, all active currencies are handled
 instead of just one.
 
 .. _multi-currency/config-journals:
@@ -163,8 +164,10 @@ company's main currency.
 Exchange rate journal entries
 -----------------------------
 
-To see **exchange difference journal entries**, go to :menuselection:`Accounting Dashboard -->
-Accounting --> Journals: Miscellaneous`.
+To see **exchange difference journal entries**, go to
+:menuselection:`Accounting --> Accounting --> Review --> Journal Items`. In the search bar, click
+the :icon:`fa-caret-down` :guilabel:`(down caret)` icon and, in the :guilabel:`Group By` column, select
+:guilabel:`Miscellaneous`.
 
 .. image:: multi_currency/exchange-journal-currency.png
    :align: center
