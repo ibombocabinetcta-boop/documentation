@@ -954,6 +954,24 @@ span.viewcode-link {
     margin-left: .3rem;
 }
 
+// Table with sticky header (for long tables)
+// Offset top by header height so table header sticks below the site header
+.table-sticky-header  {
+    // override the display: block in the mobile override
+    display: table!important;
+    border-collapse: separate;
+    border-spacing: 0;
+    thead th {
+        position: sticky;
+        z-index: 2;
+        background-color: $white;
+        top: $o-headers-mobile-height;
+        @include media-breakpoint-up(lg) {
+            top: $o-headers-height;
+        }
+    }
+}
+
 //------------------------------------------------------------------------------
 // Alerts
 //------------------------------------------------------------------------------
