@@ -228,10 +228,10 @@ below:
       .. code-block:: xml
 
          <xpath expr="//*[hasclass('o_wsale_products_main_row')]" position="before">
-         <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="move" />
+            <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="move" />
          </xpath>
          <xpath expr="//*[hasclass('o_wsale_products_main_row')]" position="before">
-         <div><!-- Content --></div>
+            <div><!-- Content --></div>
          </xpath>
 
       | **Bad example:**
@@ -239,8 +239,8 @@ below:
       .. code-block:: xml
 
          <xpath expr="//*[hasclass('o_wsale_products_main_row')]" position="before">
-         <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="move" />
-         <div><!-- Content --></div>
+            <xpath expr="//t[@t-if='opt_wsale_categories_top']" position="move" />
+            <div><!-- Content --></div>
          </xpath>
 
 
@@ -254,6 +254,42 @@ QWeb
 
 QWeb is the primary templating engine used by Odoo. It is an XML templating engine mainly used to
 generate HTML fragments and pages.
+
+Starting from Odoo 19, `t-call` directives can receives parameters:
+
+.. code-block:: xml
+
+   <!-- Old way -->
+   <t t-call="portal.user_dropdown">
+      <t t-set="_icon" t-value="True" />
+      <t t-set="_item_class" t-valuef="dropdown" />
+   </t>
+
+   <t t-call="website.layout">
+      <t t-set="additional_title">My page title</t>
+   </t>
+
+   <!-- New way (Parametric) -->
+   <t t-call="portal.user_dropdown"
+      _icon="true"
+      _item_class.f="dropdown" />
+
+   <t t-call="website.layout"
+      additional_title.translate="My page title" />
+
+.. list-table::
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 20 80
+
+   * - Attribute (examples)
+     - Description
+   * - `_icon="true"`
+     - Pass the raw value (here a boolean set to `true`)
+   * - `_item_class.f="dropdown"`
+     - Pass value as a string
+   * - `additional_title.translate="My page title"`
+     - Pass value as a string
 
 .. seealso::
    :doc:`QWeb templates documentation <../../reference/frontend/qweb>`.
@@ -403,14 +439,14 @@ Explicitly set the desired template in the `primary_variables.scss` file.
 
    $o-website-values-palettes: (
       (
-         'header-template': 'Contact',
+         'header-template': 'Stretch',
       ),
    );
 
 .. code-block:: xml
    :caption: ``/website_airproof/data/presets.xml``
 
-   <record id="website.template_header_contact" model="ir.ui.view">
+   <record id="website.template_header_stretch" model="ir.ui.view">
       <field name="active" eval="True"/>
    </record>
 
@@ -423,7 +459,7 @@ Each header template comes with the `template_header_mobile` template ensuring a
 experience accross every devices.
 
 .. seealso::
-   `Mobile header template on Odoo's Git repository <https://github.com/odoo/odoo/blob/43b20e6e52526c415e28c21810cd7023f6feef1e/addons/website/views/website_templates.xml#L354>`_
+   `Mobile header template on Odoo's Git repository <https://github.com/odoo/odoo/blob/e9c9f0ca0a54b9ca966451d12b7eecc6b9a7d6e0/addons/website/views/website_templates.xml#L383>`_
 
 
 .. _website_themes/layout/header/custom :
@@ -442,15 +478,26 @@ Create your own template and add it to the list.
 Use the following code to add an option for your new custom header on the Website Builder.
 
 .. code-block:: xml
-   :caption: ``/website_airproof/views/website_templates.xml``
+   :caption: ``/website_airproof/static/src/website_builder/header_template_option.xml``
 
-   <template id="template_header_opt" inherit_id="website.snippet_options" name="Header Template - Option">
-      <xpath expr="//we-select[@data-variable='header-template']" position="inside">
-         <we-button title="airproof"
-            data-customize-website-views="website_airproof.header"
-            data-customize-website-variable="'airproof'"  data-img="/website_airproof/static/src/img/wbuilder/template_header_opt.svg"/>
-      </xpath>
-   </template>
+   <t t-name="website_airproof.HeaderTemplateOption" t-inherit="website.HeaderTemplateOption" t-inherit-mode="extension">
+        <xpath expr="//BuilderRow[@label.translate='Template']//BuilderSelect" position="inside">
+            <BuilderSelectItem
+                title.translate="Airproof"
+                actionParam="[
+                  {
+                     action: 'websiteConfig',
+                     actionParam: {
+                        views: ['website_airproof.header'],
+                        vars: {'header-template': 'airproof'},
+                        checkVars: false,
+                     },
+                  },
+               ]">
+               <Img src="'/website_airproof/static/src/img/wbuilder/template-header-opt.svg'" attrs="{ style: 'width: calc(100% - 0.5rem);' }" />
+            </BuilderSelectItem>
+        </xpath>
+    </t>
 
 .. list-table::
    :header-rows: 1
@@ -459,11 +506,13 @@ Use the following code to add an option for your new custom header on the Websit
 
    * - Attribute
      - Description
-   * - data-customize-website-views
-     - The template to enable
-   * - data-customize-website-variable
-     - The name given to the variable
-   * - data-img
+   * - views
+     - The template(s) to enable
+   * - vars
+     - The name given to the variable (same as used into `primary_variables.scss`)
+   * - checkVars
+     - Determine if `vars` are compared to set the option status.
+   * - src (in `Img`)
      - The thumbnail of the custom template shown in the templates selection on the Website Builder
 
 Now you have to explicitly define that you want to use your custom template in the Odoo SASS
@@ -515,9 +564,8 @@ Logo
 
 .. code-block:: xml
 
-   <t t-call="website.placeholder_header_brand">
-      <t t-set="_link_class" t-valuef="..."/>
-   </t>
+   <t t-call="website.placeholder_header_brand"
+      _link_class.f="..."/>
 
 .. important::
 
@@ -532,10 +580,9 @@ Menu
 .. code-block:: xml
 
    <t t-foreach="website.menu_id.child_id" t-as="submenu">
-      <t t-call="website.submenu">
-         <t t-set="item_class" t-valuef="nav-item"/>
-         <t t-set="link_class" t-valuef="nav-link"/>
-      </t>
+      <t t-call="website.submenu"
+         item_class.f="nav-item"
+         link_class.f="nav-link" />
    </t>
 
 .. _website_themes/layout/header/components/signin :
@@ -545,10 +592,9 @@ Sign in
 
 .. code-block:: xml
 
-   <t t-call="portal.placeholder_user_sign_in">
-      <t t-set="_item_class" t-valuef="nav-item"/>
-      <t t-set="_link_class" t-valuef="nav-link"/>
-   </t>
+   <t t-call="portal.placeholder_user_sign_in"
+      _item_class.f="nav-item"
+      _link_class.f="nav-link" />
 
 .. _website_themes/layout/header/components/user_dropdown :
 
@@ -557,14 +603,13 @@ User dropdown
 
 .. code-block:: xml
 
-   <t t-call="portal.user_dropdown">
-      <t t-set="_user_name" t-value="true"/>
-      <t t-set="_icon" t-value="false"/>
-      <t t-set="_avatar" t-value="false"/>
-      <t t-set="_item_class" t-valuef="nav-item dropdown"/>
-      <t t-set="_link_class" t-valuef="nav-link"/>
-      <t t-set="_dropdown_menu_class" t-valuef="..."/>
-   </t>
+   <t t-call="portal.user_dropdown"
+      _user_name="true"
+      _icon="false"
+      _avatar="false"
+      _item_class.f="nav-item dropdown"
+      _link_class.f="nav-link"
+      _dropdown_menu_class.f="..." />
 
 .. _website_themes/layout/header/components/language_selector :
 
@@ -573,9 +618,8 @@ Language selector
 
 .. code-block:: xml
 
-   <t t-call="website.placeholder_header_language_selector">
-      <t t-set="_div_classes" t-valuef="..."/>
-   </t>
+   <t t-call="website.placeholder_header_language_selector"
+      _div_classes.f="..." />
 
 .. _website_themes/layout/header/components/cta :
 
@@ -584,9 +628,8 @@ Call to action
 
 .. code-block:: xml
 
-   <t t-call="website.placeholder_header_call_to_action">
-      <t t-set="_div_classes" t-valuef="..."/>
-   </t>
+   <t t-call="website.placeholder_header_call_to_action"
+      _div_classes.f="..." />
 
 .. _website_themes/layout/header/components/navbar_toggler :
 
@@ -595,13 +638,12 @@ Navbar toggler
 
 .. code-block:: xml
 
-   <t t-call="website.navbar_toggler">
-      <t t-set="_toggler_class" t-valuef="..."/>
-   </t>
+   <t t-call="website.navbar_toggler"
+      _toggler_class.f="..." />
 
 .. seealso::
-   You can add a :ref:`header overlay <website_themes/pages/theme_pages/header_overlay>` to position your header over the content of
-   your page. It has to be done on each page individually.
+   You can add a :ref:`header overlay <website_themes/pages/theme_pages/header_overlay>` to position
+   your header over the content of your page. It has to be done on each page individually.
 
 .. _website_themes/layout/footer :
 
@@ -657,17 +699,49 @@ active footer template first.
 
 **Option**
 
-.. code-block:: xml
-   :caption: ``/website_airproof/views/website_templates.xml``
+.. code-block:: js
+   :caption: ``/website_airproof/static/src/website_builder/footer_option_plugin.js``
 
-   <template id="template_footer_opt" inherit_id="website.snippet_options" name="Footer Template - Option">
-      <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
-         <we-button title="airproof"
-            data-customize-website-views="website_airproof.footer"
-            data-customize-website-variable="'airproof'"
-            data-img="/website_airproof/static/src/img/wbuilder/template_footer_opt.svg"/>
-      </xpath>
-   </template>
+   import { Plugin } from "@html_editor/plugin";
+   import { registry } from "@web/core/registry";
+   import { _t } from "@web/core/l10n/translation";
+   import { FooterTemplateChoice } from "@website/builder/plugins/options/footer_template_option";
+
+   export class AirproofFooterOptionPlugin extends Plugin {
+      static id = "airproofFooteOption";
+      resources = {
+         footer_templates_providers: () => [
+         {
+               key: "airproof",
+               Component: FooterTemplateChoice,
+               props: {
+                  title: _t("Airproof"),
+                  view: "website_airproof.footer",
+                  varName: "airproof",
+                  imgSrc: "/website_airproof/static/src/img/wbuilder/template-footer-opt.svg",
+               },
+         },
+         ],
+      };
+   }
+
+   registry.category("website-plugins").add(AirproofFooterOptionPlugin.id, AirproofFooterOptionPlugin);
+
+.. list-table::
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 20 80
+
+   * - Property
+     - Description
+   * - title
+     - Display title of the template
+   * - view
+     - Template that is enabled.
+   * - varName
+     - Value used in `primary_variables.scss` under `footer-template`.
+   * - imgSrc
+     - The thumbnail of the custom template shown in the templates selection on the Website Builder
 
 **Declaration**
 
@@ -761,7 +835,7 @@ Responsive
 ==========
 
 Odoo in general relies on the Bootstrap framework which eases the responsiveness of your website on
- desktop and mobile. On Odoo 16, you can mainly take action on 3 aspects:
+desktop and mobile. On Odoo 19, you can mainly take action on 3 aspects:
 
 #. Automatic computed font sizes depending on the device
 #. Column sizes on desktop (the columns are automatically stacked on mobile)
