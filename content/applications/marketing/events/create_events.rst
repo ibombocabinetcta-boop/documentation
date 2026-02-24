@@ -2,15 +2,15 @@
 Create events
 =============
 
-With the *Events* application, event organizers can create and configure in-person or online-only
+With the **Events** application, event organizers can create and configure in-person or online-only
 events in Odoo. Each new event contains a number of customizable options that are geared around
 specific event logistics, as needed per event, such as ticket sales and registration desk, booths,
 tracks, sponsors, rooms, and more.
 
 Events can be manually created from scratch or built off of pre-made templates. Once launched, the
-*Events* application then integrates with the *Website* app for the front-end promotion and
-registration of the event for attendees, the *Sales* app for the purchasing ability of paid tickets,
-as well the *CRM* application through customizable lead generation rules.
+**Events** application then integrates with the **Website** app for the front-end promotion and
+registration of the event for attendees, the **Sales** app for the purchasing ability of paid tickets,
+as well the **CRM** application through customizable lead generation rules.
 
 .. _events/new-event:
 
@@ -31,12 +31,12 @@ event form.
    If certain fields do not readily appear on the event form, that means an additional application
    needs to be installed, or the database is not operating in a multi-company environment.
 
-   For example, the :guilabel:`Twitter Wall` field **only** appears if the *Social Marketing* app is
+   For example, the :guilabel:`Twitter Wall` field **only** appears if the **Social Marketing** app is
    installed, and the :guilabel:`Company` field **only** appears if the database is working in a
    multi-company environment.
 
-   These are just *additional* elements that can be used for an event. They are **not** required to
-   create, host, and manage an event with Odoo *Events*.
+   These are just additional elements that can be used for an event. They are **not** required to
+   create, host, and manage an event with Odoo **Events**.
 
 Event form
 ==========
