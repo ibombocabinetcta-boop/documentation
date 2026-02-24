@@ -4,7 +4,7 @@
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2025
 # Fernanda Alvarez, 2025
 # "Fernanda Alvarez (mfar)" <mfar@odoo.com>, 2025, 2026.
-# "Patricia Gutiérrez (pagc)" <pagc@odoo.com>, 2025.
+# "Patricia Gutiérrez (pagc)" <pagc@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 #
 # Translators:
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-22 18:30+0000\n"
-"PO-Revision-Date: 2026-02-19 23:11+0000\n"
+"PO-Revision-Date: 2026-02-24 23:11+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-18-doc/hr/es_419/>\n"
@@ -6524,8 +6524,8 @@ msgid ""
 ":guilabel:`Employee's Name`: enter the employee's name. This field is "
 "required."
 msgstr ""
-":guilabel:`Nombre del empleado`: Ingrese el nombre del empleado. Este es un "
-"campo obligatorio."
+":guilabel:`Nombre del empleado`: Ingresa el nombre del empleado. Este campo "
+"es obligatorio."
 
 #: ../../content/applications/hr/employees/new_employee.rst:38
 msgid ""
@@ -6631,8 +6631,8 @@ msgid ""
 ":guilabel:`Department`: select the employee's department from the drop-down "
 "menu."
 msgstr ""
-":guilabel:`Departamento`: seleccione el departamento del empleado en el menú "
-"desplegable."
+":guilabel:`Departamento`: Selecciona el departamento del empleado con el "
+"menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:71
 msgid ""
@@ -6784,7 +6784,7 @@ msgstr ""
 #: ../../content/applications/hr/employees/new_employee.rst:119
 msgid ":guilabel:`Description`: enter any relevant details in this field."
 msgstr ""
-":guilabel:`Descripción`: escriba cualquier detalle relevante en este campo."
+":guilabel:`Descripción`: Escribe cualquier detalle relevante en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:121
 msgid ""
@@ -6807,9 +6807,9 @@ msgid ""
 "automatically added to the :guilabel:`Resumé` tab, with the end date listed "
 "as `current`."
 msgstr ""
-"Una vez que guarda el formulario del nuevo empleado, el puesto y la empresa "
-"actual se agregan de forma automática a la pestaña :guilabel:`Currículum` "
-"con la fecha de finalización como `actual`."
+"Después de guardar el formulario del nuevo empleado, el sistema agrega la "
+"posición y la empresa actuales de forma automática a la pestaña "
+":guilabel:`Currículum` con la fecha de finalización `actual`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:135
 msgid "Skills"
@@ -6977,9 +6977,9 @@ msgid ""
 ":guilabel:`Skill Type`: enter the name of the skill type. This acts as the "
 "parent category for more specific skills and should be generic."
 msgstr ""
-":guilabel:`Tipo de habilidad`: escriba el nombre del tipo de habilidad. "
-"Funcionará como la categoría principal para las habilidades más específicas, "
-"así que el nombre debe ser genérico."
+":guilabel:`Tipo de habilidad`: Escribe el nombre del tipo de habilidad. Este "
+"campo funciona como categoría principal para habilidades más específicas y "
+"debe ser general."
 
 #: ../../content/applications/hr/employees/new_employee.rst:198
 msgid ""
@@ -6987,9 +6987,9 @@ msgid ""
 "the :guilabel:`Name` for the new skill, then repeat for all other needed "
 "skills."
 msgstr ""
-":guilabel:`Habilidades`: Haga clic en :guilabel:`Agregar una línea` y "
-"escriba el :guilabel:`nombre` de esta nueva habilidad. Repita el proceso "
-"para todas las habilidades necesarias."
+":guilabel:`HABILIDADES`: Haz clic en :guilabel:`Agregar una línea` y escribe "
+"el :guilabel:`nombre` de la nueva habilidad. Repite el proceso para el resto "
+"de las habilidades necesarias."
 
 #: ../../content/applications/hr/employees/new_employee.rst:200
 msgid ""
@@ -6997,9 +6997,9 @@ msgid ""
 "a :guilabel:`Name` and :guilabel:`Progress` percentage (`0`-`100`) for each "
 "level."
 msgstr ""
-":guilabel:`Niveles`: Haga clic en :guilabel:`Agregar una línea` y escriba "
-"el :guilabel:`nombre` y el porcentaje (`0`-`100`) de :guilabel:`progreso` "
-"para cada nivel."
+":guilabel:`NIVELES`: Haz clic en :guilabel:`Agregar una línea` y escribe el "
+":guilabel:`nombre` y el porcentaje de :guilabel:`progreso` (`0`-`100`) de "
+"cada nivel."
 
 #: ../../content/applications/hr/employees/new_employee.rst:203
 msgid ""
@@ -7368,7 +7368,7 @@ msgid ""
 ":guilabel:`Work Address`: using the drop-down menu, select the address for "
 "the location."
 msgstr ""
-":guilabel:`Dirección laboral`: seleccione la dirección de la ubicación con "
+":guilabel:`Dirección laboral`: Selecciona la dirección de la ubicación con "
 "el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:328
@@ -7379,11 +7379,10 @@ msgid ""
 "o` :guilabel:`(building)` icon, and a :icon:`fa-map-marker` :guilabel:`(map "
 "marker)` icon."
 msgstr ""
-":guilabel:`Imagen de portada`: Haga clic en el icono para seleccionarlo "
-"como :guilabel:`Imagen de portada`. Las opciones son el icono de :icon:`fa-"
-"home` :guilabel:`(casa)`, un icono de :icon:`fa-building-"
-"o` :guilabel:`(edificio)` y un icono de :icon:`fa-map-"
-"marker` :guilabel:`(marcador de ubicación)`."
+":guilabel:`Imagen de portada`: Haz clic en el icono para seleccionarlo como "
+":guilabel:`imagen de portada`. Las opciones son el icono :icon:`fa-home` "
+":guilabel:`(casa)`, el icono :icon:`fa-building-o` :guilabel:`(edificio)` y "
+"el icono :icon:`fa-map-marker` :guilabel:`(marcador de ubicación)`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:331
 msgid ""
@@ -7391,8 +7390,8 @@ msgid ""
 "location applies to. The current company populates this field, by default. "
 "This field **only** appears in a multi-company database."
 msgstr ""
-":guilabel:`Empresa`: Seleccione la empresa a la que pertenece esta ubicación "
-"con el menú desplegable. La empresa actual completa este campo de forma "
+":guilabel:`Empresa`: Usa el menú desplegable y selecciona la empresa a la "
+"que aplica la ubicación. La empresa actual completa este campo de forma "
 "predeterminada. Este campo **solo** aparece en una base de datos "
 "multiempresas."
 
@@ -7711,7 +7710,7 @@ msgstr ""
 #: ../../content/applications/hr/employees/new_employee.rst:450
 msgid ":guilabel:`Contact Name`: enter the emergency contact's name."
 msgstr ""
-":guilabel:`Nombre del contacto`: Ingrese el nombre del contacto de "
+":guilabel:`Nombre del contacto`: Escribe el nombre del contacto de "
 "emergencia."
 
 #: ../../content/applications/hr/employees/new_employee.rst:451
@@ -7767,10 +7766,9 @@ msgid ""
 "deductions, and should follow all tax regulations regarding applicable "
 "dependents."
 msgstr ""
-":guilabel:`Número de hijos dependientes`: Ingrese el número de hijos "
-"dependientes. Este número es el mismo número que se usará para calcular las "
-"deducciones de impuestos y debe seguir todas las regulaciones fiscales sobre "
-"hijos dependientes."
+":guilabel:`Número de hijos dependientes`: Escribe el número de hijos "
+"dependientes. Usa la misma cifra utilizada para calcular deducciones "
+"fiscales y respeta las normas fiscales aplicables."
 
 #: ../../content/applications/hr/employees/new_employee.rst:472
 msgid "CITIZENSHIP"
@@ -7803,13 +7801,13 @@ msgid ""
 ":guilabel:`Identification No`: enter the employee's identification number in "
 "this field."
 msgstr ""
-":guilabel:`Número de identificación`: Ingese el número de identificación de "
-"empleado en este campo."
+":guilabel:`Número de identificación`: Escribe el número de identificación "
+"del empleado en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:482
 msgid ":guilabel:`SSN No`: enter the employee's social security number."
 msgstr ""
-":guilabel:`Número de seguro social`: Ingrese el número del seguro social del "
+":guilabel:`Número de seguro social`: Ingresa el número de seguro social del "
 "empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:483
@@ -9294,9 +9292,9 @@ msgid ""
 "blank :guilabel:`Launch Plan` pop-up window loads."
 msgstr ""
 "Después de que se contrató a un empleado y :ref:`se creó <recruitment/new-"
-"employee>` su perfil, haga clic en la terjeta kaban del empleado en el "
+"employee>` su perfil, haz clic en la tarjeta kaban del empleado en el "
 "tablero de la aplicación **Empleados** para ir a su perfil de empleado. "
-"Después, haga clic en el botón :guilabel:`Iniciar plan` en su perfil de "
+"Después, haz clic en el botón :guilabel:`Iniciar plan` en su perfil de "
 "empleado para cargar una ventana emergente de :guilabel:`Iniciar plan`."
 
 #: ../../content/applications/hr/employees/onboarding.rst:143
