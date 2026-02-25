@@ -42,7 +42,8 @@ attribute to control the animation's direction intensity.
 
 .. code-block:: xml
 
-   <div class="col-lg-6 o_animate o_anim_fade_in o_animate_both_scroll o_anim_from_bottom" style="--wanim-intensity: 100; animation-duration: 2s; animation-delay: 1s;">
+   <div class="col-lg-6 o_animate o_anim_from_right o_anim_slide_in"
+        style="--wanim-intensity: 50; animation-duration: 1s; animation-delay: 0;">
        <h2>A Section Subtitle</h2>
        <p>Write one or two paragraphs describing your product or services.</p>
    </div>
@@ -74,7 +75,10 @@ Additionally, we can also set an `in` or `out` effect, an animation `direction` 
 
 .. code-block:: xml
 
-    <div class="col-lg-6 o_animate o_animate_on_scroll o_animate_out o_anim_fade_in o_anim_from_right" data-scroll-zone-start="50" data-scroll-zone-end="100" style="--wanim-intensity: 100;">
+    <div class="col-lg-6 o_animate o_animate_on_scroll o_animate_out o_anim_fade_in o_anim_from_right"
+        data-scroll-zone-start="50"
+        data-scroll-zone-end="100"
+        style="--wanim-intensity: 100;">
         <h2>A Section Subtitle</h2>
         <p>Write one or two paragraphs describing your product or services.</p>
     </div>
@@ -102,7 +106,7 @@ Additionally, we can also set an `in` or `out` effect, an animation `direction` 
 
 .. seealso::
    `Website Animate
-   <https://github.com/odoo/odoo/blob/c272c49657e8b7865bb93e5f1dcc183cc7d44f17/addons/website/static/src/scss/website.scss#L2075>`_
+   <https://github.com/odoo/odoo/blob/e901555e99e59590aa25595bf791d4856e085999/addons/website/static/src/scss/website.scss#L2388>`_
 
 .. _website_themes/animations/hover:
 
@@ -157,7 +161,6 @@ also define the type of animation in the `data-hover-effect` attribute.
      - Integer (saved as `px`)
 
 .. image:: animations/hover.png
-   :width: 300
    :alt: Animation on hover options
 
 .. seealso::
