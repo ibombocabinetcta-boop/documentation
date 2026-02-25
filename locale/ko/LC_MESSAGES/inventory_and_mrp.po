@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-24 23:11+0000\n"
+"PO-Revision-Date: 2026-02-25 23:11+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-18-doc/"
 "inventory_and_mrp/ko/>\n"
@@ -2477,7 +2477,7 @@ msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/barcode/operations/receipts_deliveries.rst:48
 msgid ":doc:`barcode_nomenclature`"
-msgstr ""
+msgstr ":doc:`barcode_nomenclature`"
 
 #: ../../content/applications/inventory_and_mrp/barcode/operations/receipts_deliveries.rst:50
 #: ../../content/applications/inventory_and_mrp/barcode/setup/device_troubleshooting.rst:211
@@ -2503,7 +2503,7 @@ msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/barcode/operations/receipts_deliveries.rst:62
 msgid ":doc:`../../purchase/manage_deals/rfq`"
-msgstr ""
+msgstr ":doc:`../../purchase/manage_deals/rfq`"
 
 #: ../../content/applications/inventory_and_mrp/barcode/operations/receipts_deliveries.rst:64
 msgid ""
