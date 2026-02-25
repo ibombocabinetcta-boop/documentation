@@ -25,7 +25,6 @@ manually is highlighted in yellow.
 
 .. image:: translations/translate-button.png
    :alt: Translate button
-   :width: 570
 
 However, you have to understand what's happening under the hood when you translate something
 through the Website Builder.
@@ -103,7 +102,7 @@ place:
 
 .. code-block:: xml
 
-   <t t-set=”title”>Foo</t>
+   <t t-set=”label”>Foo</t>
 
 And then we need to call it in different locations:
 
@@ -127,7 +126,7 @@ the name of the page you want to translate, and click the :guilabel:`Edit Transl
 
 .. image:: translations/edit-translations.png
    :alt: Edit translations
-   :width: 718
+
 
 .. _website_themes/translations/export:
 
@@ -152,7 +151,7 @@ You can translate directly by editing a :file:`.po` file or creating the file yo
 the :doc:`translating modules documentation <../translations>` to write your translations.
 
 .. code-block:: po
-   :caption: ``/website_coconuts/i18n/fr_BE.po``
+   :caption: ``/website_airproof/i18n/fr_BE.po``
 
    #. module: website_airproof
    #: model_terms:ir.ui.view,arch_db:website_airproof.s_custom_snippet
