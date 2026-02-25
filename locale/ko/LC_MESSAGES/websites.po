@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-20 23:21+0000\n"
+"PO-Revision-Date: 2026-02-25 17:51+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19-doc/"
 "websites/ko/>\n"
@@ -1822,6 +1822,14 @@ msgid ""
 "to :menuselection:`Website --> eCommerce --> Pricelists` and :ref:`configure "
 "<sales/products/pricelist-configuration>` the relevant pricelists."
 msgstr ""
+"Odoo의 가격표를 통해 맞춤형 가격 규칙을 관리할 수 있으며 통화, 기간, 구매량, "
+":ref:`고객 위치 <ecommerce/prices/geoip>` 및 고객 유형에 따라 다양한 가격과 "
+"할인 정책을 적용할 수 있습니다. 이커머스에서 가격표를 활성화하려면 "
+":menuselection:`웹사이트 --> 환경설정 --> 설정` 으로 이동하여 :guilabel:`이커"
+"머스` 섹션까지 스크롤한 후 :guilabel:`가격표` 를 활성화하고 :guilabel:`저장` "
+"을 클릭합니다. 그런 다음 :guilabel:`가격표` 를 클릭하거나 :menuselection:`웹"
+"사이트 --> 이커머스 --> 가격표` 로 이동하여 관련 가격표에 대한 :ref:`환경설정"
+" <sales/products/pricelist-configuration>` 을 합니다."
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:93
 msgid ""
@@ -2178,6 +2186,13 @@ msgid ""
 "the :ref:`checkout process <ecommerce/checkout/review_order>`, this discount "
 "is granted according to the :guilabel:`Sales Price` configuration."
 msgstr ""
+"고객이 할인 코드를 입력할 경우 할인된 가격표를 제공하려면, 관련 :ref:`가격표 "
+"양식 <ecommerce/prices/pricelists>` 으로 가서 :guilabel:`이커머스` 탭으로 이"
+"동한 후 :guilabel:`이커머스 프로모션 코드`(예: `SUMMERSALE10%`)를 추가합니다."
+" 그런 다음 :guilabel:`판매 가격` 탭으로 이동하여 :guilabel:`줄 추가` 를 클릭"
+"하고 :ref:`할인 설정 <sales/products/price-rules>` 메뉴를 설정합니다. 고객이 "
+":ref:`결제 과정 <ecommerce/checkout/review_order>` 중에 해당하는 코드를 입력"
+"하면, 설정한 :guilabel:`판매 가격` 설정 내용에 따라 할인 내역이 적용됩니다."
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:302
 msgid ""
@@ -2268,6 +2283,17 @@ msgid ""
 "click :guilabel:`Product` in the top-right corner to access the backend "
 "product form."
 msgstr ""
+"프론트엔드에서 품목을 생성하려면, 웹사이트 앱으로 이동하여 오른쪽 상단의 :gui"
+"label:`신규`:icon:`fa-caret-down` 를 클릭한 후 :guilabel:`품목` 을 선택합니다"
+". :guilabel:`품목명` 과 함께 :guilabel:`바코드`, :guilabel:`판매 가격`, 기본 "
+":guilabel:`판매세` 및 :ref:`웹사이트 카테고리 <ecommerce/categories_variants/"
+"categories>` 등을 입력한 후 이미지를 추가합니다. :guilabel:`저장` 을 클릭하면"
+" 품목 페이지로 이동하며, 여기서 :doc:`웹사이트 편집기 </applications/"
+"websites/website/web_design>` 를 사용해 :ref:`사용자 지정 <ecommerce_design/"
+"product_page/customization>` 할 수 있습니다. 완료되면 :guilabel:`저장` 을 클"
+"릭합니다. 추가로 고급 :ref:`품목 세부 정보 <ecommerce/products/product-"
+"configuration>` 를 설정하려면 오른쪽 상단의 :guilabel:`품목` 을 클릭하면 백엔"
+"드 품목 양식을 이용할 수 있습니다."
 
 #: ../../content/applications/websites/ecommerce/configuration/products.rst:32
 msgid ""
@@ -2375,6 +2401,15 @@ msgid ""
 "it available on all of them, **duplicate** the product for each website and "
 "assign the corresponding website to each duplicate."
 msgstr ""
+"관리 중인 웹사이트가 여러 개인 경우, 각 웹사이트에서 판매할 품목은 :ref:`품목"
+" 양식 <ecommerce/products/product-form>` 에서 설정할 수 있습니다. :guilabel:`"
+"판매` 탭으로 이동한 후 :guilabel:`이커머스 상점` 섹션에서 품목을 판매하려는 :"
+"guilabel:`웹사이트` 를 선택합니다. 필드를 비워두면 *모든* 웹사이트에 해당 품"
+"목을 판매하도록 적용됩니다. 품목별로 *하나의 웹사이트* 또는 *모든 웹사이트* "
+"에서 판매되도록 설정할 수 있으나, *일부 웹사이트* 만 선택하는 것은 불가능합니"
+"다. 모든 웹사이트에서 판매하지 않고 특정한 여러 개의 웹사이트에서 품목을 판매"
+"하도록 설정하려면, 품목을 **복제** 한 후 각 복제본에 해당 웹사이트를 지정하면"
+" 됩니다."
 
 #: ../../content/applications/websites/ecommerce/configuration/products.rst:88
 msgid "Product configuration"
@@ -2507,7 +2542,7 @@ msgstr ""
 
 #: ../../content/applications/websites/ecommerce/configuration/products.rst:0
 msgid "Optional products cross-selling."
-msgstr ""
+msgstr "선택적 품목 교차 판매입니다."
 
 #: ../../content/applications/websites/ecommerce/configuration/products.rst:176
 msgid "Accessory products"
@@ -2640,6 +2675,8 @@ msgid ""
 ":doc:`Website languages and translations </applications/websites/website/"
 "configuration/translate>`"
 msgstr ""
+":doc:`웹사이트 언어 및 번역 </applications/websites/website/configuration/"
+"translate>`"
 
 #: ../../content/applications/websites/ecommerce/configuration/products.rst:259
 #: ../../content/applications/websites/ecommerce/order_handling.rst:130
@@ -5081,6 +5118,13 @@ msgid ""
 "eLearning Manager can grant access, in which case the requestor is "
 "automatically enrolled in the course, or refuse access."
 msgstr ""
+"요청 항목이 생성되면 해당 과정의 :guilabel:`담당자` 에게 작업으로 할 일이 지"
+"정되며, 이를 통해 :guilabel:`액세스 권한 부여` 또는 :guilabel:`액세스 권한 반"
+"려` 중에서 선택할 수 있습니다. 할 일은 :guilabel:`담당자` 로 지정된 사용자 및"
+" 강좌의 메시지창에 있는 모든 온라인 학습 관리자에게 표시되며, :guilabel:`담당"
+"자` 에게는 이메일로 알림이 전송됩니다. :guilabel:`담당자` 또는 온라인 학습 관"
+"리자가 액세스를 허용하면 요청자는 자동으로 강좌에 등록되며, 또는 액세스를 거"
+"부하는 것도 가능합니다."
 
 #: ../../content/applications/websites/elearning.rst:139
 msgid ""
@@ -10601,7 +10645,7 @@ msgstr ""
 
 #: ../../content/applications/websites/website/configuration/domain_names.rst:217
 msgid ":ref:`Add a CNAME record. <domain-name/cname>`"
-msgstr ""
+msgstr ":ref:`CNAME 레코드를 추가합니다. <domain-name/cname>`"
 
 #: ../../content/applications/websites/website/configuration/domain_names.rst:218
 msgid ""
@@ -14212,7 +14256,7 @@ msgstr ""
 
 #: ../../content/applications/websites/website/structure/seo.rst:None
 msgid "Search Engine Optimization"
-msgstr ""
+msgstr "검색 엔진 최적화"
 
 #: ../../content/applications/websites/website/structure/seo.rst:32
 msgid ""

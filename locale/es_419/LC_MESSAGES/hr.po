@@ -22,16 +22,16 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-18 23:21+0000\n"
-"Last-Translator: \"Patricia Gutiérrez (pagc)\" <pagc@odoo.com>\n"
+"PO-Revision-Date: 2026-02-25 23:20+0000\n"
+"Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/hr/es_419/>\n"
 "Language: es_419\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == "
-"0) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0)"
+" ? 1 : 2);\n"
 "X-Generator: Weblate 5.14.3\n"
 
 #: ../../content/applications/hr.rst:5
@@ -3830,6 +3830,9 @@ msgid ""
 "The new badge number appears in the *RFID/Badge Number* field in the "
 "*Settings* tab on the :ref:`employee's form <employees/hr-attn-pos>`."
 msgstr ""
+"El nuevo número de identificación aparece en el campo *RFID/Número de "
+"identificación* en la pestaña *Ajustes* del :ref:`formulario del empleado <"
+"employees/hr-attn-pos>`."
 
 #: ../../content/applications/hr/attendances/attendance_onboarding.rst:None
 msgid "A barcode set-up pop-up window with a new barcode entered."
@@ -7920,30 +7923,40 @@ msgid ""
 "Fill out the following employee details in the top section of the employee "
 "form."
 msgstr ""
+"Completa los siguientes datos del empleado en la sección superior del "
+"formulario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:29
 msgid ""
 ":guilabel:`Employee's Name`: Enter the employee's name. This field is "
 "required."
 msgstr ""
+":guilabel:`Nombre del empleado`: Ingresa el nombre del empleado. Este campo "
+"es obligatorio."
 
 #: ../../content/applications/hr/employees/new_employee.rst:30
 msgid ""
 ":icon:`fa-envelope` :guilabel:`(Work Email)`: Enter the employee's work "
 "email address."
 msgstr ""
+":icon:`fa-envelope` :guilabel:`(Correo de trabajo)`: Ingresa el correo "
+"electrónico laboral del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:31
 msgid ""
 ":icon:`fa-phone` :guilabel:`(Work Phone)`: Enter the employee's work phone "
 "number."
 msgstr ""
+":icon:`fa-phone` :guilabel:`(Teléfono laboral)`: Ingresa el número de "
+"teléfono laboral del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:32
 msgid ""
 ":icon:`fa-mobile` :guilabel:`(Work Mobile)`: Enter the employee's work "
 "mobile number."
 msgstr ""
+":icon:`fa-mobile` :guilabel:`(Celular de trabajo)`: Ingresa el celular "
+"laboral del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:33
 msgid ""
@@ -7953,15 +7966,25 @@ msgid ""
 "records. There is no limit to the amount of tags that can be added on an "
 "employee form."
 msgstr ""
+":icon:`fa-tag` :guilabel:`(Etiquetas)`: Selecciona etiquetas del menú "
+"desplegable para agregar las etiquetas correspondientes al empleado. Puedes "
+"crear cualquier etiqueta en este campo si la escribes. Una vez que hayas "
+"creado esta nueva etiqueta, estará disponible para todos los registros de "
+"empleados. Puedes agregar todas las etiquetas que sean necesarias al "
+"formulario del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:37
 msgid ""
 ":guilabel:`Photo`: Upload a photo of the employee in the photo placeholder."
 msgstr ""
+":guilabel:`Fotografía`: Sube una imagen del empleado en el espacio destinado "
+"para la misma."
 
 #: ../../content/applications/hr/employees/new_employee.rst:None
 msgid "The top-half of a new employee form, all filled out."
 msgstr ""
+"La mitad superior de un nuevo formulario de empleado con todos los campos "
+"completos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:45
 #: ../../content/applications/hr/payroll/payroll_localizations/jordan.rst:76
@@ -7977,10 +8000,12 @@ msgid ""
 "This tab is visible for all employees, and does not require any other apps "
 "to be installed."
 msgstr ""
+"Esta pestaña es visible para todos los empleados y no es necesario que "
+"instales otras aplicaciones."
 
 #: ../../content/applications/hr/employees/new_employee.rst:50
 msgid "Work"
-msgstr ""
+msgstr "Trabajo"
 
 #: ../../content/applications/hr/employees/new_employee.rst:52
 msgid ""
@@ -7990,12 +8015,19 @@ msgid ""
 "mini drop-down menu that appears. This field is required, but only appears "
 "when in a multi-company database."
 msgstr ""
+":guilabel:`Empresa`: Selecciona la empresa que contrató al nuevo empleado "
+"desde el menú desplegable o crea una nueva. Para ello, escribe el nombre en "
+"el campo y haz clic en :guilabel:`Crear` o en :guilabel:`Crear y editar...` "
+"en el mini menú desplegable que aparece. Este campo es obligatorio, pero "
+"solo aparece en una base de datos multiempresas."
 
 #: ../../content/applications/hr/employees/new_employee.rst:56
 msgid ""
 ":guilabel:`Department`: Select the employee's department from the drop-down "
 "menu."
 msgstr ""
+":guilabel:`Departamento`: Selecciona el departamento del empleado con el "
+"menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:57
 msgid ""
@@ -8003,6 +8035,9 @@ msgid ""
 "down menu. If using the **Recruitment** app, this list reflects configured "
 "job positions."
 msgstr ""
+":guilabel:`Puesto`: Selecciona el puesto del empleado con el menú "
+"desplegable. Esta lista mostrará los puestos configurados si usas la "
+"aplicación **Reclutamiento**."
 
 #: ../../content/applications/hr/employees/new_employee.rst:59
 msgid ""
@@ -8010,11 +8045,16 @@ msgid ""
 "selection made in the :guilabel:`Job Position` field. Adjust the text, if "
 "desired, to best reflect the employee's role."
 msgstr ""
+":guilabel:`Nombre del puesto`: Este campo se completa con la opción que "
+"elijas en el campo :guilabel:`Puesto de trabajo`. Ajusta el texto en caso de "
+"que sea necesario para reflejar mejor las funciones del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:63
 msgid ""
 "Specific details can be added in the :guilabel:`Job Title` field, if desired."
 msgstr ""
+"Puedes agregar detalles específicos en el campo :guilabel:`Nombre del puesto`"
+" en caso de que sea necesario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:65
 msgid ""
@@ -8022,6 +8062,9 @@ msgid ""
 "Associate` in the **Recruitment** app can be selected for the :guilabel:`Job "
 "Position` field."
 msgstr ""
+"Por ejemplo, puedes configurar el puesto de un representante de ventas con "
+"el nombre :guilabel:`Asociado de ventas` en la aplicación **Reclutamiento** "
+"y seleccionarlo en el campo :guilabel:`Puesto de trabajo`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:68
 msgid ""
@@ -8029,6 +8072,9 @@ msgid ""
 "Associate - Subscriptions` if the employee is focused solely on subscription "
 "sales."
 msgstr ""
+"El campo :guilabel:`Nombre del puesto` puede ser más específico, como `"
+"Asociado de ventas - Suscripciones` si el empleado solo realiza ventas por "
+"suscripción."
 
 #: ../../content/applications/hr/employees/new_employee.rst:0
 msgid "Both job position fields entered but with different information."
@@ -8039,11 +8085,13 @@ msgstr ""
 msgid ""
 ":guilabel:`Manager`: Select the employee's manager using the drop-down menu."
 msgstr ""
+":guilabel:`Gerente`: Selecciona al gerente del empleado con el menú "
+"desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:77
 #: ../../content/applications/hr/employees/new_employee.rst:493
 msgid "Location"
-msgstr ""
+msgstr "Ubicación"
 
 #: ../../content/applications/hr/employees/new_employee.rst:79
 msgid ""
@@ -8055,6 +8103,14 @@ msgid ""
 "open up the company form, and make any edits. Use the breadcrumb links to "
 "navigate back to the new employee form when done."
 msgstr ""
+":guilabel:`Dirección laboral`: Selecciona la :guilabel:`dirección laboral` "
+"con el menú desplegable. La empresa actual completa este campo de forma "
+"predeterminada. Para modificar la dirección, coloca el cursor sobre la "
+"primera línea (si hay varias) de la misma hasta que aparezca la flecha :icon"
+":`oi-arrow-right` :guilabel:`(Enlace interno)`. Haz clic en la flecha :icon"
+":`oi-arrow-right` :guilabel:`(Enlace interno)` para abrir el formulario de "
+"la empresa y realizar los cambios. Usa los enlaces de la ruta de navegación "
+"para regresar al formulario del nuevo empleado cuando termines."
 
 #: ../../content/applications/hr/employees/new_employee.rst:86
 msgid ""
@@ -8074,6 +8130,9 @@ msgid ""
 "down menu. The default options are :guilabel:`Home`, :guilabel:`Office`, "
 "or :guilabel:`Other`."
 msgstr ""
+":guilabel:`Ubicación de trabajo`: Selecciona dónde trabaja el empleado con "
+"el menú desplegable. Las opciones predeterminadas son :guilabel:`Casa`, "
+":guilabel:`Oficina` y :guilabel:`Otra`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:92
 msgid ""
@@ -8089,7 +8148,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:97
 msgid "Usual work location"
-msgstr ""
+msgstr "Ubicación habitual de trabajo"
 
 #: ../../content/applications/hr/employees/new_employee.rst:99
 msgid ""
@@ -8098,6 +8157,10 @@ msgid ""
 "where the employee works that day. The selected location is reflected on the "
 "employee's Kanban card, indicating their location that day."
 msgstr ""
+"Esta sección indica dónde debe trabajar el empleado en cada día laboral. Usa "
+"el menú desplegable de cada día de la semana y selecciona la ubicación "
+"correspondiente. La ubicación elegida aparece en la tarjeta de kanban del "
+"empleado e indica dónde trabaja ese día."
 
 #: ../../content/applications/hr/employees/new_employee.rst:103
 msgid ""
@@ -8162,12 +8225,16 @@ msgid ""
 "general or specific as needed, such as `Home` or `Building 1, Second Floor`, "
 "respectively."
 msgstr ""
+":guilabel:`Ubicación de trabajo`: Ingresa el nombre de la ubicación. Puede "
+"ser general o específico, como `Casa` o `Edificio 1, segundo piso`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:124
 msgid ""
 ":guilabel:`Work Address`: Using the drop-down menu, select the address for "
 "the location."
 msgstr ""
+":guilabel:`Dirección laboral`: Selecciona la dirección de la ubicación con "
+"el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:125
 msgid ""
@@ -8177,6 +8244,10 @@ msgid ""
 "o` :guilabel:`(building)` icon, and a :icon:`fa-map-marker` :guilabel:`(map "
 "marker)` icon."
 msgstr ""
+":guilabel:`Imagen de portada`: Haz clic en el icono para seleccionarlo como "
+":guilabel:`imagen de portada`. Las opciones son el icono :icon:`fa-home` "
+":guilabel:`(casa)`, el icono :icon:`fa-building-o` :guilabel:`(edificio)` y "
+"el icono :icon:`fa-map-marker` :guilabel:`(marcador de ubicación)`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:128
 msgid ""
@@ -8184,6 +8255,10 @@ msgid ""
 "location applies to. The current company populates this field, by default. "
 "This field **only** appears in a multi-company database."
 msgstr ""
+":guilabel:`Empresa`: Usa el menú desplegable y selecciona la empresa a la "
+"que aplica la ubicación. La empresa actual completa este campo de forma "
+"predeterminada. Este campo **solo** aparece en una base de datos "
+"multiempresas."
 
 #: ../../content/applications/hr/employees/new_employee.rst:0
 msgid "A new work location form with all fields filled out."
@@ -8193,27 +8268,31 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:136
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: ../../content/applications/hr/employees/new_employee.rst:138
 msgid "Enter any relevant notes in this field."
-msgstr ""
+msgstr "Ingresa cualquier nota relevante en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:141
 msgid "Organization chart"
-msgstr ""
+msgstr "Organigrama"
 
 #: ../../content/applications/hr/employees/new_employee.rst:143
 msgid ""
 "The related departments appear in this section, illustrating where in the "
 "company the employee works."
 msgstr ""
+"En esta sección aparecen los departamentos relacionados y muestran el lugar "
+"que ocupa el empleado dentro de la empresa."
 
 #: ../../content/applications/hr/employees/new_employee.rst:147
 msgid ""
 "After a :guilabel:`Department` is selected, the department's configured "
 "manager automatically populates the :guilabel:`Manager` field."
 msgstr ""
+"Después de seleccionar un :guilabel:`departamento`, el gerente configurado "
+"para ese departamento completa el campo :guilabel:`Gerente`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:151
 msgid ""
@@ -8224,6 +8303,12 @@ msgid ""
 "selected form, allowing for modifications. Click :guilabel:`Save` after any "
 "edits are made."
 msgstr ""
+"Para editar el :guilabel:`departamento`, el :guilabel:`gerente` o la "
+":guilabel:`empresa` seleccionados, haz clic en la flecha :icon:`oi-arrow-"
+"right` :guilabel:`(Enlace interno)` ubicada junto a la opción "
+"correspondiente. La flecha :icon:`oi-arrow-right` :guilabel:`(Enlace interno)"
+"` abre el formulario seleccionado y te permite realizar cambios. Haz clic en "
+":guilabel:`Guardar` después de realizar cualquier modificación."
 
 #: ../../content/applications/hr/employees/new_employee.rst:159
 msgid "Resumé tab"
@@ -8243,6 +8328,13 @@ msgid ""
 "is replaced with an :guilabel:`ADD` button. Enter the following information "
 "for each entry:"
 msgstr ""
+"Ingresa el historial laboral del empleado en la pestaña "
+":guilabel:`Currículum`. Agrega cada línea del currículum por separado. La "
+"primera vez que crees una entrada, haz clic en :guilabel:`Crear líneas de "
+"currículum` y aparecerá el formulario *Crear línea de currículum*. Después "
+"de agregar una entrada, el botón :guilabel:`Crear líneas de currículum` "
+"cambia por el botón :guilabel:`AGREGAR`. Ingresa la siguiente información en "
+"cada entrada:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:169
 msgid ""
@@ -8251,16 +8343,23 @@ msgid ""
 "Experience`, :guilabel:`Education`, :guilabel:`Training`, "
 "or :guilabel:`Internal Certification`."
 msgstr ""
+":guilabel:`Tipo`: Haz clic en el botón correspondiente para indicar el *tipo*"
+" de experiencia a agregar. Las opciones disponibles son :guilabel:`Otra "
+"experiencia`, :guilabel:`Educación`, :guilabel:`Capacitación` y :guilabel:`"
+"Certificación interna`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:172
 msgid ":guilabel:`Title`: Type in the title from the previous work experience."
 msgstr ""
+":guilabel:`Título`: Escribe el título de la experiencia laboral anterior."
 
 #: ../../content/applications/hr/employees/new_employee.rst:173
 msgid ""
 ":guilabel:`Duration`: Enter the start and end dates for the work experience "
 "using the calendar module."
 msgstr ""
+":guilabel:`Duración`: Ingresa las fechas de inicio y fin de la experiencia "
+"laboral con el módulo de calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:175
 msgid ""
@@ -8269,10 +8368,15 @@ msgid ""
 "click :guilabel:`Select`. The file name appears in the field, not an image "
 "of the certificate."
 msgstr ""
+":guilabel:`Certificado`: Si deseas adjuntar un certificado, haz clic en el "
+"botón :guilabel:`Sube tu archivo`, elige el archivo y haz clic en "
+":guilabel:`Seleccionar`. En el campo aparecerá el nombre del archivo, no la "
+"imagen del certificado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:178
 msgid ":guilabel:`Description`: Enter any relevant details in this field."
 msgstr ""
+":guilabel:`Descripción`: Escribe cualquier detalle relevante en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:180
 msgid ""
@@ -8295,16 +8399,21 @@ msgid ""
 "automatically added to the :guilabel:`Resumé` tab, with the end date listed "
 "as `Current`."
 msgstr ""
+"Después de guardar el formulario del nuevo empleado, el sistema agrega la "
+"posición y la empresa actuales de forma automática a la pestaña "
+":guilabel:`Currículum` con la fecha de finalización `actual`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:194
 msgid "Skills & certifications"
-msgstr ""
+msgstr "Habilidades y certificaciones"
 
 #: ../../content/applications/hr/employees/new_employee.rst:196
 msgid ""
 "An employee's skills and certifications can be entered in "
 "the :guilabel:`Resumé` tab in the same manner that a resumé line is created."
 msgstr ""
+"Ingresa las habilidades y certificaciones del empleado en la pestaña "
+":guilabel:`Currículum` del mismo modo que creas una línea de currículum."
 
 #: ../../content/applications/hr/employees/new_employee.rst:199
 msgid ""
@@ -8314,6 +8423,11 @@ msgid ""
 "the skill types <employees/skill-types>` before adding any skills to the "
 "employee record."
 msgstr ""
+"Antes de agregar una habilidad al registro del empleado, configura el tipo "
+"de habilidad. De forma predeterminada, Odoo incluye dos :guilabel:`tipos de "
+"habilidad` configurados: *Idiomas* y *Habilidades blandas*. :ref:`Configura "
+"los demás tipos de habilidad <employees/skill-types>` antes de agregar "
+"habilidades al registro del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:204
 msgid ""
@@ -8323,12 +8437,19 @@ msgid ""
 "button, and a blank *Update Skills* pop-up window loads. Configure the "
 "following information for each skill:"
 msgstr ""
+"El botón :guilabel:`Elige una habilidad de la lista` aparecerá en la sección "
+":guilabel:`Habilidades` de la pestaña :guilabel:`Currículum` al agregar la "
+"primera habilidad al registro del empleado. Haz clic en :guilabel:`Elige una "
+"habilidad de la lista` para abrir la ventana emergente *Actualizar "
+"habilidades*. Configura la siguiente información para cada habilidad:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:209
 msgid ""
 ":guilabel:`Category`: Select a :ref:`skill type <employees/skill-types>` by "
 "clicking it."
 msgstr ""
+":guilabel:`Categoría`: Selecciona un :ref:`tipo de habilidad <employees/"
+"skill-types>` al hacer clic."
 
 #: ../../content/applications/hr/employees/new_employee.rst:210
 msgid ""
@@ -8339,6 +8460,12 @@ msgid ""
 "the :guilabel:`Skills` section. Click the appropriate preconfigured skill "
 "from the list."
 msgstr ""
+":guilabel:`Habilidad`: Después de seleccionar la :guilabel:`categoría`, las "
+"habilidades asociadas a la misma aparecerán en sus respectivos botones. Por "
+"ejemplo, al elegir la opción :guilabel:`Idioma` como :guilabel:`tipo de "
+"habilidad`, el sistema muestra varios idiomas en la sección "
+":guilabel:`Habilidades`. Haz clic en la habilidad preconfigurada que "
+"corresponda en la lista."
 
 #: ../../content/applications/hr/employees/new_employee.rst:216
 msgid ""
@@ -8357,6 +8484,10 @@ msgid ""
 "select it. Skill levels can be created and modified from the :ref:`Skill "
 "Types <employees/skill-types>` dashboard."
 msgstr ""
+":guilabel:`Nivel de habilidad`: Aparecerán los niveles predefinidos "
+"asociados a la :guilabel:`categoría` seleccionada. Haz clic en un :guilabel:`"
+"Nivel de habilidad` para seleccionarlo. Puedes crear y modificar los niveles "
+"desde el tablero de :ref:`tipos de habilidad <employees/skill-types>`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:224
 msgid ""
@@ -8372,6 +8503,8 @@ msgstr ""
 msgid ""
 "At any point, a new line can be added by clicking the :guilabel:`ADD` button."
 msgstr ""
+"En cualquier momento puedes agregar una nueva línea si haces clic en el "
+"botón :guilabel:`AGREGAR`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:None
 msgid "A skill form with the information filled out."
@@ -8398,6 +8531,10 @@ msgid ""
 "Skill Types` to view the currently configured skill types and create new "
 "skill types."
 msgstr ""
+"Para agregar una habilidad en el formulario de un empleado, primero "
+"configura los :guilabel:`tipos de habilidad`. Ve a :menuselection:`Empleados "
+"--> Configuración --> Tipos de habilidad` para ver los tipos configurados y "
+"crear nuevos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:246
 msgid ""
@@ -8415,12 +8552,19 @@ msgid ""
 "new :guilabel:`Skill Type` form loads. Fill out the following details for "
 "the new skill type. Repeat this for all the needed skill types."
 msgstr ""
+"Haz clic en el botón :guilabel:`Nuevo` ubicado en la esquina superior "
+"izquierda para abrir un nuevo formulario de :guilabel:`tipo de habilidad`. "
+"Completa la siguiente información para el nuevo tipo y repite este proceso "
+"para todos los tipos que necesites."
 
 #: ../../content/applications/hr/employees/new_employee.rst:253
 msgid ""
 ":guilabel:`Skill Type`: Enter the name of the skill type. This acts as the "
 "parent category for more specific skills and should be generic."
 msgstr ""
+":guilabel:`Tipo de habilidad`: Escribe el nombre del tipo de habilidad. Este "
+"campo funciona como categoría principal para habilidades más específicas y "
+"debe ser general."
 
 #: ../../content/applications/hr/employees/new_employee.rst:257
 msgid ""
@@ -8428,6 +8572,10 @@ msgid ""
 "certification. The toggle turns green, indicating it is active and the skill "
 "can be added to the :ref:`certifications <employees/certifications>` tab."
 msgstr ""
+":guilabel:`Certificación`: Presiona el botón si la habilidad es una "
+"certificación. El botón cambiará a verde para indicar que está activa y que "
+"puedes agregar la habilidad a la pestaña :ref:`certificaciones <employees/"
+"certifications>`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:260
 msgid ""
@@ -8435,6 +8583,9 @@ msgid ""
 "the :guilabel:`Name` for the new skill, then repeat for all other needed "
 "skills."
 msgstr ""
+":guilabel:`Habilidades`: Haz clic en :guilabel:`Agregar una línea` y escribe "
+"el :guilabel:`nombre` de la nueva habilidad. Repite el proceso para el resto "
+"de las habilidades necesarias."
 
 #: ../../content/applications/hr/employees/new_employee.rst:262
 msgid ""
@@ -8442,6 +8593,9 @@ msgid ""
 "a :guilabel:`Name` and :guilabel:`Progress` percentage (`0`-`100`) for each "
 "level."
 msgstr ""
+":guilabel:`Niveles`: Haz clic en :guilabel:`Agregar una línea` y escribe el "
+":guilabel:`nombre` y el porcentaje de :guilabel:`progreso` (`0`-`100`) de "
+"cada nivel."
 
 #: ../../content/applications/hr/employees/new_employee.rst:265
 msgid ""
@@ -8465,6 +8619,15 @@ msgid ""
 "`50`, and `100`, respectively. Click :guilabel:`Set Default` on the "
 "`Beginner` line to set this as the default skill level."
 msgstr ""
+"Para agregar habilidades matemáticas en amarillo, escribe `Matemáticas` en "
+"el campo :guilabel:`Tipo de habilidad`, haz clic en el círculo de color "
+"junto a :guilabel:`Color` y después selecciona amarillo. Luego, en el campo "
+":guilabel:`Habilidades`, escribe `Álgebra`, `Cálculo` y `Trigonometría` y en "
+"el campo :guilabel:`Niveles`, escribe `Principiante`, `Intermedio` y "
+"`Experto`, con el :guilabel:`progreso` como `25`, `50` y `100`, "
+"respectivamente. Haz clic en :guilabel:`Establecer como predeterminado` en "
+"la línea `Principiante` para definirlo como el nivel de habilidad "
+"predeterminado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:0
 msgid "A skill form for a Math skill type, with all the information entered."
@@ -8489,7 +8652,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:289
 msgid "Certifications tab"
-msgstr ""
+msgstr "Pestaña \"Certificaciones\""
 
 #: ../../content/applications/hr/employees/new_employee.rst:291
 msgid ""
@@ -8499,12 +8662,19 @@ msgid ""
 "for accountants, or a :abbr:`CSM (Certified Safety Manager)` certification "
 "for a construction manager."
 msgstr ""
+"Esta pestaña reúne todas las certificaciones del empleado. Resulta clave "
+"cuando el puesto exige certificaciones específicas para poder realizar las "
+"labores, como una certificación :abbr:`CPA (Contador Público Certificado)` "
+"para contadores o una certificación :abbr:`CSM "
+"(Gerente de Seguridad Certificado)` para un gerente de construcción."
 
 #: ../../content/applications/hr/employees/new_employee.rst:296
 msgid ""
 "The tab lists each :guilabel:`Certification` in a line, and displays the "
 "validity period in the :guilabel:`From` and :guilabel:`To` fields."
 msgstr ""
+"La pestaña muestra cada :guilabel:`certificación` en una línea e indica el "
+"periodo de validez en los campos :guilabel:`Desde` y :guilabel:`Hasta`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:300
 msgid ""
@@ -8512,6 +8682,10 @@ msgid ""
 "types>` is configured as *certification*. When adding certifications, "
 "**only** skill types marked as a certification can be selected."
 msgstr ""
+"Esta pestaña **solo** aparece si hay al menos un :ref:`tipo de habilidad <"
+"employees/skill-types>` configurado como *certificación*. Al agregar "
+"certificaciones **solo** será posible seleccionar tipos de habilidad "
+"marcados como certificación."
 
 #: ../../content/applications/hr/employees/new_employee.rst:304
 msgid ""
@@ -8519,24 +8693,34 @@ msgid ""
 "tab and a blank *Create Certification* pop-up window loads. Enter the "
 "following information on the form:"
 msgstr ""
+"Para agregar una certificación, haz clic en :guilabel:`Agregar una línea` en "
+"la pestaña *Certificaciones*. Esta acción abrirá la ventana emergente *Crear "
+"certificación* y una vez ahí deberás completar la siguiente información en "
+"el formulario:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:307
 msgid ":guilabel:`Category`: Click on the type of certification being added."
-msgstr ""
+msgstr ":guilabel:`Categoría`: Haz clic en el tipo de certificación a agregar."
 
 #: ../../content/applications/hr/employees/new_employee.rst:308
 msgid ":guilabel:`Skill`: Click on the specific skill for the certification."
 msgstr ""
+":guilabel:`Habilidad`: Haz clic en la habilidad específica de la "
+"certificación."
 
 #: ../../content/applications/hr/employees/new_employee.rst:309
 msgid ":guilabel:`Skill Level`: Click on the level the certification is for."
 msgstr ""
+":guilabel:`Nivel de habilidad`: Haz clic en el nivel correspondiente a la "
+"certificación."
 
 #: ../../content/applications/hr/employees/new_employee.rst:310
 msgid ""
 ":guilabel:`Validity`: Click into the two fields, and select the start and "
 "end dates for the certification, using the calendar selector."
 msgstr ""
+":guilabel:`Validez`: Haz clic en los dos campos y selecciona la fecha de "
+"inicio y la fecha de finalización de la certificación con el calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:313
 msgid ""
@@ -8544,12 +8728,18 @@ msgid ""
 "certification and add another, or :guilabel:`Save & Close` to add the "
 "certification and close the pop-up window."
 msgstr ""
+"Una vez que completes el formulario, haz clic en :guilabel:`Guardar y nuevo` "
+"para agregar la certificación y crear otra. También puedes hacer clic en "
+":guilabel:`Guardar y cerrar` para agregar la certificación y cerrar la "
+"ventana emergente."
 
 #: ../../content/applications/hr/employees/new_employee.rst:None
 msgid ""
 "The certification pop-up with everything configured for a C/C++ Advanced "
 "certification."
 msgstr ""
+"La ventana emergente de certificación muestra toda la configuración para una "
+"certificación C/C++ Avanzado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:322
 #: ../../content/applications/hr/payroll/payroll_localizations/jordan.rst:82
@@ -8566,6 +8756,9 @@ msgid ""
 "employee, however, some information in this section may be necessary for the "
 "company's payroll department."
 msgstr ""
+"No es necesario completar la información en la pestaña :guilabel:`"
+"Información personal` para crear un empleado. Sin embargo, es posible que el "
+"departamento de nómina de la empresa necesite ciertos datos de esta sección."
 
 #: ../../content/applications/hr/employees/new_employee.rst:327
 msgid ""
@@ -8575,6 +8768,11 @@ msgid ""
 "to pay employees with direct deposit, they **must** have a trusted account "
 "listed in the :guilabel:`Bank Accounts` field."
 msgstr ""
+"Para procesar los recibos de nómina y aplicar todas las deducciones, "
+"consulta con el equipo contable y el departamento de nómina y confirma qué "
+"campos es necesario completar. Por ejemplo, si le pagas a tus empleados por "
+"depósito directo, **es necesario** que tengan una cuenta confiable en el "
+"campo :guilabel:`Cuentas bancarias`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:332
 msgid ""
@@ -8582,6 +8780,9 @@ msgid ""
 "the :guilabel:`Personal` tab. Fields are entered either using a drop-down "
 "menu, ticking a checkbox, or typing in the information."
 msgstr ""
+"Ingresa la información en las siguientes secciones y campos de la pestaña "
+":guilabel:`Personal`. Para ingresar información puedes usar el menú "
+"desplegable, seleccionar la casilla o escribir los datos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:336
 msgid ""
@@ -8589,18 +8790,24 @@ msgid ""
 "example, for the United States localization, a :guilabel:`SSN No` (Social "
 "Security Number) field is present."
 msgstr ""
+"Los campos disponibles aparecen según la localización instalada. Por "
+"ejemplo, el campo :guilabel:`Número de seguro social (SSN)` aparece en la "
+"localización de Estados Unidos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:342
 msgid "Private contact"
-msgstr ""
+msgstr "Contacto privado"
 
 #: ../../content/applications/hr/employees/new_employee.rst:344
 msgid ":guilabel:`Email`: Enter the employee's personal email address."
 msgstr ""
+":guilabel:`Correo electrónico`: Escribe la dirección de correo personal del "
+"empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:345
 msgid ":guilabel:`Phone`: Enter the employee's personal phone number."
 msgstr ""
+":guilabel:`Teléfono`: Escribe el número de teléfono personal del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:346
 msgid ""
@@ -8608,10 +8815,13 @@ msgid ""
 "menu. If the bank account does not exist, :ref:`create a new bank account "
 "<employees/add-bank>` and select it."
 msgstr ""
+":guilabel:`Cuentas bancarias`: Ingresa el número de cuenta bancaria con el "
+"menú desplegable. Si la cuenta no existe en el sistema, :ref:`crea una nueva "
+"<employees/add-bank>` y selecciónala."
 
 #: ../../content/applications/hr/employees/new_employee.rst:352
 msgid "Add a bank account"
-msgstr ""
+msgstr "Agregar una cuenta bancaria"
 
 #: ../../content/applications/hr/employees/new_employee.rst:354
 msgid ""
@@ -8620,6 +8830,10 @@ msgid ""
 "the :guilabel:`Bank Accounts` field in the *Personal* tab of the employee "
 "form, then click :guilabel:`Create and edit..`."
 msgstr ""
+"Al agregar un empleado a la base de datos también es necesario agregar su "
+"cuenta bancaria. Para ello, escribe el número de cuenta en el campo "
+":guilabel:`Cuentas bancarias` de la pestaña *Personal* del formulario del "
+"empleado y después haz clic en :guilabel:`Crear y editar`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:358
 msgid ""
@@ -8628,6 +8842,10 @@ msgid ""
 "the :guilabel:`Clearing Number` (also referred to as a *routing number*) in "
 "the corresponding field."
 msgstr ""
+"Esta acción abrirá la ventana emergente *Crear cuentas bancarias* con el "
+"número en el campo :guilabel:`Número de cuenta`. Después, escribe el "
+":guilabel:`número de compensación` (también llamado *número de enrutamiento*)"
+" en el campo correspondiente."
 
 #: ../../content/applications/hr/employees/new_employee.rst:362
 msgid ""
@@ -8635,6 +8853,9 @@ msgid ""
 "and :guilabel:`Account Holder Name` fields by default, but can be updated if "
 "needed."
 msgstr ""
+"El sistema completa de forma predeterminada los campos :guilabel:`Titular de "
+"la cuenta` y :guilabel:`Nombre del titular de la cuenta` con el nombre del "
+"empleado, pero puedes actualizarlos en caso de que sea necesario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:365
 msgid ""
@@ -8650,6 +8871,17 @@ msgid ""
 "complete, click :guilabel:`Save`, and the new bank populates "
 "the :guilabel:`Bank` field."
 msgstr ""
+"Después selecciona el :guilabel:`banco` con el menú desplegable. Si el banco "
+"no existe, haz clic en :guilabel:`Crear y editar...` para abrir la ventana "
+"emergente *Crear banco* con el nombre en el campo :guilabel:`Nombre`. "
+"Después, escribe el :guilabel:`código de identificación bancaria`, también "
+"llamado código BIC o SWIFT. Si aplica, selecciona el :guilabel:`banco "
+"intermediario` en el menú desplegable. Este banco facilita las "
+"transferencias internacionales entre bancos cuando es necesario. Completa "
+"los campos :guilabel:`Dirección del banco`, :guilabel:`Teléfono` y "
+":guilabel:`Correo electrónico`. Una vez que completes el formulario, haz "
+"clic en :guilabel:`Guardar` y el nuevo banco aparecerá en el campo "
+":guilabel:`Banco`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:374
 msgid ""
@@ -8657,16 +8889,22 @@ msgid ""
 "green, and the status changes from :guilabel:`Untrusted` in gray text, "
 "to :guilabel:`Trusted` in green text."
 msgstr ""
+"Presiona el botón :guilabel:`Enviar dinero`. El botón cambiará a color verde "
+"y el estado cambiará de :guilabel:`No confiable` en gris a "
+":guilabel:`Confiable` en verde."
 
 #: ../../content/applications/hr/employees/new_employee.rst:377
 msgid ""
 "The :guilabel:`Employee` field is populated with the employee's name, and "
 "cannot be modified."
 msgstr ""
+"El campo :guilabel:`Empleado` muestra el nombre del empleado y no es posible "
+"modificarlo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:379
 msgid "Finally, add any relevant notes in the :guilabel:`Note` tab."
 msgstr ""
+"Por último, agrega cualquier nota relevante en la pestaña :guilabel:`Nota`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:None
 msgid "The Create Bank Account form with all the information filled out."
@@ -8681,16 +8919,22 @@ msgid ""
 "for an employee causes an error in the **Payroll** application when "
 "processing direct deposits."
 msgstr ""
+"Para que el sistema procese los pagos y los envíe a la cuenta bancaria, "
+"marca la cuenta como :guilabel:`Confiable`. Si un empleado tiene una cuenta "
+":guilabel:`No confiable`, la aplicación **Nómina** mostrará un error cuando "
+"proceses los depósitos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:389
 msgid ""
 "If issuing paper checks or paying via cash, the :guilabel:`Bank` field does "
 "not need to be configured."
 msgstr ""
+"No es necesario configurar el campo :guilabel:`Banco` si emites cheques o "
+"pagas en efectivo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:393
 msgid "Emergency contact"
-msgstr ""
+msgstr "Contacto de emergencia"
 
 #: ../../content/applications/hr/employees/new_employee.rst:395
 msgid ""
@@ -8701,7 +8945,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:397
 msgid ":guilabel:`Contact`: Enter the emergency contact's name."
-msgstr ""
+msgstr ":guilabel:`Contacto`: Escribe el nombre del contacto de emergencia."
 
 #: ../../content/applications/hr/employees/new_employee.rst:398
 msgid ""
@@ -8709,10 +8953,13 @@ msgid ""
 "recommended to enter a phone number that the person has the most access to, "
 "typically a mobile phone."
 msgstr ""
+":guilabel:`Teléfono`: Escribe el teléfono del contacto de emergencia. "
+"Recomendamos ingresar un número al que la persona tenga acceso, por lo "
+"general es un número de celular."
 
 #: ../../content/applications/hr/employees/new_employee.rst:402
 msgid "Citizenship"
-msgstr ""
+msgstr "Ciudadanía"
 
 #: ../../content/applications/hr/employees/new_employee.rst:404
 msgid ""
@@ -8723,36 +8970,49 @@ msgid ""
 "required. Different fields may be visible, depending on the localization "
 "installed."
 msgstr ""
+"Esta sección reúne toda la información sobre la ciudadanía del empleado. "
+"Aplica sobre todo cuando el empleado trabaja en un país distinto al de su "
+"ciudadanía. Por ejemplo, si trabaja con visa laboral, pueden pedir estos "
+"datos. Los campos visibles dependen de la localización instalada."
 
 #: ../../content/applications/hr/employees/new_employee.rst:409
 msgid ""
 ":guilabel:`Nationality (Country)`: Select the country the employee is from "
 "using the drop-down menu."
 msgstr ""
+":guilabel:`Nacionalidad (País)`: Selecciona el país de origen del empleado "
+"con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:411
 msgid ""
 ":guilabel:`Non-resident`: Click this checkbox if the employee lives in a "
 "foreign country."
 msgstr ""
+":guilabel:`No es residente`: Haz clic en esta casilla si el empleado vive en "
+"el extranjero."
 
 #: ../../content/applications/hr/employees/new_employee.rst:412
 msgid ""
 ":guilabel:`Identification No`: Enter the employee's identification number in "
 "this field."
 msgstr ""
+":guilabel:`Número de identificación`: Escribe el número de identificación "
+"del empleado en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:413
 msgid ":guilabel:`SSN No`: Enter the employee's social security number."
 msgstr ""
+":guilabel:`Número de seguro social`: Ingresa el número de seguro social del "
+"empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:414
 msgid ":guilabel:`Passport No`: Enter the employee's passport number."
 msgstr ""
+":guilabel:`Número de pasaporte`: Ingresa el número de pasaporte del empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:417
 msgid "Family"
-msgstr ""
+msgstr "Familia"
 
 #: ../../content/applications/hr/employees/new_employee.rst:419
 msgid ""
@@ -8767,6 +9027,8 @@ msgid ""
 ":guilabel:`Disabled`: Check this box if the employee is considered legally "
 "disabled."
 msgstr ""
+":guilabel:`Discapacidad`: Selecciona esta casilla si el empleado cuenta con "
+"una discapacidad reconocida por la ley."
 
 #: ../../content/applications/hr/employees/new_employee.rst:423
 msgid ""
@@ -8775,6 +9037,10 @@ msgid ""
 "are :guilabel:`Single`, :guilabel:`Married`, :guilabel:`Legal "
 "Cohabitant`, :guilabel:`Widower`, and :guilabel:`Divorced`."
 msgstr ""
+":guilabel:`Estado civil`: Selecciona el estado civil del empleado con el "
+"menú desplegable. Las opciones predeterminadas son :guilabel:`Soltero(a)`, "
+":guilabel:`Casado(a)`, :guilabel:`Cohabitante legal`, :guilabel:`Viudo(a)` y "
+":guilabel:`Divorciado(a)`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:427
 msgid ""
@@ -8783,6 +9049,10 @@ msgid ""
 "and :guilabel:`Spouse Birthdate`. Enter these fields with the respective "
 "information."
 msgstr ""
+"Si seleccionas :guilabel:`Casado` o :guilabel:`Cohabitante legal`, "
+"aparecerán dos campos adicionales: :guilabel:`Nombre legal del cónyuge` y "
+":guilabel:`Fecha de nacimiento del cónyuge`. Completa ambos campos con la "
+"información correspondiente."
 
 #: ../../content/applications/hr/employees/new_employee.rst:430
 msgid ""
@@ -8790,6 +9060,9 @@ msgid ""
 "number is the same number used for calculating tax deductions, and should "
 "follow all tax regulations regarding applicable dependents."
 msgstr ""
+":guilabel:`Hijos dependientes`: Escribe el número de hijos dependientes. Usa "
+"la misma cifra utilizada para calcular deducciones fiscales y respeta las "
+"normas fiscales aplicables."
 
 #: ../../content/applications/hr/employees/new_employee.rst:435
 msgid "Documents"
@@ -8802,16 +9075,22 @@ msgid ""
 "corresponding document name, navigate to the file, then "
 "click :guilabel:`Select` to upload the file."
 msgstr ""
+"Esta sección te permite subir los documentos pertinentes al formulario del "
+"empleado. Haz clic en el botón :guilabel:`Sube tu archivo` ubicado junto al "
+"nombre del documento correspondiente, busca el archivo y haz clic en "
+":guilabel:`Seleccionar` para subirlo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:441
 msgid "The documents that can be uploaded are:"
-msgstr ""
+msgstr "Puedes subir los siguientes documentos:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:443
 msgid ""
 ":guilabel:`ID Card Copy`: Upload any relevant ID's that may be required by "
 "the payroll or HR department."
 msgstr ""
+":guilabel:`Copia de la identificación`: Sube cualquier identificación que el "
+"departamento de nómina o RR. HH. solicite."
 
 #: ../../content/applications/hr/employees/new_employee.rst:445
 msgid ""
@@ -8819,12 +9098,17 @@ msgid ""
 "field may be necessary if the employee drives as part of their job, or is "
 "given a company car to use."
 msgstr ""
+":guilabel:`Licencia de conducir`: Sube la licencia de conducir del empleado. "
+"Este campo puede ser necesario si el empleado debe conducir como parte de su "
+"trabajo o usa un vehículo de la empresa."
 
 #: ../../content/applications/hr/employees/new_employee.rst:447
 msgid ""
 ":guilabel:`SIM Card Copy`: Upload a copy of the SIM card if the employee is "
 "using a work-issued mobile phone."
 msgstr ""
+":guilabel:`Copia de la tarjeta SIM`: Sube una copia de la tarjeta SIM si el "
+"empleado usa un teléfono celular de trabajo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:449
 msgid ""
@@ -8832,6 +9116,9 @@ msgid ""
 "benefits or compensation for their internet service, upload their invoice in "
 "this field."
 msgstr ""
+":guilabel:`Factura de suscripción a internet`: Si el empleado recibe un "
+"subsidio o compensación por el servicio de internet, sube la factura a este "
+"campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:453
 msgid ""
@@ -8839,14 +9126,18 @@ msgid ""
 "purposes only. Employees must use the **Expenses** app to request "
 "reimbursement for expenses, or define compensation in the *Payroll* tab."
 msgstr ""
+"El campo :guilabel:`Factura de suscripción a internet` solo cumple fines de "
+"documentación. Los empleados deben usar la aplicación **Gastos** para "
+"solicitar el reembolso de ese gasto o definir la compensación en la pestaña "
+"*Nómina*."
 
 #: ../../content/applications/hr/employees/new_employee.rst:458
 msgid "Personal information"
-msgstr ""
+msgstr "Información personal"
 
 #: ../../content/applications/hr/employees/new_employee.rst:460
 msgid "This section houses information used for payroll and tax purposes."
-msgstr ""
+msgstr "Esta sección incluye información para nómina e impuestos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:462
 msgid ""
@@ -8855,18 +9146,26 @@ msgid ""
 "<employees/general-info>` populates this field. This is the name that "
 "typically is used for filing taxes."
 msgstr ""
+":guilabel:`Nombre legal`: Escribe el nombre legal del empleado en este "
+"campo. De forma predeterminada, el nombre que registras en la :ref:`sección "
+"de información general <employees/general-info>` aparece aquí. Este es el "
+"nombre que se usa para declarar impuestos."
 
 #: ../../content/applications/hr/employees/new_employee.rst:465
 msgid ""
 ":guilabel:`Birthday`: Select the birthday of the employee using the calendar "
 "selector."
 msgstr ""
+":guilabel:`Fecha de nacimiento`: Selecciona la fecha de nacimiento del "
+"empleado con el calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:466
 msgid ""
 ":guilabel:`Place of Birth`: Enter the city or town the employee was born in "
 "the first field, and select the country using the drop-down menu."
 msgstr ""
+":guilabel:`Lugar de nacimiento`: Escribe la ciudad o localidad de nacimiento "
+"del empleado en el primer campo y selecciona el país con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:468
 msgid ""
@@ -8874,6 +9173,9 @@ msgid ""
 "The default options are :guilabel:`Male`, :guilabel:`Female`, "
 "and :guilabel:`Other`."
 msgstr ""
+":guilabel:`Género`: Selecciona el género del empleado con el menú "
+"desplegable. Las opciones predeterminadas son :guilabel:`Masculino`, "
+":guilabel:`Femenino` y :guilabel:`Otro`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:470
 msgid ""
@@ -8881,10 +9183,14 @@ msgid ""
 "employee's payslips. Each language must be :doc:`added to the database "
 "<../../general/users/language>` to appear in the drop-down menu."
 msgstr ""
+":guilabel:`Idioma del recibo de nómina`: Selecciona el idioma a utilizar al "
+"imprimir los recibos de nómina del empleado. Debes :doc:`agregar cada idioma "
+"a la base de datos <../../general/users/language>` para que aparezca en el "
+"menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:475
 msgid "Visa & work permit"
-msgstr ""
+msgstr "Visa y permiso de trabajo"
 
 #: ../../content/applications/hr/employees/new_employee.rst:477
 msgid ""
@@ -8892,6 +9198,8 @@ msgid ""
 "work permit or visa. This section may be left blank if they do not require "
 "any work permits or visas for employment."
 msgstr ""
+"Completa esta sección si la empleado trabaja con un permiso de trabajo o una "
+"visa. Déjala vacía si no necesita un permiso de trabajo ni una visa."
 
 #: ../../content/applications/hr/employees/new_employee.rst:480
 msgid ""
@@ -8899,6 +9207,9 @@ msgid ""
 "an :guilabel:`Expires on` field appears. Select the date the visa expires "
 "using the calendar."
 msgstr ""
+":guilabel:`Número de visa`: Escribe el número de visa del empleado. Al "
+"ingresarlo aparecerá el campo :guilabel:`Vence el`. Selecciona la fecha de "
+"vencimiento correspondiente con el calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:482
 msgid ""
@@ -8906,12 +9217,17 @@ msgid ""
 "entered, an :guilabel:`Expires on` field appears. Select the date the work "
 "permit expires using the calendar."
 msgstr ""
+":guilabel:`Número de permiso de trabajo`: Escribe el número de permiso de "
+"trabajo del empleado. Al ingresarlo aparecerá el campo :guilabel:`Vence el`. "
+"Selecciona la fecha de vencimiento correspondiente con el calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:484
 msgid ""
 ":guilabel:`Visa Expiration Date`: Select the date the employee's visa "
 "expires using the calendar."
 msgstr ""
+":guilabel:`Fecha de vencimiento de la visa`: Selecciona la fecha en que "
+"vence la visa del empleado con el calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:485
 msgid ""
@@ -8919,6 +9235,9 @@ msgid ""
 "the work permit or visa file in the file explorer, and "
 "click :guilabel:`Select` to upload it."
 msgstr ""
+":guilabel:`Documento`: Haz clic en :guilabel:`Sube tu archivo`, busca el "
+"archivo del permiso de trabajo o la visa en el explorador de archivos y haz "
+"clic en :guilabel:`Seleccionar` para subirlo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:489
 msgid ""
@@ -8926,6 +9245,9 @@ msgid ""
 "this reason, only one document can be added to the :guilabel:`Document` "
 "field."
 msgstr ""
+"Por lo general, la empleado necesita una visa *o* un permiso de trabajo, no "
+"ambos, y por este motivo solo puedes agregar un documento en el campo "
+":guilabel:`Documento`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:495
 msgid ""
@@ -8933,11 +9255,16 @@ msgid ""
 "apps to be installed for this section to be visible. Enter the following "
 "information in this section:"
 msgstr ""
+"Esta sección es visible para todos los empleados y no es necesario que haya "
+"otras aplicaciones instaladas para que aparezca. Ingresa la siguiente "
+"información en esta sección:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:498
 msgid ""
 ":guilabel:`Private Address`: Enter the employee's home address in this field."
 msgstr ""
+":guilabel:`Dirección privada`: Escribe la dirección del domicilio del "
+"empleado en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:499
 msgid ""
@@ -8956,7 +9283,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:505
 msgid "Education"
-msgstr ""
+msgstr "Educación"
 
 #: ../../content/applications/hr/employees/new_employee.rst:507
 msgid ""
@@ -8973,12 +9300,18 @@ msgid ""
 "are :guilabel:`Graduate`, :guilabel:`Bachelor`, :guilabel:`Master`, :guilabel:`Doctor`, "
 "and :guilabel:`Other`."
 msgstr ""
+":guilabel:`Nivel de estudios`: Selecciona el grado más alto que obtuvo el "
+"empleado con el menú desplegable. Las opciones predeterminadas son "
+":guilabel:`Egresado`, :guilabel:`Licenciatura`, :guilabel:`Maestría`, "
+":guilabel:`Doctorado` y :guilabel:`Otro`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:513
 msgid ""
 ":guilabel:`Field of Study`: Type in the subject the employee studied, such "
 "as `Business` or `Computer Science`."
 msgstr ""
+":guilabel:`Campo de estudio`: Escribe el campo de estudio del empleado, como "
+"`Negocios` o `Informática`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:519
 #: ../../content/applications/hr/payroll/payroll_localizations/jordan.rst:106
@@ -8997,10 +9330,15 @@ msgid ""
 "information that may be requested in this tab, it is recommended to check "
 "with the accounting department to fill out this section correctly."
 msgstr ""
+"Las secciones y los campos de esta pestaña pueden variar según la :doc:`"
+"localización de nómina <../payroll/payroll_localizations>` instalada. Debido "
+"a la naturaleza específica de cada localización y a la variedad de datos que "
+"pueden ser necesarios para esta pestaña, te recomendamos hablar con el "
+"departamento de contabilidad para completar esta sección de forma correcta."
 
 #: ../../content/applications/hr/employees/new_employee.rst:526
 msgid "The following fields are universal for all payroll localizations:"
-msgstr ""
+msgstr "Los siguientes campos aplican a todas las localizaciones de nómina:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:529
 msgid ":doc:`Payroll localizations <../payroll/payroll_localizations>`"
@@ -9008,7 +9346,7 @@ msgstr ":doc:`Localizaciones de nómina <../payroll/payroll_localizations>`"
 
 #: ../../content/applications/hr/employees/new_employee.rst:532
 msgid "Contract overview"
-msgstr ""
+msgstr "Resumen del contrato"
 
 #: ../../content/applications/hr/employees/new_employee.rst:534
 msgid ""
@@ -9016,16 +9354,21 @@ msgid ""
 "Refer to the :doc:`contracts <../payroll/contracts>` document for detailed "
 "information on creating and modifying employee contracts."
 msgstr ""
+"Esta sección detalla toda la información del contrato del empleado. Consulta "
+"la documentación de :doc:`contratos <../payroll/contracts>` para ver "
+"detalles sobre cómo crear y modificar los contratos de los empleados."
 
 #: ../../content/applications/hr/employees/new_employee.rst:539
 msgid "Employer costs"
-msgstr ""
+msgstr "Costos del empleador"
 
 #: ../../content/applications/hr/employees/new_employee.rst:541
 msgid ""
 "This section details the various costs the employer incurs for the employee, "
 "including:"
 msgstr ""
+"Esta sección detalla los distintos costos que el empleador asume por el "
+"empleado, incluidos:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:543
 msgid ""
@@ -9034,28 +9377,38 @@ msgid ""
 "modified, if needed. If it is modified, the :guilabel:`Wage` field updates "
 "to reflect the new :guilabel:`Yearly Cost`."
 msgstr ""
+":guilabel:`Costo anual`: Este campo se actualiza según el :guilabel:`salario`"
+" de la sección *Resumen del contrato*, pero puedes modificarlo en caso de "
+"que sea necesario. Si lo cambias, el campo :guilabel:`Salario` se actualiza "
+"para reflejar el nuevo :guilabel:`costo anual`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:546
 msgid ""
 ":guilabel:`Monthly Cost`: This field automatically displays the monthly cost "
 "according to the :guilabel:`Yearly Cost`. This field cannot be modified."
 msgstr ""
+":guilabel:`Costo mensual`: Este campo muestra el costo mensual de forma "
+"automática según el :guilabel:`costo anual`. No puedes modificar este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:548
 msgid ""
 ":guilabel:`Wage on Signature`: Enter the employee's expected monthly wage "
 "according to the contract in this field."
 msgstr ""
+":guilabel:`Sueldo al firmar`: Escribe el salario mensual esperado según el "
+"contrato del empleado en este campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:554
 msgid "Schedule"
-msgstr ""
+msgstr "Horario"
 
 #: ../../content/applications/hr/employees/new_employee.rst:556
 msgid ""
 "This section defines when the employee is expected to work. Configure the "
 "following fields:"
 msgstr ""
+"Esta sección define cuándo debe trabajar el empleado. Configura los "
+"siguientes campos:"
 
 #: ../../content/applications/hr/employees/new_employee.rst:558
 msgid ""
@@ -9064,6 +9417,11 @@ msgid ""
 "Schedules` is selected by default. If the **Attendances** or **Planning** "
 "apps are installed, their respective options are available."
 msgstr ""
+":guilabel:`Origen de la entrada de trabajo`: Define cómo se crean las "
+"entradas de trabajo del empleado en la aplicación **Nómina** con el menú "
+"desplegable. La opción :guilabel:`Horarios de trabajo` aparece seleccionada "
+"de forma predeterminada. Las aplicaciones **Asistencias** y **Planeación** "
+"también aparecerán como opciones si están instaladas."
 
 #: ../../content/applications/hr/employees/new_employee.rst:561
 msgid ""
@@ -9073,6 +9431,11 @@ msgid ""
 "an :guilabel:`Appointment Resource Default Calendar` option is also "
 "available."
 msgstr ""
+":guilabel:`Horas de trabajo`: Selecciona las horas que debe trabajar el "
+"empleado con el menú desplegable. El horario laboral :guilabel:`Estándar de "
+"40 horas a la semana` aparece seleccionado de forma predeterminada. Si la "
+"aplicación **Registro de horas** está instalada, también verás la opción "
+":guilabel:`Calendario predeterminado del recurso de la cita`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:566
 msgid ""
@@ -9092,6 +9455,9 @@ msgid ""
 "an employee **cannot** have working hours that are outside of a company's "
 "working schedule."
 msgstr ""
+"Las :guilabel:`horas de trabajo` están relacionadas al horario en el que "
+"opera la empresa y las horas laborables de un empleado **no** pueden estar "
+"fuera de esos horarios."
 
 #: ../../content/applications/hr/employees/new_employee.rst:574
 msgid ""
@@ -9116,6 +9482,8 @@ msgid ""
 "Working hours can be modified in both the **Employees** and **Payroll** "
 "apps, where they are referred to as :guilabel:`Working Schedules`."
 msgstr ""
+"Puedes modificar las horas de trabajo en las aplicaciones **Empleados** y "
+"**Nómina**, donde aparecen como :guilabel:`horarios de trabajo`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:583
 msgid ""
@@ -9123,6 +9491,9 @@ msgid ""
 "Schedules`, refer to the :doc:`working schedules <../payroll/"
 "working_schedules>` documentation."
 msgstr ""
+"Consulta la documentación sobre los :doc:`horarios de trabajo <../payroll/"
+"working_schedules>` para obtener más información sobre cómo crear o "
+"modificar los :guilabel:`horarios de trabajo`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:586
 msgid ""
@@ -9135,7 +9506,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:590
 msgid "Salary adjustments tab"
-msgstr ""
+msgstr "Pestaña \"Ajustes salariales\""
 
 #: ../../content/applications/hr/employees/new_employee.rst:592
 msgid ""
@@ -9143,12 +9514,17 @@ msgid ""
 "Salary adjustments are wage garnishments or voluntary portions of an "
 "employee's payslip set aside each pay period."
 msgstr ""
+"La pestaña de *ajustes salariales* muestra todos los ajustes salariales en "
+"vista de lista. Los ajustes salariales son retenciones o montos voluntarios "
+"que apartas del recibo de nómina de un empleado en cada periodo de pago."
 
 #: ../../content/applications/hr/employees/new_employee.rst:595
 msgid ""
 "Add each individual :ref:`salary adjustment <payroll/salary-adjustment/"
 "create>` to this tab."
 msgstr ""
+"Agrega cada :ref:`ajuste salarial <payroll/salary-adjustment/create>` por "
+"separado en esta pestaña."
 
 #: ../../content/applications/hr/employees/new_employee.rst:600
 msgid "Settings tab"
@@ -9166,13 +9542,15 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:606
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: ../../content/applications/hr/employees/new_employee.rst:608
 msgid ""
 ":guilabel:`User`: Select a user in the database to link to this employee "
 "using the drop-down menu."
 msgstr ""
+":guilabel:`Usuario`: Selecciona un usuario en la base de datos para "
+"vincularlo con este empleado desde el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:611
 msgid ""
@@ -9181,16 +9559,22 @@ msgid ""
 "billing. If the new employee should also be a user, the user "
 "**must** :ref:`be created <employees/new-user>`."
 msgstr ""
+"Los empleados **no** necesitan ser usuarios de la base de datos y **no** se "
+"contabilizan para la facturación de la suscripción de Odoo, mientras que los "
+"usuarios **sí** se contabilizan. Si el nuevo empleado también debe ser un "
+"usuario, entonces **debes** :ref:`crearlo <employees/new-user>`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:614
 msgid ""
 ":guilabel:`Timezone`: Select the timezone for the employee using the drop-"
 "down menu."
 msgstr ""
+":guilabel:`Zona horaria`: Selecciona la zona horaria del empleado con el "
+"menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:619
 msgid "Create a user"
-msgstr ""
+msgstr "Crear un usuario"
 
 #: ../../content/applications/hr/employees/new_employee.rst:621
 msgid ""
@@ -9198,6 +9582,9 @@ msgid ""
 "the upper-left corner of the employee record, and a *Create User* pop-up "
 "window appears."
 msgstr ""
+"Después de crear al empleado, haz clic en el botón :guilabel:`Crear usuario` "
+"ubicado en la esquina superior izquierda del registro del empleado y "
+"aparecerá la ventana emergente *Crear usuario*."
 
 #: ../../content/applications/hr/employees/new_employee.rst:624
 msgid ""
@@ -9206,6 +9593,11 @@ msgid ""
 "and :guilabel:`photo` fields are populated on the employee form, the "
 "corresponding fields are auto-populated on the *Create User* form."
 msgstr ""
+"El nombre del empleado completa el campo :guilabel:`Nombre` de forma "
+"predeterminada. Si completas los campos :guilabel:`Correo electrónico`, "
+":guilabel:`Teléfono`, :guilabel:`Empresa` y :guilabel:`Foto` en el "
+"formulario del empleado, el sistema completará los campos correspondientes "
+"de forma automática en el formulario *Crear usuario*."
 
 #: ../../content/applications/hr/employees/new_employee.rst:628
 msgid ""
@@ -9225,6 +9617,13 @@ msgid ""
 "Invitation`. An email invitation is sent to the user, informing them their "
 "account has been created."
 msgstr ""
+"También puedes seleccionar la opción :icon:`fa-envelope-o` :guilabel:`"
+"Invitar a compañeros por correo` que aparece en el menú desplegable "
+":guilabel:`Usuario`. Esta acción abrirá la ventana emergente *Invitar "
+"compañeros* con los mismos campos que la ventana *Crear usuario*. Completa "
+"el formulario y haz clic en :guilabel:`Enviar invitación`. El sistema "
+"enviará un correo electrónico al usuario para informarle que creaste su "
+"cuenta."
 
 #: ../../content/applications/hr/employees/new_employee.rst:636
 msgid ""
@@ -9237,7 +9636,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:None
 msgid "The invite a user pop-up window, configured."
-msgstr ""
+msgstr "La ventana emergente para invitar a un usuario configurada."
 
 #: ../../content/applications/hr/employees/new_employee.rst:647
 msgid ""
@@ -9248,6 +9647,13 @@ msgid ""
 "the :guilabel:`Time Off` approver field does not appear. Only one selection "
 "can be made for each field."
 msgstr ""
+"Para ver esta sección, el usuario debe tener permisos correspondientes a "
+":guilabel:`Administrador` o :guilabel:`Encargado: gestionar a todos los "
+"empleados` en la aplicación **Empleados**. Para que aparezca cada categoría "
+"es necesario instalar la aplicación correspondiente. Por ejemplo, si no "
+"instalas la aplicación **Vacaciones**, el campo de aprobación "
+":guilabel:`Vacaciones` no aparece. Solo puedes seleccionar una opción en "
+"cada campo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:653
 msgid ""
@@ -9266,6 +9672,11 @@ msgid ""
 "section. Then, click on an employee and go to the :guilabel:`Access Rights` "
 "tab. Scroll to the *Human Resources* section and check the various settings."
 msgstr ""
+"Para revisar quién tiene estos permisos, ve a la :menuselection:`aplicación "
+"Ajustes` y haz clic en :icon:`oi-arrow-right` :guilabel:`Administrar "
+"usuarios` en la sección *Usuarios*. Después, haz clic en un empleado y abre "
+"la pestaña :guilabel:`Permisos de acceso`, dirígete a la sección *Recursos "
+"humanos* y revisa las configuraciones."
 
 #: ../../content/applications/hr/employees/new_employee.rst:661
 msgid ""
@@ -9316,40 +9727,53 @@ msgid ""
 ":guilabel:`HR Responsible`: Select the user responsible for validating the "
 "employee's contracts using the drop-down menu."
 msgstr ""
+":guilabel:`Responsable de RR. HH.`: Selecciona al usuario responsable de "
+"validar los contratos del empleado con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:675
 msgid ""
 ":guilabel:`Expense`: Select the user responsible for approving all expenses "
 "for the employee using the drop-down menu."
 msgstr ""
+":guilabel:`Gastos`: Selecciona al usuario responsable de aprobar todos los "
+"gastos del empleado con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:677
 msgid ""
 ":guilabel:`Time Off`: Select the user responsible for approving all time off "
 "requests from this employee using the drop-down menu."
 msgstr ""
+":guilabel:`Vacaciones`: Selecciona al usuario responsable de aprobar todas "
+"las solicitudes de permisos de este empleado con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:679
 msgid ""
 ":guilabel:`Timesheet`: Select the user responsible for approving all the "
 "employee's timesheet entries using the drop-down menu."
 msgstr ""
+":guilabel:`Registro de horas`: Selecciona al usuario responsable de aprobar "
+"todas las entradas del registro de horas del empleado con el menú "
+"desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:681
 msgid ""
 ":guilabel:`Attendance`: Select the user responsible for approving all "
 "attendance entries for the employee using the drop-down menu."
 msgstr ""
+":guilabel:`Asistencias`: Selecciona al usuario responsable de aprobar todas "
+"las entradas de asistencia del empleado con el menú desplegable."
 
 #: ../../content/applications/hr/employees/new_employee.rst:685
 msgid ""
 "If any approver field is left empty, the approval is done by an "
 "Administrator or Approver."
 msgstr ""
+"Si dejas vacío algún campo de aprobador, un administrador o aprobador podrá "
+"realizar esta acción."
 
 #: ../../content/applications/hr/employees/new_employee.rst:688
 msgid "Application settings"
-msgstr ""
+msgstr "Ajustes de la aplicación"
 
 #: ../../content/applications/hr/employees/new_employee.rst:690
 msgid ""
@@ -9366,6 +9790,10 @@ msgid ""
 "a :doc:`work center <../../inventory_and_mrp/manufacturing/"
 "advanced_configuration/using_work_centers>`."
 msgstr ""
+":guilabel:`Costo por hora`: Escribe el costo por hora del empleado con el "
+"formato `##.##`. Este costo se tomará en cuenta cuando el empleado trabaje "
+"en un :doc:`centro de trabajo <../../inventory_and_mrp/manufacturing/"
+"advanced_configuration/using_work_centers>`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:698
 msgid ""
@@ -9373,6 +9801,9 @@ msgid ""
 "value of the manufactured product is **not** a fixed amount. This cost does "
 "**not** affect the **Payroll** application."
 msgstr ""
+"Los costos de fabricación se suman a los costos de producción de un producto "
+"si el valor del producto fabricado **no** es un importe fijo. Este costo "
+"**no** influye en la aplicación **Nómina**."
 
 #: ../../content/applications/hr/employees/new_employee.rst:702
 msgid ""
@@ -9380,16 +9811,21 @@ msgid ""
 "Mobility Card` number. This is typically a credit card for gas purchases or "
 "other vehicle-related costs."
 msgstr ""
+":guilabel:`Tarjeta de movilidad de la flotilla`: Si aplica, escribe el "
+"número de la :guilabel:`tarjeta de movilidad de la flotilla`. Por lo "
+"general, es una tarjeta de crédito para comprar combustible o realizar otros "
+"gastos relacionados con el vehículo."
 
 #: ../../content/applications/hr/employees/new_employee.rst:706
 msgid "Appraisal"
-msgstr ""
+msgstr "Evaluación"
 
 #: ../../content/applications/hr/employees/new_employee.rst:708
 msgid ""
 "This field is **only** visible if the **Appraisals** application is "
 "installed."
 msgstr ""
+"Este campo **solo** aparece si la aplicación **Evaluaciones** está instalada."
 
 #: ../../content/applications/hr/employees/new_employee.rst:710
 msgid ""
@@ -9398,10 +9834,14 @@ msgid ""
 "in the **Appraisals** application. This date can be modified using the "
 "calendar selector."
 msgstr ""
+":guilabel:`Fecha de la próxima evaluación`: El sistema completa esta fecha "
+"de forma automática al calcularla con los ajustes que configuraste en la "
+"aplicación **Evaluaciones**, pero puedes cambiarla con el selector de "
+"calendario."
 
 #: ../../content/applications/hr/employees/new_employee.rst:715
 msgid "Planning"
-msgstr ""
+msgstr "Planeación"
 
 #: ../../content/applications/hr/employees/new_employee.rst:717
 msgid ""
@@ -9420,6 +9860,10 @@ msgid ""
 "must be :ref:`configured in the Planning app <planning/roles>`. There is no "
 "limit to the number of roles assigned to an employee."
 msgstr ""
+":guilabel:`Funciones`: Selecciona todas las funciones que el empleado puede "
+"realizar con el menú desplegable. No hay roles preconfigurados, así que "
+"debes :ref:`configurarlos en la aplicación Planeación <planning/roles>`. "
+"Puedes asignarle tantas funciones como sean necesarias a un empleado."
 
 #: ../../content/applications/hr/employees/new_employee.rst:723
 msgid ""
@@ -9428,10 +9872,15 @@ msgid ""
 "is selected before the :guilabel:`Roles` field is configured, the selected "
 "role is automatically added to the list of :guilabel:`Roles`."
 msgstr ""
+":guilabel:`Función predeterminada`: Selecciona la función predeterminada que "
+"el empleado desempeñará con mayor frecuencia con el menú desplegable. Si "
+"eliges la :guilabel:`función predeterminado` antes de configurar el campo "
+":guilabel:`Funciones`, el sistema agregará esa función a la lista de "
+":guilabel:`funciones` en automático."
 
 #: ../../content/applications/hr/employees/new_employee.rst:730
 msgid "Attendance/Point of Sale/Manufacturing"
-msgstr ""
+msgstr "Asistencias, Punto de venta y Manufactura"
 
 #: ../../content/applications/hr/employees/new_employee.rst:732
 msgid ""
@@ -9439,6 +9888,9 @@ msgid ""
 "**Point Of Sale**, or **Manufacturing** apps, and only appear if any of "
 "those apps are installed."
 msgstr ""
+"Esta sección define cómo el empleado registra su entrada en las aplicaciones "
+"**Asistencias**, **Punto de venta** o **Manufactura**. Solo aparece si "
+"alguna de estas aplicaciones está instalada."
 
 #: ../../content/applications/hr/employees/new_employee.rst:735
 msgid ""
@@ -9446,6 +9898,10 @@ msgid ""
 "code is used to sign in and out of **Attendances** app kiosks, and "
 "a :abbr:`POS (Point Of Sale)` system."
 msgstr ""
+":guilabel:`Código NIP`: Escribe el código NIP del empleado en este campo. "
+"Este código permite registrar las entradas y las salidas en los quioscos de "
+"la aplicación **Asistencias** y en el sistema de :abbr:`PdV (Punto de venta)"
+"`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:737
 msgid ""
@@ -9458,6 +9914,16 @@ msgid ""
 "system or :ref:`check-in <attendances/kiosk-mode-entry>` on an "
 "**Attendances** app kiosk."
 msgstr ""
+":guilabel:`RFID/Número de la identificación`: Haz clic en :guilabel:`Generar`"
+" al final de la línea :guilabel:`RFID/Número de la identificación` para "
+"crear un número único. Una vez que lo generes, el número aparecerá en el "
+"campo :guilabel:`RFID/Número de la identificación` y :guilabel:`Generar` "
+"cambia a :guilabel:`Imprimir identificación`. Haz clic en :guilabel:`"
+"Imprimir identificación` para crear un archivo PDF de la credencial del "
+"empleado. Puedes imprimirla y usarla para iniciar sesión en un sistema de "
+":abbr:`PdV (Punto de venta)` o para :ref:`registrar las entradas <"
+"attendances/kiosk-mode-entry>` en un quiosco de la aplicación "
+"**Asistencias**."
 
 #: ../../content/applications/hr/employees/new_employee.rst:744
 msgid ""
@@ -9466,12 +9932,18 @@ msgid ""
 "RFID token to be read. Once read, the number populates the :guilabel:`RFID/"
 "Badge Number` field."
 msgstr ""
+"Si el empleado usa un token RFID o ya cuenta con una identificación con "
+"código de barras, haz clic en :guilabel:`Leer una identificación` y el "
+"sistema leerá el código de barras o el token RFID. Después de la lectura, el "
+"número aparecerá en el campo :guilabel:`RFID/Número de la identificación`."
 
 #: ../../content/applications/hr/employees/new_employee.rst:747
 msgid ""
 ":guilabel:`Overtime Ruleset`: Select the overtime rules to be used when "
 "calculating overtime for the employee using the drop-down menu."
 msgstr ""
+":guilabel:`Conjunto de reglas de las horas extra`: Selecciona las reglas que "
+"se usarán para calcular las horas extra del empleado con el menú desplegable."
 
 #: ../../content/applications/hr/employees/offboarding.rst:5
 msgid ""
@@ -9498,6 +9970,9 @@ msgid ""
 "reason why they left, and close any open activities associated with the "
 "employee."
 msgstr ""
+"Además de un plan de salida, debes :ref:`actualizar el registro del empleado "
+"para reflejar que esto ocurrió <employees/archive>`, registrar el motivo de "
+"su salida y cerrar cualquier actividad abierta relacionada con el empleado."
 
 #: ../../content/applications/hr/employees/offboarding.rst:19
 msgid "View offboarding plan"
@@ -9511,6 +9986,11 @@ msgid ""
 "Configuration --> Onboarding / Offboarding`. Click :guilabel:`Offboarding` "
 "to view the detailed offboarding plan form."
 msgstr ""
+"Antes de iniciar el proceso de baja, es recomendable que revises el plan de "
+"salida predeterminado que está preconfigurado en la aplicación **Empleados**"
+". Para ver el plan predeterminado actual, ve a :menuselection:`Empleados --> "
+"Configuración --> Incorporación / Salida`. Haz clic en :guilabel:`Salida` "
+"para ver el formulario detallado de este plan."
 
 #: ../../content/applications/hr/employees/offboarding.rst:29
 msgid "Offboarding plan steps"
@@ -9523,6 +10003,12 @@ msgid ""
 "and are scheduled for the day the offboarding plan is launched (:guilabel:`0 "
 "days Before Plan Date`). The default steps are:"
 msgstr ""
+"El plan predeterminado de :guilabel:`salida` es mínimo, ya que cuenta con "
+"dos pasos predeterminados (tres si la aplicación **Flotilla** está instalada)"
+". Todos los pasos son actividades *pendientes* y están programadas para el "
+"día en el que inicia el plan de baja "
+"(:guilabel:`0 días antes de la fecha del plan`). Los pasos predeterminados "
+"son:"
 
 #: ../../content/applications/hr/employees/offboarding.rst:35
 msgid ""
@@ -9530,6 +10016,10 @@ msgid ""
 "ensure all knowledge the employee has relating to their job position is "
 "either documented or shared with colleagues so there is no knowledge gap."
 msgstr ""
+":guilabel:`Organizar la transferencia de información dentro del equipo`: El "
+"gerente debe asegurarse de que el empleado documente o comparta toda la "
+"información relacionada con su puesto con sus compañeros para evitar vacíos "
+"de información."
 
 #: ../../content/applications/hr/employees/offboarding.rst:38
 msgid ""
@@ -9538,6 +10028,11 @@ msgid ""
 "or the next driver is assigned <fleet/new_vehicle/new-driver>`. This step "
 "only appears if the **Fleet** app is installed."
 msgstr ""
+":guilabel:`Recuperar el vehículo de la flotilla`: El gerente de la flotilla "
+"debe asegurarse de que los vehículos asignados al empleado ya :ref:`no estén "
+"asignados (para que estén disponibles para otros empleados) o se asignen al "
+"siguiente conductor <fleet/new_vehicle/new-driver>`. Este paso solo aparece "
+"la aplicación **Flotilla** está instalada."
 
 #: ../../content/applications/hr/employees/offboarding.rst:41
 msgid ""
@@ -9578,6 +10073,10 @@ msgid ""
 "then :ref:`a new plan should be created <employees/new-offboarding>`, "
 "specifically for that department."
 msgstr ""
+"Si el plan de salida aplica para toda la empresa, agrega o modifica el plan "
+"predeterminado correspondiente. Si el plan de salida aplica solo a un "
+"departamento específico, entonces :ref:`crea un nuevo plan <employees/new-"
+"offboarding>` para ese departamento."
 
 #: ../../content/applications/hr/employees/offboarding.rst:59
 msgid ""
@@ -9585,6 +10084,8 @@ msgid ""
 "--> Configuration --> Onboarding / Offboarding`, then click "
 "on :guilabel:`Offboarding`."
 msgstr ""
+"Para modificar el plan predeterminado, ve a :menuselection:`Empleados --> "
+"Configuración --> Incorporación / Salida` y haz clic en :guilabel:`Salida`."
 
 #: ../../content/applications/hr/employees/offboarding.rst:62
 msgid ""
@@ -9592,6 +10093,9 @@ msgid ""
 "appears. Make any desired modifications to the step, then "
 "click :guilabel:`Save` to accept the changes and close the pop-up window."
 msgstr ""
+"Para modificar un paso, haz clic en él y aparecerá la ventana emergente "
+"*Abrir: Actividades*. Realiza los cambios necesarios y después haz clic en "
+":guilabel:`Guardar` para aceptar los cambios y cerrar la ventana."
 
 #: ../../content/applications/hr/employees/offboarding.rst:66
 msgid ""
@@ -9635,6 +10139,10 @@ msgid ""
 "> Configuration --> Onboarding / Offboarding`. Click the :guilabel:`New` "
 "button in the upper-left corner, and a blank *Employee Plans* form loads."
 msgstr ""
+"Para crear un nuevo plan de incorporación, ve a :menuselection:`Empleados --"
+"> Configuración --> Incorporación / Salida`. Haz clic en el botón "
+":guilabel:`Nuevo` ubicado en la esquina superior izquierda y el sistema "
+"abrirá un formulario vacío de *planes de empleados*."
 
 #: ../../content/applications/hr/employees/offboarding.rst:85
 #: ../../content/applications/hr/employees/onboarding.rst:128
@@ -9642,6 +10150,9 @@ msgid ""
 "Enter the :guilabel:`Plan Name`, and select the :guilabel:`Department` using "
 "the drop-down menu. This creates a plan *exclusively* for that department."
 msgstr ""
+"Escribe el :guilabel:`nombre del plan` y selecciona el "
+":guilabel:`departamento` con el menú desplegable. Esta acción crea un plan "
+"*exclusivo* para ese departamento."
 
 #: ../../content/applications/hr/employees/offboarding.rst:88
 msgid ""
@@ -9649,10 +10160,13 @@ msgid ""
 "the *Activities To Create* tab, and :ref:`configure each activity <employees/"
 "offb-plan-form>`."
 msgstr ""
+"Agrega las distintas actividades de salida al hacer clic en :guilabel:`"
+"Agregar una línea` en la pestaña *Actividades por crear* y :ref:`configura "
+"cada una de ellas <employees/offb-plan-form>`."
 
 #: ../../content/applications/hr/employees/offboarding.rst:93
 msgid ":guilabel:`Plan Name`: The specific name for the plan."
-msgstr ""
+msgstr ":guilabel:`Nombre del plan`: El nombre específico del plan."
 
 #: ../../content/applications/hr/employees/offboarding.rst:94
 msgid ""
@@ -9668,6 +10182,9 @@ msgid ""
 "available for all departments. To make the plan department-specific, select "
 "a department using the drop-down menu."
 msgstr ""
+":guilabel:`Departamento`: Si lo dejas vacío (que es el ajuste predeterminado)"
+", el plan estará disponible para todos los departamentos. Para crear un plan "
+"específico para un departamento, selecciona uno con el menú desplegable."
 
 #: ../../content/applications/hr/employees/offboarding.rst:99
 msgid ""
@@ -9675,6 +10192,10 @@ msgid ""
 "at the bottom of the listed activities in the *Activities To Create* tab, "
 "and a blank *Create Activities* pop-up window appears."
 msgstr ""
+"Después, para agregar los distintos pasos del plan, haz clic en :guilabel:`"
+"Agregar una línea` al final de la lista de actividades en la pestaña *"
+"Actividades por crear* y aparecerá la ventana emergente *Crear actividades* "
+"vacía."
 
 #: ../../content/applications/hr/employees/offboarding.rst:103
 msgid "Enter the following information in the pop-up window:"
@@ -9688,6 +10209,12 @@ msgid ""
 "or :guilabel:`Certifications`. If the **Sign** app is installed, "
 "a :guilabel:`Signature` option is available."
 msgstr ""
+":guilabel:`Tipo de actividad`: Usa el menú desplegable para seleccionar la "
+"actividad a programar. Las opciones predeterminadas son :guilabel:`"
+"Actividades pendientes`, :guilabel:`Correo electrónico`, :guilabel:`Llamada`"
+", :guilabel:`Reunión`, :guilabel:`Documento` o :guilabel:`Certificaciones`. "
+"La opción :guilabel:`Firma` aparecerá si la aplicación **Firma electrónica** "
+"está instalada."
 
 #: ../../content/applications/hr/employees/offboarding.rst:109
 msgid ":guilabel:`Summary`: Enter a short description for the step."
@@ -9751,6 +10278,9 @@ msgid ""
 "click :guilabel:`Save & Close` if there are no other steps to add, or "
 "click :guilabel:`Save & New` to add more steps, as needed."
 msgstr ""
+"Cuando completes el formulario :guilabel:`Crear actividades`, haz clic en "
+":guilabel:`Guardar y cerrar` si no necesitas agregar más pasos, o en "
+":guilabel:`Guardar y nuevo` para agregar más pasos."
 
 #: ../../content/applications/hr/employees/offboarding.rst:131
 msgid ""
@@ -9796,6 +10326,12 @@ msgid ""
 "profile. Click the :guilabel:`Launch Plan` button, and a blank *Launch Plan* "
 "pop-up window loads."
 msgstr ""
+"Una vez que el empleado avise sobre su salida "
+"(por lo general con dos semanas de anticipación) o cuando la empresa decida "
+"terminar la relación laboral, inicia el plan de salida. Ve a "
+":menuselection:`Empleados` y haz clic en el perfil del empleado que se "
+"retira. Haz clic en el botón :guilabel:`Iniciar plan` y el sistema abrirá la "
+"ventana emergente *Iniciar plan* vacía."
 
 #: ../../content/applications/hr/employees/offboarding.rst:None
 msgid "The Launch Plan button on the employee profile."
@@ -9809,6 +10345,12 @@ msgid ""
 "the :guilabel:`Due Date` field. This is typically the employee's last day, "
 "but any date can be selected."
 msgstr ""
+"En la parte superior de la pantalla aparecerá un botón por cada plan "
+"disponible y un botón para las distintas actividades disponibles. Haz clic "
+"en el plan de salida a seleccionar. Después, usa el selector de calendario "
+"para definir una fecha en el campo :guilabel:`Fecha límite`. Por lo general, "
+"esta fecha coincide con el último día de trabajo del empleado, aunque puedes "
+"elegir cualquier fecha."
 
 #: ../../content/applications/hr/employees/offboarding.rst:158
 #: ../../content/applications/hr/employees/onboarding.rst:162
@@ -9817,12 +10359,17 @@ msgid ""
 "the steps in the selected plan, along with the user icon for the person "
 "assigned to each activity."
 msgstr ""
+"La sección *Resumen del plan* de la ventana emergente *Iniciar plan* muestra "
+"todos los pasos del plan seleccionado, junto con el icono del usuario "
+"asignado a cada actividad."
 
 #: ../../content/applications/hr/employees/offboarding.rst:161
 msgid ""
 "Click the :guilabel:`Schedule` button, and Odoo schedules everything in the "
 "plan, according to their respective due dates."
 msgstr ""
+"Haz clic en el botón :guilabel:`Programar` y Odoo programará todas las "
+"actividades del plan según sus respectivas fechas límite."
 
 #: ../../content/applications/hr/employees/offboarding.rst:167
 msgid "Archive an employee"
@@ -9849,6 +10396,11 @@ msgid ""
 "drop-down menu appears. Click :icon:`oi-archive` :guilabel:`Archive`, and an "
 "*Employee Termination* pop-up window appears."
 msgstr ""
+"El sistema abrirá el formulario del empleado y mostrará toda su información. "
+"Haz clic en el icono :icon:`fa-gear` :guilabel:`(engranaje)` ubicado en la "
+"esquina superior izquierda y aparecerá un menú desplegable. Haz clic en :icon"
+":`oi-archive` :guilabel:`Archivar` y aparecerá la ventana emergente *Despido "
+"del empleado*."
 
 #: ../../content/applications/hr/employees/offboarding.rst:178
 #: ../../content/applications/hr/time_off.rst:309
@@ -9861,6 +10413,9 @@ msgid ""
 "default. Multiple employees can be archived at once by adding the additional "
 "employees to archive in this field."
 msgstr ""
+":guilabel:`Empleados`: El empleado seleccionado completa este campo de forma "
+"predeterminada. Puedes archivar varios empleados a la vez si agregas más a "
+"este campo."
 
 #: ../../content/applications/hr/employees/offboarding.rst:182
 msgid ""
@@ -9889,6 +10444,7 @@ msgstr ""
 #: ../../content/applications/hr/employees/offboarding.rst:189
 msgid ":guilabel:`Retired`: Select this option when the employee is retiring."
 msgstr ""
+":guilabel:`Jubilado`: Selecciona esta opción si el empleado se jubilará."
 
 #: ../../content/applications/hr/employees/offboarding.rst:192
 msgid ""
@@ -9898,6 +10454,11 @@ msgid ""
 "Click the :guilabel:`New` button, and a blank line appears at the bottom of "
 "the list. Enter the new reason, and click :guilabel:`Save`."
 msgstr ""
+"Si es necesario un nuevo motivo de salida entonces puedes crearlo. Cierra la "
+"ventana emergente *Despido del empleado* y ve a :menuselection:`Empleados --"
+"> Configuración --> Motivos de salida`. Haz clic en el botón "
+":guilabel:`Nuevo` y aparecerá una línea vacía al final de la lista. Ingresa "
+"el nuevo motivo y haz clic en :guilabel:`Guardar`."
 
 #: ../../content/applications/hr/employees/offboarding.rst:197
 msgid ""
@@ -9923,10 +10484,15 @@ msgid ""
 "recommended to click **all** checkboxes that are applicable. The available "
 "options are:"
 msgstr ""
+":guilabel:`Cerrar actividades`: Haz clic en la casilla ubicada junto a cada "
+"tipo de actividad para cerrar o eliminar las actividades abiertas asociadas. "
+"Te recomendamos seleccionar **todas** las casillas que correspondan. Las "
+"opciones disponibles son:"
 
 #: ../../content/applications/hr/employees/offboarding.rst:204
 msgid ":guilabel:`Contract`: Applies an end date for the current contract."
 msgstr ""
+":guilabel:`Contrato`: Aplica una fecha de finalización al contrato actual."
 
 #: ../../content/applications/hr/employees/offboarding.rst:205
 msgid ""
@@ -9934,17 +10500,24 @@ msgid ""
 "current company car, and :ref:`assigns the next driver <fleet/new_vehicle/"
 "new-driver>`, if applicable."
 msgstr ""
+":guilabel:`Automóvil de la empresa`: Elimina al empleado como conductor del "
+"vehículo actual de la empresa y :ref:`asigna al siguiente conductor <fleet/"
+"new_vehicle/new-driver>` si corresponde."
 
 #: ../../content/applications/hr/employees/offboarding.rst:207
 msgid ""
 ":guilabel:`Equipment`: Unassigns the employee from any assigned equipment."
 msgstr ""
+":guilabel:`Equipo`: Elimina la asignación del empleado de cualquier equipo "
+"asignado."
 
 #: ../../content/applications/hr/employees/offboarding.rst:208
 msgid ""
 ":guilabel:`Appraisals`: Cancels all appraisals scheduled after the contract "
 "end date."
 msgstr ""
+":guilabel:`Evaluaciones`: Cancela todas las evaluaciones programadas después "
+"de la fecha de finalización del contrato."
 
 #: ../../content/applications/hr/employees/offboarding.rst:210
 msgid ""
@@ -9955,6 +10528,13 @@ msgid ""
 "Reason`, :guilabel:`Contract End Date`, the dates for the last work entries, "
 "and the employee version that was archived."
 msgstr ""
+"Haz clic en :guilabel:`Aplicar` una vez que completes el formulario. El "
+"sistema archivará el registro del empleado y mostrará una cinta roja con el "
+"texto :guilabel:`Archivado` en la esquina superior derecha del formulario "
+"del empleado. El chatter registrará los distintos detalles, como la "
+":guilabel:`fecha de salida`, el :guilabel:`motivo de salida`, la :guilabel:`"
+"fecha de finalización del contrato`, las fechas de las últimas entradas de "
+"trabajo y la versión del empleado que archivaste."
 
 #: ../../content/applications/hr/employees/offboarding.rst:None
 msgid "The employee termination form with all fields filled out."
@@ -9969,6 +10549,11 @@ msgid ""
 "launched`, then lists the various steps that must be done before archiving "
 "the employee."
 msgstr ""
+"Si existe algún problema que impida que Odoo archive al empleado, el sistema "
+"mostrará los motivos en un cuadro rojo de advertencia en la ventana "
+"emergente *Despido del empleado*. La advertencia indica `No es posible "
+"iniciar el plan \"(Nombre del plan)\"` y luego enumera los pasos que debes "
+"completar antes de archivar al empleado."
 
 #: ../../content/applications/hr/employees/onboarding.rst:5
 msgid ""
@@ -9997,6 +10582,8 @@ msgid ""
 "Depending on the installed applications, additional steps may appear in the "
 "onboarding plan."
 msgstr ""
+"Es posible que aparezcan pasos adicionales en el plan de incorporación según "
+"las aplicaciones que tengas instaladas."
 
 #: ../../content/applications/hr/employees/onboarding.rst:16
 msgid "View onboarding plan"
@@ -10010,6 +10597,12 @@ msgid ""
 "Configuration --> Onboarding / Offboarding`, then "
 "click :guilabel:`Onboarding` to view the detailed onboarding plan form."
 msgstr ""
+"Antes de iniciar el proceso de incorporación, es recomendable que revises el "
+"plan de incorporación predeterminado que está preconfigurado en la "
+"aplicación **Empleados**. Para ver el plan predeterminado actual, ve a "
+":menuselection:`Empleados --> Configuración --> Incorporación / Salida`. Haz "
+"clic en :guilabel:`Incorporación` para ver el formulario detallado de este "
+"plan."
 
 #: ../../content/applications/hr/employees/onboarding.rst:25
 msgid "The plan form displays the following information:"
@@ -10018,12 +10611,15 @@ msgstr "El formulario del plan muestra la información a continuación:"
 #: ../../content/applications/hr/employees/onboarding.rst:27
 msgid ":guilabel:`Plan Name`: The specific name for the onboarding plan."
 msgstr ""
+":guilabel:`Nombre del plan`: El nombre específico del plan de incorporación."
 
 #: ../../content/applications/hr/employees/onboarding.rst:28
 msgid ""
 ":guilabel:`Model`: Specifies where this plan can be used. In this case, in "
 "the **Employees** app. This field cannot be modified."
 msgstr ""
+":guilabel:`Modelo`: Indica dónde es posible usar este plan. En este caso, en "
+"la aplicación **Empleados**. No puedes modificar este campo."
 
 #: ../../content/applications/hr/employees/onboarding.rst:30
 msgid ""
@@ -10031,12 +10627,18 @@ msgid ""
 "available for all departments. Limit the use of the plan to a specific "
 "department by selecting the department using the drop-down menu."
 msgstr ""
+":guilabel:`Departamento`: Si lo dejas vacío (que es el ajuste predeterminado)"
+", el plan estará disponible para todos los departamentos. Para limitar el "
+"uso del plan a un departamento específico, selecciónalo con el menú "
+"desplegable."
 
 #: ../../content/applications/hr/employees/onboarding.rst:33
 msgid ""
 ":guilabel:`Activities To Create`: This tab lists all the onboarding steps. "
 "Each row displays:"
 msgstr ""
+":guilabel:`Actividades por crear`: Esta pestaña muestra todos los pasos de "
+"la incorporación. Cada fila muestra:"
 
 #: ../../content/applications/hr/employees/onboarding.rst:35
 msgid ""
@@ -10049,13 +10651,15 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/onboarding.rst:39
 msgid ":guilabel:`Summary`: A one line description of the step."
-msgstr ""
+msgstr ":guilabel:`Resumen`: Una descripción del paso en una línea."
 
 #: ../../content/applications/hr/employees/onboarding.rst:40
 msgid ""
 ":guilabel:`Assignment`: Chooses who completes the activity, relative to the "
 "new hire:"
 msgstr ""
+":guilabel:`Asignación`: Define quién completa la actividad en relación con "
+"la nueva contratación:"
 
 #: ../../content/applications/hr/employees/onboarding.rst:42
 msgid ""
@@ -10114,6 +10718,9 @@ msgid ""
 ":guilabel:`Trigger`: How scheduling is determined for the activity. Options "
 "are either :guilabel:`Before Plan Date` or :guilabel:`After Plan Date`."
 msgstr ""
+":guilabel:`Activador`: Cómo se determina el horario de la actividad. Las "
+"ipciones son :guilabel:`Antes de la fecha del plan` o :guilabel:`Después de "
+"la fecha del plan`."
 
 #: ../../content/applications/hr/employees/onboarding.rst:62
 msgid ""
@@ -10157,6 +10764,9 @@ msgid ""
 "Selecting a company for an onboarding plan restricts the plan to *only* that "
 "company."
 msgstr ""
+"En una base de datos multiempresa, también aparece el campo "
+":guilabel:`Empresa`. Seleccionar una empresa para el plan de integración "
+"restringe ese plan a *solo* esa empresa."
 
 #: ../../content/applications/hr/employees/onboarding.rst:79
 msgid "Onboarding plan steps"
@@ -10178,18 +10788,24 @@ msgid ""
 ":guilabel:`Setup IT Materials`: The manager must gather and configure all IT "
 "materials."
 msgstr ""
+":guilabel:`Configurar materailes de TI`: El gerente debe obtener y "
+"configurar todos los materiales de TI."
 
 #: ../../content/applications/hr/employees/onboarding.rst:86
 msgid ""
 ":guilabel:`Plan Training`: The manager must plan the training for the new "
 "employee."
 msgstr ""
+":guilabel:`Planificar capacitación`: El gerente debe planificar la "
+"capacitación del empleado nuevo."
 
 #: ../../content/applications/hr/employees/onboarding.rst:87
 msgid ""
 ":guilabel:`Training`: The new employee must complete the training planned by "
 "the manager."
 msgstr ""
+":guilabel:`Capacitación`: El nuevo empleado debe completar la capacitación "
+"que planificó el gerente."
 
 #: ../../content/applications/hr/employees/onboarding.rst:None
 msgid "The three default steps in the Onboarding plan."
@@ -10214,6 +10830,10 @@ msgid ""
 "plan. If department-specific onboarding plans are needed, :ref:`create a new "
 "onboarding plan <employees/create-plan>` and limit the plan to a department."
 msgstr ""
+"Si el plan de integración es universal, agrega o haz modificaciones al plan "
+"de integración predeterminado. Si los planes de integración deben ser "
+"diferentes según el departamento, :ref:`crea un plan de integración nuevo <"
+"employees/create-plan>` y limita el plan a un departamento."
 
 #: ../../content/applications/hr/employees/onboarding.rst:104
 msgid ""
@@ -10221,12 +10841,18 @@ msgid ""
 "--> Configuration --> Onboarding / Offboarding`, then click "
 "on :guilabel:`Onboarding`."
 msgstr ""
+"Para modificar el plan predeterminado, ve a :menuselection:`la aplicación "
+"Empleados --> Configuración --> Planes de incorporación y de salida laboral` "
+"y luego haz clic en :guilabel:`Integración`."
 
 #: ../../content/applications/hr/employees/onboarding.rst:107
 msgid ""
 "To modify a step, click on it. In the *Open: Activities* pop-up window, make "
 "any desired modifications to the step, then click :guilabel:`Save`."
 msgstr ""
+"Para modificar un paso, haz clic en él. En la ventana emergente *Abrir: "
+"Actividades*, haz los cambios necesarios al paso y después haz clic en "
+":guilabel:`Guardar`."
 
 #: ../../content/applications/hr/employees/onboarding.rst:110
 msgid ""
@@ -10236,6 +10862,12 @@ msgid ""
 "window, then click :guilabel:`Save & Close` if there are no other steps to "
 "add, or click :guilabel:`Save & New` if more steps are needed."
 msgstr ""
+"Para agregar un paso nuevo, haz clic en :guilabel:`Agregar una línea` en la "
+"parte inferior de la lista de actividades en la pestaña *Actividades por "
+"crear* y aparecerá la ventana emergente *Crear actividades*. Ingresa toda la "
+"información en la ventana emergente, después haz clic en :guilabel:`Guardar "
+"y cerrar` si no hay otros pasos que agregar, o haz clic en :guilabel:`"
+"Guardar y crear nuevo` si necesitas más pasos."
 
 #: ../../content/applications/hr/employees/onboarding.rst:118
 msgid "Create onboarding plan"
@@ -10258,6 +10890,9 @@ msgid ""
 "the *Activities To Create* tab, and :ref:`configure each activity "
 "<onboarding/plan-form>`."
 msgstr ""
+"Para agregar las actividades de integración, haz clic en :guilabel:`Agregar "
+"una línea` en la pestaña *Actividades por crear* y :ref:`configura cada "
+"actividad <onboarding/plan-form>`."
 
 #: ../../content/applications/hr/employees/onboarding.rst:135
 msgid ""
@@ -10305,6 +10940,11 @@ msgid ""
 "the :guilabel:`Launch Plan` button on their employee profile, and a blank "
 "*Launch Plan* pop-up window loads."
 msgstr ""
+"Después de que se contrató a un empleado y :ref:`se creó <recruitment/new-"
+"employee>` su perfil, haz clic en la tarjeta kaban del empleado en el "
+"tablero de la aplicación **Empleados** para ir a su perfil de empleado. "
+"Después, haz clic en el botón :guilabel:`Iniciar plan` en su perfil de "
+"empleado para cargar una ventana emergente de *Iniciar plan*."
 
 #: ../../content/applications/hr/employees/onboarding.rst:157
 msgid ""
@@ -10314,18 +10954,29 @@ msgid ""
 "the :guilabel:`Due Date` field. This is typically the employee's first day, "
 "but any date can be selected."
 msgstr ""
+"En la parte superior de la pantalla se muestra un botón para cada plan "
+"disponible, así como un botón para las diferentes actividades disponibles. "
+"Haz clic en el plan de integración deseado para seleccionarlo. Después, con "
+"el selector de calendario, selecciona una fecha en el campo :guilabel:`Fecha "
+"límite`. Usualmente esta fecha será el primer día del empleado, pero se "
+"puede seleccionar cualquier fecha."
 
 #: ../../content/applications/hr/employees/onboarding.rst:165
 msgid ""
 "Click the :guilabel:`Schedule` button, and Odoo schedules everything in the "
 "plan according to their respective due dates."
 msgstr ""
+"Haz clic en el botón :guilabel:`Programar` y Odoo programará todas las "
+"actividades del plan según sus respectivas fechas límite."
 
 #: ../../content/applications/hr/employees/onboarding.rst:168
 msgid ""
 "All scheduled activities appear in the both chatter of the employee profile, "
 "and in the chatter of the users with assignments relating to the plan."
 msgstr ""
+"Todas las actividades programadas aparecerán en el chatter del perfil del "
+"empleado y en el chatter de los usuarios que tengan tareas asignadas "
+"relacionadas con el plan."
 
 #: ../../content/applications/hr/employees/onboarding.rst:172
 msgid ""
@@ -10334,6 +10985,10 @@ msgid ""
 "Using the drop-down menu, select the user responsible for all the unassigned "
 "activities."
 msgstr ""
+"Si la asignación de cualquier actividad se establece como :guilabel:`"
+"Preguntar en el lanzamiento`, aparecerá el campo :guilabel:`Asignado a` en "
+"la ventana emergente *Iniciar plan*. Con el menú desplegable, seleccione al "
+"usuario responsable de todas las actividades que no están asignadas."
 
 #: ../../content/applications/hr/employees/onboarding.rst:None
 msgid "All onboarding tasks scheduled in the chatter."
@@ -10347,6 +11002,9 @@ msgid ""
 "the database. If there is any missing information on the employee's profile, "
 "a warning listing the information needed appears."
 msgstr ""
+"Solo se puede iniciar la integración para :doc:`usuarios <../../general/"
+"users>` de la base de datos. Si hay información faltante en el perfil del "
+"empleado, aparecerá una advertencia con toda la información necesaria."
 
 #: ../../content/applications/hr/employees/retention_report.rst:5
 msgid ""
@@ -29330,11 +29988,11 @@ msgid ""
 "report these correctly may be subject to a 309% penalty on undisclosed "
 "amounts."
 msgstr ""
-"Los ingresos gravables y la retención de impuestos correspondiente se debe "
-"registrar con los fomularios de remuneración fiscal 281.x y los resúmenes de "
-"declaración 325.x.  Los empleados que no hagan estos reportes de forma "
-"correcta podrían estar sujetos a una sanción del 309% sobre las cantidades "
-"no divulgadas."
+"Es obligatorio registrar los ingresos gravables y la retención de impuestos "
+"correspondiente en los formularios de remuneración fiscal 281.x y en las "
+"declaraciones de resumen 325x. Los empleadores que no realicen sus reportes "
+"de forma correcta podrían estar sujetos a una multa del 309% sobre los "
+"importes no declarados."
 
 #: ../../content/applications/hr/payroll/payroll_localizations/belgium.rst:2949
 msgid ""

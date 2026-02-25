@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-23 23:20+0000\n"
+"PO-Revision-Date: 2026-02-25 23:20+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/inventory_and_mrp/es_419/>\n"
@@ -9128,10 +9128,10 @@ msgid ""
 "form to put all items with a :guilabel:`Quantity` greater than `0.00` into a "
 "package. The *Put in Pack* pop-up window opens."
 msgstr ""
-"También puedes hacer clic en el botón :guilabel:`Poner en el paquete` en el "
-"fomulario de operación para poner todos los artículos "
-"cuya :guilabel:`cantidad` sea más que `0.00` en un paquete. Se abrirá la "
-"ventana emergente *Incluir en el paquete*."
+"También puedes hacer clic en el botón :guilabel:`Incluir en el paquete` en "
+"el formulario de operación para incluir todos los artículos cuya "
+":guilabel:`cantidad` sea mayor que `0.00` en un paquete. Esta acción abrirá "
+"la ventana emergente *Incluir en el paquete*."
 
 #: ../../content/applications/inventory_and_mrp/inventory/product_management/configure/pack_in_pack.rst:104
 msgid ""
@@ -17106,6 +17106,13 @@ msgid ""
 "Odoo then evaluates these locations, based on defined capacity, and "
 "recommends the best one on the warehouse transfer form."
 msgstr ""
+"Se usa una *categoría de almacenamiento* con :doc:`reglas de almacenamiento "
+"<putaway>` para asignar una ubicación de almacenamiento a productos "
+"entrantes, tomando en cuenta la capacidad de esa ubicación. Si asignas "
+"categorías a las ubicaciones de almacenamiento le indicarás a Odoo que estas "
+"ubicaciones cumplen con algunos requisitos específicos, como temperatura o "
+"accesibilidad. Odoo las evalúa según la capacidad definida y recomienda la "
+"mejor opción en el formulario de traslado del almacén."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:11
 msgid "Follow these steps to complete the setup:"
@@ -17146,7 +17153,7 @@ msgstr ":doc:`putaway`"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:25
 msgid "Enable storage categories"
-msgstr ""
+msgstr "Activar categorías de almacenamiento"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:27
 msgid ""
@@ -17155,6 +17162,10 @@ msgid ""
 "the :guilabel:`Storage Locations` and :guilabel:`Multi-Step Routes` features "
 "are enabled."
 msgstr ""
+"Vaya a :menuselection:`Inventario --> Configuración --> Ajustes` para "
+"habilitar las categorías de almacenamiento y asegúrese de que las funciones "
+":guilabel:`Ubicaciones de almacenamiento` y :guilabel:`Rutas multietapa` "
+"estén habilitadas en la sección *Almacén*."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:31
 msgid ""
@@ -17162,6 +17173,9 @@ msgid ""
 "package>`, also make sure :guilabel:`Packages` is enabled in the "
 "*Operations* section. Click :guilabel:`Save`."
 msgstr ""
+"Para configurar capacidad por :ref:`tipo de paquete <inventory/routes/set-"
+"capacity-package>`, asegúrate que la opción :guilabel:`Paquetes` esté "
+"activada en la sección *Operaciones* y haz clic en :guilabel:`Guardar`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:None
 msgid ""
@@ -17172,7 +17186,7 @@ msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:38
 msgid "Storage location setup"
-msgstr ""
+msgstr "Configuración de la ubicación de almacenamiento"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:40
 msgid ""
@@ -17183,10 +17197,18 @@ msgid ""
 "the :ref:`storage category <inventory/routes/assign-location>` will be set "
 "to the child location."
 msgstr ""
+"Configura ubicaciones de almacenamiento que trabajen con la categoría de "
+"almacenamiento. Se configura una ubicación principal, con *ubicaciones "
+"secundarias* asignadas . Esto es porque la ubicación :ref:`Almacenar en <"
+"inventory/routes/set-putaway-attribute>` será la ubicación principal y la "
+":ref:`categoría de almacenamiento <inventory/routes/assign-location>` se "
+"establecerá como la ubicación secundaria."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:45
 msgid "Go to :menuselection:`Inventory app --> Configuration --> Locations`."
 msgstr ""
+"Ve a :menuselection:`la aplicación Inventario --> Configuración --> "
+"Ubicaciones`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:47
 msgid ""
@@ -17196,6 +17218,13 @@ msgid ""
 "location form, specify a :guilabel:`Location Name` and :guilabel:`Parent "
 "Location`. Select :guilabel:`Internal` as the :guilabel:`Location Type`."
 msgstr ""
+"Primero configura la ubicación principal, que puede ser tan simple como la "
+"ubicación predeterminada `WH/Stock`. También puedes crear una ubicación "
+"principal si haces clic en el botón :guilabel:`Nuevo` en la página "
+":guilabel:`Ubicaciones`. En este formulario de ubicación principal, "
+"especifica el :guilabel:`nombre de la ubicación` y la :guilabel:`ubicación "
+"principal`. Selecciona :guilabel:`Interno` como el :guilabel:`Tipo de "
+"ubicación`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:52
 msgid ""
@@ -17204,12 +17233,18 @@ msgid ""
 "a :guilabel:`Location Name`, and set the :guilabel:`Parent Location` to the "
 "parent location that was just created."
 msgstr ""
+"Después, para crear *ubicaciones secundarias* para esta ubicación principal "
+"haz clic en :guilabel:`Nuevo`. En el formulario de la ubicación, especifica "
+"un :guilabel:`nombre de la ubicación` y establece la :guilabel:`Ubicación "
+"principal` como la ubicación que acabas de crear."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:57
 msgid ""
 "A beverage company stores all of its cans of lemonade on pallets in one "
 "section of its warehouse."
 msgstr ""
+"Una empresa de bebidas guarda todas sus latas y limonadas en pallets en una "
+"sección de su almacén."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:59
 msgid ""
@@ -17217,14 +17252,18 @@ msgid ""
 "Then, they create two sublocations, named `PAL1` and `PAL2`. Both have `WH/"
 "Stock/Pallets` set as the parent location."
 msgstr ""
+"Primero crearon una ubicación llamada `Pallets` en la ubicación `WH/Stock`. "
+"Luego, crearon dos ubicaciones, una llamada `PAL1` y otra `PAL2`. Ambas "
+"tienen la ubicación `WH/Stock/Pallets` configurada como la ubicación "
+"principal."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:0
 msgid "Create a sublocation."
-msgstr ""
+msgstr "Crear una ubicación secundaria."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:68
 msgid "Define storage category limitations"
-msgstr ""
+msgstr "Definir limitaciones de la categoría de almacenamiento"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:70
 msgid ""
@@ -17232,6 +17271,10 @@ msgid ""
 "with specific limitations in order to decide the optimal storage location. "
 "Capacity can be limited by weight, product, and package type."
 msgstr ""
+"Antes de que una categoría de almacenamiento se aplique a las ubicaciones, "
+"se debe configurar con limitaciones específicas para decidir cuál es la "
+"ubicación de almacenamiento óptima. La capacidad se puede limitar por peso, "
+"producto y tipo del paquete."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:74
 msgid ""
@@ -17267,6 +17310,10 @@ msgid ""
 "across various locations, as shown in the :ref:`limit capacity by package "
 "<inventory/routes/set-capacity-package>` example."
 msgstr ""
+"Es posible limitar la capacidad por producto y tipo de paquete en la misma "
+"ubicación, pero es más práctico almacenar los artículos en diferentes "
+"cantidades en varias ubicaciones, tal como aparece en este ejemplo de :ref:`"
+"limitar capacidad por paquete <inventory/routes/set-capacity-package>`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:88
 msgid ""
@@ -17325,7 +17372,7 @@ msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:107
 msgid "Limit capacity by weight"
-msgstr ""
+msgstr "Limitar capacidad por peso"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:109
 msgid ""
@@ -17333,10 +17380,14 @@ msgid ""
 "This limit applies to each location assigned this storage category. If a "
 "product weight is defined, the value must be set to greater than `0`."
 msgstr ""
+"Se puede establecer un peso máximo del producto en el campo :guilabel:`Peso "
+"máximo`. Este límite se aplica a cada ubicación asignada a esta categoría de "
+"almacenamiento. Si se define un peso de producto, el valor debe ser más de "
+"`0`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:114
 msgid "Limit capacity by product"
-msgstr ""
+msgstr "Limitar capacidad por producto"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:116
 msgid ""
@@ -17344,6 +17395,9 @@ msgid ""
 "enter a product, and set the maximum capacity that should be stored at each "
 "location in the :guilabel:`Quantity` field."
 msgstr ""
+"En la pestaña :guilabel:`Capacidad por producto`, hazclic en :guilabel:`"
+"Agregar una línea` para ingresar un producto y configura la capacidad máxima "
+"que se puede almacenar en cada ubicación en el campo :guilabel:`Cantidad`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:120
 msgid ""
@@ -17351,6 +17405,10 @@ msgid ""
 "Sit` are stored at a single storage location, specify those amounts in "
 "the :guilabel:`Capacity by Product` tab."
 msgstr ""
+"Para asegurar que solo un máximo de cinco `gabinetes grandes` y dos `sillas "
+"de escritorio para sentarse del lado derecho` se almacenen en una única "
+"ubicación de almacenamiento, especifica esas cantidades en la pestaña "
+":guilabel:`Capacidad por producto`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:0
 msgid "Show storage category limiting by product count."
@@ -17360,7 +17418,7 @@ msgstr ""
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:129
 msgid "Limit capacity by package type"
-msgstr ""
+msgstr "Limitar la capacidad por tipo de paquete"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:131
 msgid ""
@@ -17368,6 +17426,10 @@ msgid ""
 "package>` makes it possible to enforce real-time storage capacity checks "
 "based on package type (e.g., crates, bins, boxes, etc.)."
 msgstr ""
+"Limitar la capacidad por :doc:`paquete <../../product_management/configure/"
+"package>` implementa las revisiones de capacidad del almacenamiento en "
+"tiempo real según el tipo de paquete "
+"(por ejemplo, cajones, cestas, cajas, entre otros)."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:135
 msgid ""
@@ -17377,12 +17439,21 @@ msgid ""
 "form (in the :guilabel:`Packaging` section), or from the :guilabel:`Product "
 "Packagings` page."
 msgstr ""
+"Haz clic en :guilabel:`Agregar una línea` para agregar un :ref:`tipo de "
+"paquete <inventory/warehouses_storage/package-type>` a la categoría de "
+"almacenamiento. También puedes crear un tipo de paquete nuevo en la pestaña "
+":guilabel:`Inventario` del formulario del producto "
+"(en la sección :guilabel:`Embalaje`) o desde la página :guilabel:`Embalajes "
+"de productos`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:141
 msgid ""
 "To help create putaway rules for pallet-stored items, create the `High "
 "frequency pallets` storage category."
 msgstr ""
+"Para ayudar a crear reglas de almacenamiento para artículos que se almacenen "
+"en pallets, crea una categoría de almacenamiento `Pallets de alta "
+"frecuencia`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:144
 msgid ""
@@ -17400,7 +17471,7 @@ msgstr "Crear categoría de almacenamiento."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:162
 msgid "Assign storage locations"
-msgstr ""
+msgstr "Asignar ubicaciones de almacenamiento"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:164
 msgid ""
@@ -17409,6 +17480,11 @@ msgid ""
 "Locations`, and open the desired sublocation. Then, select the created "
 "category in the :guilabel:`Storage Category` field."
 msgstr ""
+"Después de crear la categoría de almacenamiento, se le pueden asignar "
+"sububicaciones. Ve a :menuselection:`la aplicación Inventario --> "
+"Configuración --> Ubicaciones` y abre la ubicación deseada. Luego, "
+"selecciona la categoría creada en el campo :guilabel:`Categoría de "
+"almacenamiento`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:169
 msgid ""
@@ -17416,6 +17492,9 @@ msgid ""
 "stored at any location to two pallets) to the `WH/Stock/Pallets/PAL1` "
 "sublocation."
 msgstr ""
+"Asigna la categoría de almacenamiento `Pallets de alta frecuencia` (que "
+"limita los pallets almacenados en cualquier ubicación a solo dos a la vez) a "
+"la sububicación `WH/Stock/Pallets/PAL1`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:0
 msgid ""
@@ -17429,16 +17508,21 @@ msgid ""
 "Repeat this step for all sublocations to which the storage category should "
 "apply."
 msgstr ""
+"Repite este paso para todas las sububicaciones a las que se debe aplicar la "
+"categoría de almacenamiento."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:178
 msgid ""
 "On the storage category form, the :icon:`oi-arrows-v` :guilabel:`Locations` "
 "smart button shows which storage locations the category has been assigned to."
 msgstr ""
+"En el formulario de categoría de almacenamiento, el botón inteligente :icon"
+":`oi-arrows-v` :guilabel:`Ubicaciones` muestra qué ubicaciones de "
+"almacenamiento tiene asignadas la categoría."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:184
 msgid "Create a putaway rule"
-msgstr ""
+msgstr "Crear regla de almacenamiento"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:186
 msgid ""
@@ -17447,18 +17531,26 @@ msgid ""
 "the :doc:`putaway rule <putaway>` by navigating to :menuselection:`Inventory "
 "app --> Configuration --> Putaway Rules`."
 msgstr ""
+"Una vez que haya configurado la :ref:`categoría de almacenamiento <inventory/"
+"routes/define-storage>` y la :ref:`ubicación <inventory/routes/assign-"
+"location>`, cree la :doc:`regla de almacenamiento <putaway>` en "
+":menuselection:`Inventario --> Configuración --> Reglas de almacenamiento`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:190
 msgid ""
 "Click the :guilabel:`New` button to create the putaway rule. Specify a "
 "location in the :guilabel:`Store to` field."
 msgstr ""
+"Haz clic en el botón :guilabel:`Nuevo` para crear una regla de "
+"almacenamiento. Especifica la ubicación en el campo :guilabel:`Almacenar en`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:193
 msgid ""
 "Use the :guilabel:`Sublocation` field to specify that you want to use a "
 "storage category on the sublocations of the :guilabel:`Store to` field:"
 msgstr ""
+"Usa el campo :guilabel:`Sububicación` para especificar que quieres usar una "
+"categoría en las sububicaciones del campo :guilabel:`Almacenar en`:"
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:196
 msgid ""
@@ -17480,6 +17572,13 @@ msgid ""
 "of the location in the :guilabel:`Store to` field. If the closest locations "
 "in the storage category are full, the :guilabel:`Store to` location is used."
 msgstr ""
+":guilabel:`Ubicación más cercana`: Se usan las ubicaciones especificadas "
+"como parte de una categoría de almacenamiento. Es obligatorio agregar una "
+"categoría de almacenamiento en el campo :guilabel:`Tiene categoría`. Las "
+"ubicaciones en la categoría de almacenamiento debe ser sububicaciones de la "
+"ubicación en :guilabel:`Almacenar en`. Si la ubicación más cercana en la "
+"categoría de almacenamiento está llena, se usará la ubicación que aparece en "
+":guilabel:`Almacenar en`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:205
 msgid ""
@@ -17529,6 +17628,8 @@ msgid ""
 "Continuing the examples from above, the `High frequency pallets` storage "
 "category is assigned to the `PAL1` and `PAL2` locations."
 msgstr ""
+"Continuando con el ejemplo de arriba, la categoría de almacenamiento `"
+"Pallets de alta frecuencia` está asignada a las ubicaciones `PAL1` y `PAL2`."
 
 #: ../../content/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/storage_category.rst:226
 msgid ""

@@ -6,8 +6,9 @@
 # philku79 <philip.kuss@gmx.de>, 2021
 # e2f <projects@e2f.com>, 2021
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
-# "Larissa Manderfeld (lman)" <lman@odoo.com>, 2025.
+# "Larissa Manderfeld (lman)" <lman@odoo.com>, 2025, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# DeepL <noreply-mt-deepl@weblate.org>, 2026.
 #
 # Translators:
 # Martin Trigaux, 2021
@@ -17,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Odoo 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2025-12-24 23:21+0000\n"
+"PO-Revision-Date: 2026-02-24 23:24+0000\n"
 "Last-Translator: \"Larissa Manderfeld (lman)\" <lman@odoo.com>\n"
 "Language-Team: German <https://translate.odoo.com/projects/odoo-19-doc/"
 "productivity/de/>\n"
@@ -373,6 +374,7 @@ msgstr ""
 #: ../../content/applications/productivity/ai/agents.rst:48
 msgid "Step-by-step workflows for how to complete a specific action"
 msgstr ""
+"Schritt-für-Schritt-Anleitungen zur Durchführung einer bestimmten Aktion"
 
 #: ../../content/applications/productivity/ai/agents.rst:49
 msgid "Technical details needed to complete any actions"
@@ -395,6 +397,11 @@ msgid ""
 "conversations, telling the agent what it can do, how it can do it, and when "
 "it should do it."
 msgstr ""
+"*Themen* sind eine Sammlung von Anweisungen und :ref:`Tools <ai/tools>`, die "
+"definieren, wie sich ein Agent in einem bestimmten Kontext verhält. Im "
+"Wesentlichen definieren die Themen, was ein Agent in der Datenbank tun kann. "
+"Themen leiten Unterhaltungen und sagen dem Agenten, was er tun kann, wie er "
+"es tun kann und wann er es tun soll."
 
 #: ../../content/applications/productivity/ai/agents.rst:65
 msgid ""
@@ -414,6 +421,13 @@ msgid ""
 "consistent reasoning pattern and uses the appropriate tools to generate "
 "accurate, context-aware responses."
 msgstr ""
+"Jedes Thema enthält eine detaillierte Eingabeaufforderung, die dem Agenten "
+"ausführlichere Anweisungen dazu gibt, wie er die mit diesem Thema "
+"verbundenen Aufgaben ausführt, welche Grenzen seines Verhaltens er "
+"definieren und festlegen soll und wie er die Absicht des Benutzers "
+"interpretiert. Diese Eingabeaufforderungen stellen sicher, dass der Agent "
+"einem konsistenten Denkmuster folgt und die geeigneten Tools verwendet, um "
+"präzise, kontextbezogene Antworten zu generieren."
 
 #: ../../content/applications/productivity/ai/agents.rst:74
 msgid "The following topics are preconfigured in the **AI** app:"
@@ -736,6 +750,10 @@ msgid ""
 "prompts. Odoo supports both Gemini and OpenAI (ChatGPT) as providers in the  "
 "**AI** application."
 msgstr ""
+"Die App-Einstellungen von Odoo **KI** enthalten Optionen zur Steuerung des "
+"von der App verwendeten |KI| -Anbieters, zur Verwaltung der |API|-"
+"Anmeldedaten und zur Definition der Standardaufforderungen. Odoo unterstützt "
+"sowohl Gemini als auch OpenAI (ChatGPT) als Anbieter in der App **KI**."
 
 #: ../../content/applications/productivity/ai/apikeys.rst:12
 msgid ""
@@ -743,6 +761,10 @@ msgid ""
 "to use custom |API| credentials or to alter the |AI| provider used for a "
 "specific agent, the app **must** be installed."
 msgstr ""
+"Einige |KI|-Funktionen lassen sich ohne die Installation der **KI**-App "
+"nutzen. Um jedoch benutzerdefinierte |API|-Anmeldeinformationen zu verwenden "
+"oder den für einen bestimmten Agenten verwendeten |KI|-Anbieter zu ändern, "
+"**muss** die App installiert sein."
 
 #: ../../content/applications/productivity/ai/apikeys.rst:16
 msgid ""
@@ -750,6 +772,9 @@ msgid ""
 "odoo_sh>` or :doc:`On-premise </../../../../administration/on_premise>` "
 "databases to use |AI| features."
 msgstr ""
+"|API|-Schlüssel sind für :doc:`Odoo.sh </../../../../administration/"
+"odoo_sh>`- oder :doc:`On-premise </../../../../administration/on_premise>`-"
+"Datenbanken erforderlich, um die |KI|-Funktionen nutzen zu können."
 
 #: ../../content/applications/productivity/ai/apikeys.rst:19
 msgid ""
@@ -758,6 +783,11 @@ msgid ""
 "may prefer to use their own keys for greater control over permissions, "
 "version updates, or internal policy compliance."
 msgstr ""
+":doc:`Odoo-Online </../../../../administration/odoo_online>` -Benutzer "
+"können ihre eigenen |API| -Schlüssel hinzufügen, dies ist jedoch nicht "
+"erforderlich. Einige Organisationen bevorzugen jedoch möglicherweise die "
+"Verwendung eigener Schlüssel, um eine bessere Kontrolle über Berechtigungen, "
+"Versionsaktualisierungen oder die Einhaltung interner Richtlinien zu haben."
 
 #: ../../content/applications/productivity/ai/apikeys.rst:26
 msgid "Create API key for ChatGPT"
@@ -1701,7 +1731,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/ai/live-chat.rst:3
 msgid "AI live chat"
-msgstr ""
+msgstr "KI-Livechat"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:5
 msgid ""
@@ -1711,22 +1741,33 @@ msgid ""
 "AI agent can answer common questions, request additional information, and "
 "determine when a conversation needs to be escalated to a human operator."
 msgstr ""
+"Die **KI**-App von Odoo kann mit **Livechat** integriert werden, um es "
+"Agenten zu ermöglichen, automatisch auf Kundenanfragen zu reagieren, "
+"Unterhaltungen zu qualifizieren und Leads zu generieren. Wenn eine "
+"Verbindung zu einem Livechat-Kanal hergestellt ist, kann ein KI-Agent häufig "
+"gestellte Fragen beantworten, zusätzliche Informationen anfordern und "
+"entscheiden, wann eine Unterhaltung an einen menschlichen Mitarbeiter "
+"weitergeleitet werden muss."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:10
 msgid ""
 "AI responses are generated in real-time and follow the rules and "
 "instructions defined in the assigned agent and topics."
 msgstr ""
+"KI-Antworten werden in Echtzeit generiert und folgen den Regeln und "
+"Anweisungen, die im zugewiesenen Agenten und in den Themen definiert sind."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:14
 msgid "Connecting an agent to live chat"
-msgstr ""
+msgstr "Einen Agenten mit dem Livechat verbinden"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:16
 msgid ""
 "First, confirm that both the **Live Chat** and **AI** applications are "
 "installed."
 msgstr ""
+"Überprüfen Sie zunächst, ob die Apps **Livechat** und **KI** installiert "
+"sind."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:19
 msgid ""
@@ -1734,10 +1775,13 @@ msgid ""
 "Agent* is added to the **AI** app. Other agents can be created and used for "
 "live chat conversations, if desired."
 msgstr ""
+"Wenn sowohl die App **KI** als auch die App **Livechat** installiert sind, "
+"wird ein *Livechat-KI-Agent* zur **KI**-App hinzugefügt. Bei Bedarf können "
+"weitere Agenten erstellt und für Livechat-Unterhaltungen verwendet werden."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:0
 msgid "The preconfigured AI Live Chat agent in the AI app."
-msgstr ""
+msgstr "Der vorkonfigurierte KI-Livechat-Agent in der KI-App."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:25
 msgid ""
@@ -1745,6 +1789,10 @@ msgid ""
 "the channel card, click the :icon:`fa-ellipsis-v` :guilabel:`(vertical "
 "ellipsis)` icon, then click :guilabel:`Configure Channel`."
 msgstr ""
+"Navigieren Sie zur **Livechat**-App und wählen Sie einen Livechat-Kanal aus. "
+"Klicken Sie auf der Kanalkarte auf das Symbol :icon:`fa-ellipsis-v` "
+":guilabel:`(vertikale Auslassungspunkte)` und dann auf :guilabel:`Kanal "
+"konfigurieren`."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:29
 msgid ""
@@ -1753,20 +1801,27 @@ msgid ""
 "*Open: Rules* pop-up, click in the :guilabel:`AI Agent` field, and select an "
 "agent from the drop-down."
 msgstr ""
+"Klicken Sie auf der Kanalseite im Reiter :guilabel:`Regeln`. Klicken Sie auf "
+"eine vorhandene Regel oder auf :guilabel:`Zeile hinzufügen`, um eine neue "
+"Regel hinzuzufügen. Klicken Sie im Pop-up-Fenster „ *Öffnen: Regeln* in das "
+"Feld :guilabel:`KI-Agent` und wählen Sie einen Agenten aus der Drop-down-"
+"Liste aus."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:None
 msgid "The rules pop-up window in the live chat app."
-msgstr ""
+msgstr "Das Pop-up-Fenster mit den Regeln in der Livechat-App."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:37
 msgid ""
 "If a channel has both a chatbot and an AI Agent assigned, the priority is "
 "given to the AI agent workflow."
 msgstr ""
+"Wenn einem Kanal sowohl ein Chatbot als auch ein KI-Agent zugewiesen sind, "
+"hat der Arbeitsablauf des KI-Agenten Vorrang."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:41
 msgid "Configuring AI behavior in live chat"
-msgstr ""
+msgstr "KI-Verhaltens im Livechat konfigurieren"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:43
 msgid ""
@@ -1776,6 +1831,12 @@ msgid ""
 "card, click the :icon:`fa-ellipsis-v` :guilabel:`(vertical ellipsis)` icon, "
 "then click :guilabel:`Configuration`."
 msgstr ""
+"Das Verhalten und die Aktionen des KI-Agenten während einer Livechat-"
+"Unterhaltung werden über die Einstellungen des Agenten gesteuert. Um den "
+":doc:`Agenten <agents>` zu konfigurieren, navigieren Sie zu :menuselection"
+":`KI-App --> Agenten`. Klicken Sie auf der Agentenkarte auf das Symbol :icon"
+":`fa-ellipsis-v` :guilabel:`(vertikale Auslassungspunkte)` und dann auf "
+":guilabel:`Konfiguration`."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:48
 msgid ""
@@ -1783,10 +1844,14 @@ msgid ""
 "this section lays out how the agent's prompt is used in a live chat "
 "conversation."
 msgstr ""
+"Da der Standard-*Livechat-KI-Agent* für die Verwendung im Livechat "
+"konfiguriert ist, wird in diesem Abschnitt erläutert, wie die "
+"Eingabeaufforderung des Agenten in einer Livechat-Unterhaltung verwendet "
+"wird."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:52
 msgid "Agent identity and goals"
-msgstr ""
+msgstr "Identität und Ziele des Agenten"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:54
 msgid ""
@@ -1795,16 +1860,23 @@ msgid ""
 "answering customer questions accurately, while also being responsible for "
 "initiating lead creation when a request cannot be handled confidently."
 msgstr ""
+"Die Identität des *Livechat-KI-Agenten* hilft dabei, den Kommunikationsstil "
+"und die Gesprächsziele des Agenten zu definieren. Auf hoher Ebene "
+"konzentriert sich der Agent darauf, Kundenfragen präzise zu beantworten, und "
+"ist gleichzeitig dafür verantwortlich, die Lead-Generierung zu initiieren, "
+"wenn eine Anfrage nicht zuverlässig bearbeitet werden kann."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:58
 msgid ""
 "Rather than reacting message-by-message, the agent evaluates each "
 "interaction against its defined priorities."
 msgstr ""
+"Anstatt auf jede Nachricht einzeln zu reagieren, bewertet der Agent jede "
+"Interaktion anhand festgelegter Prioritäten."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:62
 msgid "How the agent answers questions"
-msgstr ""
+msgstr "Wie der Agent Fragen beantwortet"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:64
 msgid ""
@@ -1812,6 +1884,10 @@ msgid ""
 "agent's decision rules. When sufficient information is available, the agent "
 "responds directly with a clear and concise answer."
 msgstr ""
+"Während einer Unterhaltung wird jede eingehende Nachricht anhand der "
+"Entscheidungsregeln des Agenten ausgewertet. Wenn genügend Informationen "
+"vorliegen, antwortet der Agent direkt mit einer klaren und prägnanten "
+"Antwort."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:67
 msgid ""
@@ -1819,104 +1895,127 @@ msgid ""
 "guess or fabricate a response. Instead, it acknowledges the limitation and "
 "prepares to transition the conversation toward human follow-up."
 msgstr ""
+"Wenn die verfügbaren Informationen unvollständig oder ungewiss sind, gibt "
+"der Agent keine Vermutungen oder erfundenen Antworten. Stattdessen erkennt "
+"er die Einschränkung an und bereitet sich darauf vor, die Unterhaltung an "
+"einen menschlichen Mitarbeiter weiterzuleiten."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:71
 msgid "This ensures that automated responses remain accurate and trustworthy."
 msgstr ""
+"Dadurch wird sichergestellt, dass automatisierte Antworten präzise und "
+"vertrauenswürdig bleiben."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:74
 msgid "How escalation is triggered"
-msgstr ""
+msgstr "Wie eine Weiterleitung ausgelöst wird"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:76
 msgid ""
 "Escalation to human follow-up is defined explicitly in the agent's prompt "
 "and delegated to a dedicated topic."
 msgstr ""
+"Die Weiterleitung zur manuellen Nachverfolgung wird in der "
+"Eingabeaufforderung des Agenten ausdrücklich definiert und an ein spezielles "
+"Thema delegiert."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:79
 msgid "Conversations are escalated when one of the following occurs:"
 msgstr ""
+"Unterhaltung werden weitergeleitet, wenn einer der folgenden Fälle eintritt:"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:81
 msgid "The request requires custom pricing, contracts, or implementation work."
 msgstr ""
+"Die Anfrage erfordert individuelle Preisgestaltung, Verträge oder "
+"Implementierungsarbeiten."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:82
 msgid "The request involves account changes or troubleshooting."
-msgstr ""
+msgstr "Die Anfrage betrifft Kontoänderungen oder Fehlerbehebung."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:83
 msgid "The user explicitly asks to be contacted or requests a demo."
 msgstr ""
+"Der Nutzer bittet ausdrücklich um Kontaktaufnahme oder fordert eine Demo an."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:84
 msgid "The agent cannot respond with high confidence."
-msgstr ""
+msgstr "Der Agent kann nicht mit hoher Sicherheit antworten."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:86
 msgid ""
 "When one of these conditions is met, the agent activates the *Lead "
 "Creation* :ref:`topic <ai/topics>`."
 msgstr ""
+"Wenn eine dieser Bedingungen erfüllt ist, aktiviert der Agent das :ref:`"
+"Thema <ai/topics>` *Lead-Generierung*."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:90
 msgid "Lead creation topic"
-msgstr ""
+msgstr "Thema „Lead-Generierung“"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:92
 msgid ""
 "The Lead creation topic defines a structured, multi-step workflow that "
 "governs how contact information is collected and how a lead is created."
 msgstr ""
+"Das Thema „Lead-Generierung“ definiert einen strukturierten, mehrstufigen "
+"Arbeitsablauf, der regelt, wie Kontaktinformationen erfasst und Leads "
+"erstellt werden."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:95
 msgid "This topic specifies:"
-msgstr ""
+msgstr "Dieses Thema behandelt:"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:97
 msgid "when lead creation is appropriate"
-msgstr ""
+msgstr "wenn die Lead-Generierung angemessen ist"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:98
 msgid "what information must be collected"
-msgstr ""
+msgstr "welche Informationen erfasst werden müssen"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:99
 msgid "how the conversation should progress"
-msgstr ""
+msgstr "wie das Gespräch verlaufen sollte"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:100
 msgid "what language the agent may and may not use"
-msgstr ""
+msgstr "welche Sprache der Agent verwenden soll und welche nicht"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:102
 msgid ""
 "Rather than immediately creating a lead, the agent completes the following "
 "steps:"
 msgstr ""
+"Anstatt sofort einen Lead zu erstellen, führt der Agent die folgenden "
+"Schritte aus:"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:104
 msgid "Suggests human follow-up when appropriate"
-msgstr ""
+msgstr "Empfiehlt gegebenenfalls eine Nachfassaktion durch einen Menschen"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:105
 msgid "Collects missing contact details one at a time"
-msgstr ""
+msgstr "Sammelt fehlende Kontaktdaten einzeln"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:106
 msgid "Confirms known details before proceeding"
-msgstr ""
+msgstr "Bestätigt bekannte Details, bevor fortgefahren wird."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:107
 msgid "Calls the lead creation tool exactly once"
-msgstr ""
+msgstr "Ruft das Tool zur Lead-Generierung genau einmal auf"
 
 #: ../../content/applications/productivity/ai/live-chat.rst:109
 msgid ""
 "The topic also enforces strict constraints to prevent system-centric "
 "language, duplicate lead creation, or premature promises of follow-up."
 msgstr ""
+"Das Thema erlegt auch strenge Beschränkungen auf, um systemzentrierte "
+"Sprache, doppelte Lead-Erstellung oder voreilige Versprechen für "
+"Folgemaßnahmen zu verhindern."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:112
 msgid ""
@@ -1924,20 +2023,26 @@ msgid ""
 "the :menuselection:`AI app --> Agents --> Topics`, and "
 "click :guilabel:`Create Leads`."
 msgstr ""
+"Um die detaillierten Anweisungen zum Thema„Lead-Generierung“ anzuzeigen, "
+"navigieren Sie zu :menuselection:`KI --> Agenten --> Themen` und klicken Sie "
+"auf :guilabel:`Leads erstellen`."
 
 #: ../../content/applications/productivity/ai/live-chat.rst:116
 msgid ":doc:`AI Agents <agents>`"
-msgstr ""
+msgstr ":doc:`KI-Agenten <agents>`"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:3
 msgid "AI server actions"
-msgstr ""
+msgstr "KI-Serveraktionen"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:7
 msgid ""
 "|AI| server actions extend Odoo's automation framework by allowing "
 "artificial intelligence to make decisions during a workflow."
 msgstr ""
+"|KI|-Serveraktionen erweitern das Automatisierungsframework von Odoo, indem "
+"sie es künstlicher Intelligenz ermöglichen, während eines Workflows "
+"Entscheidungen zu treffen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:10
 msgid ""
@@ -1945,10 +2050,13 @@ msgid ""
 "fixed conditions, but still requires controlled execution through standard "
 "server actions."
 msgstr ""
+"Sie sind für Fälle konzipiert, in denen Logik nicht vollständig durch feste "
+"Bedingungen ausgedrückt werden kann, aber dennoch eine kontrollierte "
+"Ausführung durch Standardserveraktionen erfordert."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:14
 msgid "How AI server actions work"
-msgstr ""
+msgstr "Wie KI-Serveraktionen funktionieren"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:16
 msgid ""
@@ -1956,10 +2064,13 @@ msgid ""
 "responsibilities between the |AI| server action, or *the Manager*, and the "
 "tool, or *the Worker*."
 msgstr ""
+"KI-gesteuerte Arbeitsabläufe in Odoo basieren auf einer klaren "
+"Aufgabenteilung zwischen der |KI|-Serveraktion oder *dem Manager* und dem "
+"Tool oder *dem Worker*."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:20
 msgid "AI server action: the manager"
-msgstr ""
+msgstr "KI-Serveraktion: der Manager"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:22
 msgid ""
@@ -1967,6 +2078,10 @@ msgid ""
 "record and its context. It interprets the |AI| prompt. And it decides which "
 "tool to call, and what arguments to use."
 msgstr ""
+"Eine |KI|-Serveraktion fungiert als Entscheidungsträger oder Manager. Sie "
+"liest den Datensatz und seinen Kontext. Sie interpretiert die |KI|-"
+"Eingabeaufforderung. Und sie entscheidet, welches Tool aufgerufen und welche "
+"Argumente verwendet werden sollen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:25
 msgid ""
@@ -1974,10 +2089,13 @@ msgid ""
 "or guarantee the correctness of the operation. Its role is limited to "
 "decision-making."
 msgstr ""
+"Die Serveraktion erzwingt keine Geschäftsregeln, ändert keine Datensätze "
+"direkt und garantiert auch nicht die Korrektheit des Vorgangs. Ihre Rolle "
+"beschränkt sich auf die Entscheidungsfindung."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:29
 msgid "AI tool: the worker"
-msgstr ""
+msgstr "KI-Tool: der Arbeiter"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:31
 msgid ""
@@ -1986,40 +2104,49 @@ msgid ""
 "updates, moves, or writes. Tools **must** enforce business rules explicitly "
 "in Python code."
 msgstr ""
+"Ein Tool ist eine Standardaerveraktion mit der Option *In KI verwenden*, die "
+"im Reiter *Verwendung* aktiviert ist. Tools enthalten die gesamte "
+"Ausführungslogik und führen Datensatzaktualisierungen, -verschiebungen oder -"
+"schreibvorgänge durch. Tools **müssen** Geschäftsregeln explizit in Python-"
+"Code durchsetzen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:35
 msgid ""
 "If a tool is called by the |AI| server action, it will execute "
 "unconditionally, unless the code itself prevents it."
 msgstr ""
+"Wenn ein Tool von der |KI|-Serveraktion aufgerufen wird, wird es "
+"bedingungslos ausgeführt, sofern der Code selbst dies nicht verhindert."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:39
 msgid "AI server action workflow"
-msgstr ""
+msgstr "KI-Serveraktionsablauf"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:41
 msgid "The |AI| server action workflow follows this sequence:"
-msgstr ""
+msgstr "Der Arbeitsablauf der |KI|-Serveraktion folgt dieser Reihenfolge:"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:43
 msgid "A record triggers an |AI| server action."
-msgstr ""
+msgstr "Ein Datensatz löst eine |KI|-Serveraktion aus."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:44
 msgid "The |AI| prompt is evaluated, using the record as context."
 msgstr ""
+"Die |KI|-Eingabeaufforderung wird mithilfe des Datensatzes als Kontext "
+"ausgewertet."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:45
 msgid "The |AI| selects one of the available tools."
-msgstr ""
+msgstr "Die |KI| wählt eines der verfügbaren Tools aus."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:46
 msgid "The |AI| provides arguments expected by the tool."
-msgstr ""
+msgstr "Die |KI| liefert die vom Tool erwarteten Argumente."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:47
 msgid "The selected tool executes its Python code."
-msgstr ""
+msgstr "Das ausgewählte Tool führt seinen Python-Code aus."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:50
 msgid ""
@@ -2027,10 +2154,14 @@ msgid ""
 "behavior already exists in Odoo, such as moving a document to a folder. In "
 "these cases, the |AI| selects parameters, and Odoo executes the action."
 msgstr ""
+"|KI|-Serveraktionen funktionieren ohne benutzerdefinierte Logik nur dann, "
+"wenn das zugrunde liegende Verhalten bereits in Odoo vorhanden ist, z. B. "
+"das Verschieben eines Dokuments in einen Ordner. In diesen Fällen wählt die "
+"|KI| die Parameter aus und Odoo führt die Aktion aus."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:55
 msgid "Use case walkthrough"
-msgstr ""
+msgstr "Erläuterung eines Anwendungsfalls"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:57
 msgid ""
@@ -2038,6 +2169,10 @@ msgid ""
 "Action pattern. Navigate to the *Server Actions* menu by going "
 "to :menuselection:`Settings --> Technical --> Server Actions`."
 msgstr ""
+"Das Beispiel *Dokumente im Posteingang automatisch sortieren* "
+"veranschaulicht das gesamte Muster der |KI|-Serveraktion. Navigieren Sie zum "
+"Menü *Serveraktionen*, indem Sie :menuselection:`Einstellungen --> Technisch "
+"--> Serveraktionen` aufrufen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:62
 msgid ""
@@ -2045,22 +2180,33 @@ msgid ""
 "add tags. The action itself does **not** move documents or add tags, it only "
 "decides which tool should be used, based on the documents' content."
 msgstr ""
+"Diese Serveraktion dient dazu, Dokumente auf ihren Inhalt zu überprüfen und "
+"Stichwörter hinzuzufügen. Die Aktion selbst führt **keine** Verschiebung von "
+"Dokumenten oder Hinzufügung von Stichwörtern durch, sondern entscheidet "
+"lediglich anhand des Inhalts der Dokumente, welches Tool verwendet werden "
+"soll."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:66
 msgid ""
 "The :guilabel:`Model` for the action is listed as *Document*, and "
 "the :guilabel:`Type` is *AI*."
 msgstr ""
+"Das :guilabel:`Model` für die Aktion lautet *Dokument*, und der "
+":guilabel:`Typ` lautet *KI*."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:None
 msgid "The record for the Auto-sort documents in inbox server action."
 msgstr ""
+"Der Datensatz für die Serveraktion „Dokumente im Posteingang automatisch "
+"sortieren“."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:71
 msgid ""
 "The prompt for this action provides context about the document, as well as "
 "intent of the action."
 msgstr ""
+"Die Einagbeaufforderung zu dieser Aktion liefert Kontextinformationen zum "
+"Dokument sowie zur Absicht der Aktion."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:73
 msgid ""
@@ -2068,12 +2214,18 @@ msgid ""
 "on this prompt, including moving a document, adding tags, or creating "
 "invoices or bills."
 msgstr ""
+"Das Feld :guilabel:`Tool` enthält mehrere Aktionen, die basierend auf dieser "
+"Eingabeaufforderung ausgeführt werden können, darunter das Verschieben eines "
+"Dokuments, das Hinzufügen von Stichwörtern oder das Erstellen von Rechnungen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:77
 msgid ""
 "*AI: Add Tags*, *AI: Move to Folder*, and *AI: Rename Document* are all "
 "*Execute Code* server actions, meaning they trigger python code."
 msgstr ""
+"*KI: Stichwörter hinzufügen*, *KI: In Ordner verschieben* und *KI: Dokument "
+"umbenennen* sind allesamt Serveraktion vom Typ *Code ausführen*, d. h. sie "
+"lösen Python-Code aus."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:80
 msgid ""
@@ -2081,12 +2233,17 @@ msgid ""
 "that the most appropriate tool is *AI: Move to Folder*, the Python code "
 "performs the following operation:"
 msgstr ""
+"Wenn die Aktion beispielsweise anhand des Inhalts des Dokuments feststellt, "
+"dass das am besten geeignete Tool *KI: In Ordner verschieben* ist, führt der "
+"Python-Code die folgende Operation aus:"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:87
 msgid ""
 "This code, executes unconditionally when called and performs the move using "
 "an existing method."
 msgstr ""
+"Dieser Code wird beim Aufruf bedingungslos ausgeführt und führt die "
+"Verschiebung mithilfe einer vorhandenen Methode durch."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:90
 msgid ""
@@ -2094,6 +2251,9 @@ msgid ""
 "signature. Instead, arguments passed to a tool are determined entirely by "
 "the tool's configuration."
 msgstr ""
+"Die |KI| leitet Argumente nicht aus dem Python-Code oder der "
+"Methodensignatur ab. Stattdessen werden die an ein Tool übergebenen "
+"Argumente vollständig durch die Konfiguration des Tools bestimmt."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:93
 msgid ""
@@ -2104,6 +2264,13 @@ msgid ""
 "The :guilabel:`Name` column under *AI Schema* must match the variable name "
 "used in the Python code exactly."
 msgstr ""
+"Für das Tool *KI: In Ordner verschieben* erwartet der Python-Code die "
+"Variable `folder_id`. Die |KI| weiß, dass sie `folder_id` bereitstellen "
+"muss, da diese Variable in der Konfiguration explizit als Argument "
+"deklariert ist. Diese Angabe finden Sie im Reiter *Verwendung* der "
+"Serveraktion im Feld :guilabel:`KI-Schema`. Die Spalte :guilabel:`Name` "
+"unter *KI-Schema* muss genau mit dem im Python-Code verwendeten "
+"Variablennamen übereinstimmen."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:99
 msgid ""
@@ -2111,20 +2278,25 @@ msgid ""
 "represents, what type of value is expected, and when it is appropriate to "
 "supply it."
 msgstr ""
+"Die |KI| verwendet die Argumentbeschreibung, um zu verstehen, was der "
+"Parameter darstellt, welche Art von Wert erwartet wird und wann es "
+"angebracht ist, ihn anzugeben."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:102
 msgid ""
 "If an argument is not defined in the Usage tab, the AI cannot provide it, "
 "even if the Python code references it."
 msgstr ""
+"Wenn ein Argument nicht im Reiter „Verwendung“ definiert ist, kann die KI es "
+"nicht bereitstellen, selbst wenn der Python-Code darauf verweist."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:0
 msgid "The usage tab of the AI move to folder server action."
-msgstr ""
+msgstr "Der Reiter „Verwendung“ der Serveraktion „KI: In Ordner verschieben“."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:109
 msgid "Creating custom AI tools"
-msgstr ""
+msgstr "Benutzerdefinierte KI-Tools erstellen"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:111
 msgid ""
@@ -2133,67 +2305,78 @@ msgid ""
 "can update a task description, an *Execute Code* action could be created "
 "with the following code:"
 msgstr ""
+"Das gleiche Muster wie im obigen Beispiel *Dokumente im Posteingang "
+"automatisch sortieren* kann mit der Standardlogik von Odoo implementiert "
+"werden. Um beispielsweise eine Aktion zu erstellen, mit der eine "
+"Aufgabenbeschreibung aktualisiert werden kann, könnte eine Aktion vom Typ *"
+"Code ausführen* mit dem folgenden Code erstellt werden:"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:119
 msgid ""
 "To function correctly, `content` **must** be defined as an argument in "
 "tool's *Usage* tab."
 msgstr ""
+"Damit es ordnungsgemäß funktioniert, muss `content` als Argument im Reiter "
+"*Verwendung* des Tools definiert werden."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:122
 msgid ":ref:`Server Actions <reference/actions/server>`"
-msgstr ""
+msgstr ":ref:`Serveraktionen <reference/actions/server>`"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:125
 msgid "Common issues"
-msgstr ""
+msgstr "Häufige Probleme"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:128
 msgid "Why is the Tools field empty?"
-msgstr ""
+msgstr "Warum ist das Feld „Tools“ leer?"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:130
 msgid ""
 "Confirm that at least one server action has :guilabel:`Use in AI` enabled."
 msgstr ""
+"Stellen Sie sicher, dass für mindestens eine Serveraktion die Option "
+":guilabel:`In KI verwenden` aktiviert ist."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:131
 msgid ""
 "Confirm that at least one tool is assigned to the same "
 "model :guilabel:`Model` as the server action."
 msgstr ""
+"Stellen Sie sicher, dass mindestens ein Tool dem gleichen :guilabel:`Modell` "
+"zugewiesen ist wie die Serveraktion."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:135
 msgid "Why did the tool run but nothing happened?"
-msgstr ""
+msgstr "Warum wurde das Tool ausgeführt, aber es ist nichts passiert?"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:137
 msgid "The Python code exited without changes."
-msgstr ""
+msgstr "Der Python-Code wurde ohne Änderungen beendet."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:138
 msgid "Required arguments were missing or empty."
-msgstr ""
+msgstr "Erforderliche Argumente fehlten oder waren leer."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:139
 msgid "Business conditions were not implemented in the tool logic."
-msgstr ""
+msgstr "Die Geschäftsbedingungen wurden nicht in die Tool-Logik implementiert."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:142
 msgid "Why did the AI choose an unexpected tool?"
-msgstr ""
+msgstr "Warum hat die KI ein unerwartetes Tool ausgewählt?"
 
 #: ../../content/applications/productivity/ai/server-actions.rst:144
 msgid "The prompt lacked sufficient context."
-msgstr ""
+msgstr "Die Eingabeaufforderung enthielt nicht genügend Kontext."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:145
 msgid "Multiple tools matched the same intent."
-msgstr ""
+msgstr "Mehrere Tools entsprachen derselben Absicht."
 
 #: ../../content/applications/productivity/ai/server-actions.rst:146
 msgid "No constraints were enforced at the tool level."
-msgstr ""
+msgstr "Auf Tool-Ebene wurden keine Einschränkungen durchgesetzt."
 
 #: ../../content/applications/productivity/ai/voice.rst:3
 msgid "AI voice transcription"
@@ -2519,10 +2702,13 @@ msgid ""
 "the :guilabel:`Description` tab are visible to customers when booking an "
 "appointment online."
 msgstr ""
+"Fügen Sie abschließend eine :guilabel:`Beschreibung` für diese Ressource "
+"hinzu. Der Inhalt des Reiters :guilabel:`Beschreibung` ist für Kunden "
+"sichtbar, wenn sie online einen Termin buchen."
 
 #: ../../content/applications/productivity/appointments.rst:44
 msgid "Resource capacity"
-msgstr ""
+msgstr "Ressourcenkapazität"
 
 #: ../../content/applications/productivity/appointments.rst:46
 msgid ""
@@ -2531,6 +2717,10 @@ msgid ""
 "capacity. To avoid this, a new *System Parameter* needs to be added to the "
 "database."
 msgstr ""
+"Bei der Buchung eines Termins auf Basis der Ressourcenverfügbarkeit zeigt "
+"die Website nur eine Kapazität von bis zu `12` an. Dies geschieht auch dann, "
+"wenn die Ressource eine höhere Kapazität aufweist. Um dies zu vermeiden, "
+"muss ein neuer *Systemparameter* zur Datenbank hinzugefügt werden."
 
 #: ../../content/applications/productivity/appointments.rst:50
 msgid ""
@@ -2538,6 +2728,10 @@ msgid ""
 "navigate to the :menuselection:`Settings app --> Technical --> Parameters --"
 "> System Parameters`. Click :guilabel:`New` to add a new parameter."
 msgstr ""
+"Stellen Sie zunächst sicher, dass der :ref:`Entwicklermodus <developer-mode>`"
+" aktiviert ist. Navigieren Sie dann zu :menuselection:`Einstellungen --> "
+"Technisch --> Parameter --> Systemparameter`. Klicken Sie auf :guilabel:`Neu`"
+", um einen neuen Parameter hinzuzufügen."
 
 #: ../../content/applications/productivity/appointments.rst:54
 msgid ""
@@ -2546,10 +2740,14 @@ msgid ""
 "enter the maximum capacity that should be allowed. Click :icon:`fa-cloud-"
 "upload` :guilabel:`(Save manually)` when finished."
 msgstr ""
+"Geben Sie im Feld :guilabel:`Schlüssel` "
+"`appointment.resource_max_capacity_allowed` ein. Geben Sie im Feld "
+":guilabel:`Wert` die maximal zulässige Kapazität ein. Klicken Sie "
+"anschließend auf :icon:`fa-cloud-upload` :guilabel:`(Manuell speichern)`."
 
 #: ../../content/applications/productivity/appointments.rst:None
 msgid "The new system parameter for capacity limits."
-msgstr ""
+msgstr "Der neue Systemparameter für Kapazitätsgrenzen."
 
 #: ../../content/applications/productivity/appointments.rst:64
 msgid "Appointment type configuration"
@@ -12562,11 +12760,13 @@ msgstr ""
 
 #: ../../content/applications/productivity/knowledge.rst:440
 msgid ":doc:`/applications/essentials/property_fields`"
-msgstr ""
+msgstr ":doc:`/applications/essentials/property_fields`"
 
 #: ../../content/applications/productivity/knowledge.rst:443
 msgid "Click outside the property field window to save a property."
 msgstr ""
+"Klicken Sie außerhalb des Eigenschaftsfeldfensters, um eine Eigenschaft zu "
+"speichern."
 
 #: ../../content/applications/productivity/knowledge.rst:444
 msgid ""
@@ -12575,6 +12775,11 @@ msgid ""
 "Deleting a property is permanent, and deleting all properties removes the "
 "property sidebar panel."
 msgstr ""
+"Um eine Eigenschaft zu entfernen, bewegen Sie den Mauszeiger über den Namen, "
+"klicken Sie auf das Symbol :icon:`fa-pencil` (:guilabel:`Bleistift`) und "
+"dann auf :menuselection:`Löschen --> Löschen`. Das Löschen einer Eigenschaft "
+"ist endgültig, und wenn Sie alle Eigenschaften löschen, wird die "
+"Eigenschaftsseitenleiste entfernt."
 
 #: ../../content/applications/productivity/knowledge.rst:449
 msgid ""

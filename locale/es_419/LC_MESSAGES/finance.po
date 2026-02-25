@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-23 23:20+0000\n"
+"PO-Revision-Date: 2026-02-25 23:20+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/finance/es_419/>\n"
@@ -35020,7 +35020,7 @@ msgstr "Túnez"
 
 #: ../../content/applications/finance/fiscal_localizations.rst:141
 msgid ":doc:`Türkiye <fiscal_localizations/turkiye>`"
-msgstr ""
+msgstr ":doc:`Turquía <fiscal_localizations/turkiye>`"
 
 #: ../../content/applications/finance/fiscal_localizations.rst:142
 msgid "Uganda"
@@ -78589,7 +78589,7 @@ msgstr ""
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:979
 msgid "Add a bank account"
-msgstr "Agregar una cuenta"
+msgstr "Agregar una cuenta bancaria"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:981
 msgid ""

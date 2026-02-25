@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-19 23:21+0000\n"
+"PO-Revision-Date: 2026-02-24 23:25+0000\n"
 "Last-Translator: \"Patricia Gutiérrez (pagc)\" <pagc@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/websites/es_419/>\n"
@@ -36,8 +36,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == "
-"0) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0)"
+" ? 1 : 2);\n"
 "X-Generator: Weblate 5.14.3\n"
 
 #: ../../content/applications/websites.rst:5
@@ -17362,6 +17362,9 @@ msgid ""
 "as :doc:`eCommerce <../../ecommerce>`, :doc:`Blog <../../"
 "blog>`, :doc:`eLearning <../../elearning>`, and :doc:`Forum <../../forum>`."
 msgstr ""
+"Odoo cuenta con varios módulos para ayudarte a crear el contenido de tu "
+"sitio web, como :doc:`Comercio electrónico <../../ecommerce>`, :doc:`Blog <"
+"../../blog>`, :doc:`eLearning <../../elearning>` y :doc:`Foro <../../forum>`."
 
 #: ../../content/applications/websites/website/structure/seo.rst:14
 msgid ""
@@ -17369,6 +17372,10 @@ msgid ""
 "`Bootstrap <https://getbootstrap.com/>`_ CSS framework to ensure responsive "
 "layouts across desktop, tablet, or mobile, which can support SEO."
 msgstr ""
+"Todos los :doc:`temas <../web_design/themes>` se crearon usando `Bootstrap "
+"<https://getbootstrap.com/>`_, un marco de trabajo para CSS, para asegurar "
+"que los diseños fueran compatibles con computadoras, tabletas, o celulares, "
+"que son compatibles con SEO."
 
 #: ../../content/applications/websites/website/structure/seo.rst:19
 msgid ""
@@ -17392,7 +17399,7 @@ msgstr ""
 
 #: ../../content/applications/websites/website/structure/seo.rst:None
 msgid "Search Engine Optimization"
-msgstr ""
+msgstr "Optimización de motores de búsqueda"
 
 #: ../../content/applications/websites/website/structure/seo.rst:32
 msgid ""
@@ -17401,18 +17408,26 @@ msgid ""
 "a :ref:`301 redirect <website/pages/URL-redirection>` is created, "
 "maintaining the SEO."
 msgstr ""
+"Cambiar el título de una publicación de blog o el nombre de un producto "
+"actualiza el enlace a la página web relacionada en automático. El enlace "
+"anterior sigue funcionando como una :ref:`redirección 301 <website/pages/URL-"
+"redirection>`, para mantener el SEO."
 
 #: ../../content/applications/websites/website/structure/seo.rst:37
 msgid ""
 "Click :guilabel:`Fill with AI` to automatically generate a meta title, a "
 "description, and get keyword suggestions."
 msgstr ""
+"Haz clic e :guilabel:`Llenar con IA` para generar un título meta, una "
+"descripción y obtener sugerencias de palabras clave en automático."
 
 #: ../../content/applications/websites/website/structure/seo.rst:39
 msgid ""
 "Remove incorrect URLs from the :guilabel:`Broken Link` field and select "
 "valid ones to prevent errors."
 msgstr ""
+"Eliminar URL incorrectas del campo :guilabel:`Enlaces rotos` y seleccionar "
+"URL válidas evitará errores."
 
 #: ../../content/applications/websites/website/structure/seo.rst:43
 msgid "Keywords and meta tags"
@@ -17460,6 +17475,12 @@ msgid ""
 "attract visitors with appealing content. They can be edited in "
 "the :guilabel:`optimize SEO` pop-up. There are two types of meta tags:"
 msgstr ""
+"**Las etiquetas meta** son elementos de HTML que brindan información sobre "
+"la página web a motores de búsqueda y visitantes del sitio web. Juegan un "
+"papel crucial en el SEO ya que le ayudan a los motores de búsqueda a "
+"entender el contenido y el contexto de una página web y atraer visitantes "
+"con contenido valioso. Pueden editarse en la ventana emergente :guilabel:`"
+"optimizar SEO`. Hay dos tipos de etiquetas meta:"
 
 #: ../../content/applications/websites/website/structure/seo.rst:67
 msgid ""
@@ -17484,6 +17505,12 @@ msgid ""
 "webpage, or keep it empty to use the default description based on the page's "
 "content."
 msgstr ""
+"Las etiquetas de :guilabel:`descripción` hacen un resumen del contenido de "
+"la página web que usualmente se muestran en los resultados del motor de "
+"búsqueda, abajo del título. Se usan para captar la atención del cliente para "
+"que visite la página. Actualiza la etiqueta de descripción de la página web, "
+"o déjala en blanco para usar la descripción predeterminada según el "
+"contenido de la página."
 
 #: ../../content/applications/websites/website/structure/seo.rst:78
 msgid ""
@@ -17545,10 +17572,17 @@ msgid ""
 "speed and, therefore, gives a better ranking in SEO. All images used in Odoo "
 "official :doc:`themes <../web_design/themes>` are also compressed by default."
 msgstr ""
+"En automático, Odoo comprime las imágenes que subes y las convierte a `Webp`"
+". En este formato las imágenes son más pequeñas, lo cual aumenta la "
+"velocidad de carga de la página y resulta en una mejor calificación SEO. "
+"Todas las imágenes que se usan en los :doc:`temas <../web_design/themes>` "
+"oficiales de Odoo también se comprimen de forma automática."
 
 #: ../../content/applications/websites/website/structure/seo.rst:106
 msgid "Third-party themes may not compress images efficiently."
 msgstr ""
+"Es posible que los temas de terceros no compriman las imágenes de forma "
+"eficiente."
 
 #: ../../content/applications/websites/website/structure/seo.rst:109
 msgid ""
@@ -17556,6 +17590,9 @@ msgid ""
 "click :guilabel:`Edit`, then go to the :guilabel:`Customize` tab, and adapt "
 "the :guilabel:`Format` in the :guilabel:`Image` section."
 msgstr ""
+"**Para modificar una imagen** de tu página web, selecciónala, haz clic en "
+":guilabel:`Editar`, luego ve a la pestaña :guilabel:`Personalizar` y ajusta "
+"el :guilabel:`formato` en la sección :guilabel:`Imagen`."
 
 #: ../../content/applications/websites/website/structure/seo.rst:113
 msgid ""
@@ -17584,6 +17621,11 @@ msgid ""
 "integrations/unsplash>` or upload any other image by clicking the :icon:`fa-"
 "upload` :guilabel:`(upload)` button."
 msgstr ""
+"Cuando compartes una página en redes sociales, el logo del sitio web se "
+"selecciona en automático, pero puedes buscar en la :doc:`biblioteca de "
+"imágenes Unsplash <../../../general/integrations/unsplash>` o subir "
+"cualquier otra imagen haciendo clic en el botón :icon:`fa-upload` :guilabel:`"
+"(subir)`."
 
 #: ../../content/applications/websites/website/structure/seo.rst:126
 msgid ""
@@ -17591,6 +17633,10 @@ msgid ""
 "Configuration --> Settings`. Under the :guilabel:`Tracking & SEO` section, "
 "enable :guilabel:`Default Social Share Image`."
 msgstr ""
+"Para definir una imagen predeterminada para compartir en redes sociales ve a "
+":menuselection:`Sitio web --> Configuración --> Ajustes` y selecciona la "
+"casilla :guilabel:`Imagen predeterminada al compartir en redes sociales` en "
+"la sección :guilabel:`Rastreo y SEO`."
 
 #: ../../content/applications/websites/website/structure/seo.rst:131
 msgid ""
@@ -17660,10 +17706,14 @@ msgid ""
 "SEO. While no platform can guarantee that rankings will remain unchanged, "
 "follow these best practices to significantly reduce the risk."
 msgstr ""
+"En la mayoría de los casos, migrar a Odoo no impactará el SEO del sitio web "
+"de forma negativa. Aunque ninguna plataforma puede garantizar que las "
+"clasificaciones no cambiarán, sigue estas mejores prácticas para reducir el "
+"riesgo lo más posible."
 
 #: ../../content/applications/websites/website/structure/seo.rst:161
 msgid "Keep the existing content."
-msgstr ""
+msgstr "Mantener el contenido existente."
 
 #: ../../content/applications/websites/website/structure/seo.rst:162
 msgid ""
@@ -17686,6 +17736,8 @@ msgid ""
 "By doing this, search engines reindex the site and maintain its visibility "
 "in search results."
 msgstr ""
+"Al hacer esto, los motores de búsqueda vuelve a indexar el sitio y mantienen "
+"su visibilidad en los resultados de búsqueda."
 
 #: ../../content/applications/websites/website/structure/seo.rst:170
 msgid "It is normal to experience a traffic decrease in the first days."

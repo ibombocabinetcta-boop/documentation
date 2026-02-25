@@ -33,7 +33,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-19 23:21+0000\n"
+"PO-Revision-Date: 2026-02-25 23:20+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/sales/es_419/>\n"
@@ -41,8 +41,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == "
-"0) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0)"
+" ? 1 : 2);\n"
 "X-Generator: Weblate 5.14.3\n"
 
 #: ../../content/applications/sales.rst:5
@@ -10138,16 +10138,21 @@ msgid ""
 "The **Epson TM-m30 i/ii/iii (Wi-Fi or Ethernet only) models** are strongly "
 "recommended, as they have been fully tested with Odoo Point of Sale."
 msgstr ""
+"Los modelos **Epson TM-m30 i/ii/iii (Wi-Fi o solo Ethernet)** son la opción "
+"recomendada, ya que son los que han sido probados por completo con Punto de "
+"venta de Odoo."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:32
 msgid ""
 "Other Wi-Fi or Ethernet Epson printer models that support the **ePoS "
 "protocol** should also be compatible."
 msgstr ""
+"Otros modelos de impresoras Epson con Wi-Fi o Ethernet que sean compatibles "
+"con el **protocolo ePoS** también son compatibles."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:36
 msgid "The ePoS printer must be capable of operating in HTTP mode."
-msgstr ""
+msgstr "La impresora ePoS debe operar en modo HTTP."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:37
 msgid ""
@@ -10156,6 +10161,10 @@ msgid ""
 "IP address**; otherwise, it may become unreachable. The static IP should be "
 "configured through the router."
 msgstr ""
+"Cuando uses :doc:`una red de área local (LNA) </applications/sales/"
+"point_of_sale/configuration/pos_lna>`, la impresora ePoS debe tener una **"
+"dirección IP estática**; de lo contrario, puede quedar inaccesible. "
+"Configura la IP estática en el router."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:45
 msgid "ePOS printers with IoT system integration"
@@ -10222,7 +10231,7 @@ msgstr ""
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:66
 #: ../../content/applications/sales/point_of_sale/configuration/epos_ssc.rst:19
 msgid ":doc:`pos_lna`"
-msgstr ""
+msgstr ":doc:`pos_lna`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:67
 msgid ":doc:`epos_ssc`"
@@ -10239,6 +10248,10 @@ msgid ""
 "recommended approach is to use the :doc:`Local Network Access <pos_lna>` "
 "method instead."
 msgstr ""
+"A partir de la `actualización 142 de Chromium <https://developer.chrome.com/"
+"release-notes/142>`_ ya no es necesario usar un certificado autofirmado. El "
+"proceso que se recomienda es usar un método :doc:`de acceso a la red local "
+"(LNA) <pos_lna>`."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_ssc.rst:12
 msgid ""
@@ -10248,6 +10261,12 @@ msgid ""
 "trying to reach the printer's IP address using HTTPS leads to a warning page "
 "on most web browsers."
 msgstr ""
+"Es probable que algunos modelos de impresora que se pueden usar sin un :doc:`"
+"sistema IoT </applications/general/iot>` necesiten un protocolo HTTPS para "
+"establecer una conexión segura entre el navegador y la impresora. Sin "
+"embargo, la mayoría de los navegadores te mostrarán una página de "
+"advertencia si intentas conectarse a la dirección IP de la impresora a "
+"través de HTTPS."
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_ssc.rst:22
 msgid "Generate, export, and import self-signed certificates"
@@ -11011,7 +11030,7 @@ msgstr "Una configuración sugerida para un sistema de punto de venta."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:5
 msgid "Local Network Access"
-msgstr ""
+msgstr "Acceso a la red local"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:7
 msgid ""
@@ -11024,6 +11043,15 @@ msgid ""
 "printers <pos/epos_printers/supported-printers>`, directly from the browser "
 "and without requiring an :doc:`SSL certificate <epos_ssc>`."
 msgstr ""
+"La `Local Network Access <https://developer.chrome.com/release-notes/"
+"142#local_network_access_restrictions>`_ es una función de seguridad que "
+"limita la capacidad de un sitio web para enviar solicitudes a servidores en "
+"una red local. El acceso requiere permiso explícito del usuario, lo que hace "
+"posible que se le permita acceso a la red a un sito web específico. Con LNA, "
+"el Punto de venta de Odoo se puede comunicar con dispositivos que tengan "
+"acceso local, como :ref:`impresoras ePOS compatibles <pos/epos_printers/"
+"supported-printers>`, directamente desde el navegador y sin necesitar un "
+":doc:`certificado SSL <epos_ssc>`."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:15
 msgid ""
@@ -11031,42 +11059,51 @@ msgid ""
 "version 142 <https://developer.chrome.com/release-notes/142>`_ or higher, "
 "including Google Chrome, Brave, Microsoft Edge, Vivaldi, and Opera."
 msgstr ""
+"El acceso a la red local está disponible para la mayoría de los navegadores "
+"que funcionen con la `versión 142 de Chromium <https://developer.chrome.com/"
+"release-notes/142>`_ o versiones más altas, incluyendo Google Chrome, Brave, "
+"Microsoft Edge, Vivaldi y Opera."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:20
 msgid ""
 "The ePOS printer must have a **static IP address**; otherwise, it may become "
 "unreachable. The static IP should be configured through the router."
 msgstr ""
+"La impresora ePOS debe tener una **dirección IP estática**, de lo contrario "
+"es posible que se pierda la conexión. La IP estática se debe configurar on "
+"un router."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:24
 msgid "Activation"
-msgstr ""
+msgstr "Activación"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:26
 msgid ""
 "To activate |LNA| and ensure POS uses it over a secure connection, create a "
 "new system parameter as follows:"
 msgstr ""
+"Para activar la LNA y asegurar que el PdV la usa con una conexión segura, "
+"crea un nuevo parámetro de sistema como se muestra a continuación:"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:29
 msgid ":ref:`Enable the developer mode <developer-mode>`."
-msgstr ""
+msgstr ":ref:`Activa el modo de desarrollador <developer-mode>`."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:30
 msgid "Go to :menuselection:`Settings --> Technical --> System Parameters`."
-msgstr ""
+msgstr "Ve a :menuselection:`Ajustes --> Técnicos --> Parámetros del sistema`."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:31
 msgid "Click :guilabel:`New` and fill in the fields:"
-msgstr ""
+msgstr "Haz clic en :guilabel:`Nuevo` y llena los campos:"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:33
 msgid ":guilabel:`Key`: `point_of_sale.use_lna`"
-msgstr ""
+msgstr ":guilabel:`Clave`: `point_of_sale.use_lna`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:34
 msgid ":guilabel:`Value`: `True`"
-msgstr ""
+msgstr ":guilabel:`Valor`: `True` (verdadero)"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:36
 #: ../../content/applications/sales/point_of_sale/payment_methods/terminals.rst:20
@@ -11082,7 +11119,7 @@ msgstr "Haga clic en :guilabel:`Guardar`."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:39
 msgid "Browser permission"
-msgstr ""
+msgstr "Permisos del navegador"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:41
 msgid ""
@@ -11091,32 +11128,42 @@ msgid ""
 "configured, the browser displays a popup requesting permission to "
 "communicate with the devices on the local network."
 msgstr ""
+"Cuando se activa el LNA en Odoo y se configura un dispositivo con acceso "
+"local, como una :ref:`impresora ePOS <pos/epos_printers/supported-printers>`"
+", el navegador mostrará una ventana emergente en la que se pedirá permiso "
+"para comunicarse con los dispositivos en la red local."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:None
 msgid "Permission popup to access local network devices"
 msgstr ""
+"Ventana emergente de permisos para que los dispositivos accedan a la red "
+"local"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:49
 msgid ""
 "If the popup does not appear, permission can be granted manually through the "
 "browser's site settings."
 msgstr ""
+"Si la ventana emergente no aparece, se puede otorgar permiso de forma manual "
+"desde los ajustes del navegador."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:51
 msgid "Some browsers may require enabling a flag to activate the feature:"
 msgstr ""
+"Es posible que algunos navegadores requieran activar un flag para activar "
+"esta función:"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:53
 msgid "Brave: `brave://flags/#local-network-access-check`"
-msgstr ""
+msgstr "Brave: `brave://flags/#local-network-access-check`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:54
 msgid "Google Chrome: `chrome://flags/#local-network-access-check`"
-msgstr ""
+msgstr "Google Chrome: `chrome://flags/#local-network-access-check`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:57
 msgid "Point of sale LNA status"
-msgstr ""
+msgstr "Estado LNA del Punto de venta"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:59
 msgid ""
@@ -11127,6 +11174,12 @@ msgid ""
 "current |LNA| status details are then displayed in the :guilabel:`LNA "
 "Permission status` popup."
 msgstr ""
+"Para ver el estado LNA del punto de venta. :ref:`abre <pos/use/open-"
+"register>` o accede a la caja registradora, haz clic en el icono :icon:`fa-"
+"bars` (:guilabel:`menú de hamburguesa`) en la esquina superior derecha y haz "
+"clic en el botón :guilabel:`Local Network Access` en la parte inferior del "
+"menú. Los detalles del estado LNA se muestran en la ventana emergente "
+":guilabel:`Estado del permiso LNA`."
 
 #: ../../content/applications/sales/point_of_sale/employee_login.rst:3
 msgid "Multi-employee management"
@@ -19849,28 +19902,34 @@ msgstr ":doc:`pricing/fiscal_position`"
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:161
 msgid "Launch on IoT Box"
-msgstr ""
+msgstr "Usar en la caja IoT"
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:162
 msgid ""
 "This option allows for using an :doc:`IoT Box <../../general/iot/iot_box>` "
 "connected to a touchscreen as a self-ordering kiosk."
 msgstr ""
+"Con esta opción se puede usar una :doc:`caja IoT <../../general/iot/iot_box>`"
+" conectada a una pantalla táctil como quiosco de auto pedido."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:165
 msgid ""
 ":doc:`Connect an IoT Box <../../general/iot/connect>` to your Odoo database."
 msgstr ""
+":doc:`Conecta una caja IoT <../../general/iot/connect>` a tu base de datos "
+"de Odoo."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:166
 msgid ""
 "Ensure a touchscreen :doc:`display <../../general/iot/devices/screen>` is "
 "connected"
 msgstr ""
+"Asegúrate de conectar una :doc:`pantalla táctil <../../general/iot/devices/"
+"screen>`."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:167
 msgid "Select the IoT Box from the :guilabel:`Launch on` field."
-msgstr ""
+msgstr "Selecciona la caja IoT en el campo :guilabel:`Ejecutar en`."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:170
 msgid ""
@@ -19878,6 +19937,9 @@ msgid ""
 "separate devices in the IoT box's list of devices: a display and a keyboard "
 "input device."
 msgstr ""
+"Una vez que esté conectada a la caja IoT, la pantalla táctil aparece como "
+"dos dispositivos separados en la lista de dispositivos de la caja IoT: una "
+"dispositivo de pantalla y de entrada de teclado."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:174
 msgid "Preview"
@@ -19950,7 +20012,7 @@ msgstr ""
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:203
 msgid "On the POS user's end, click :guilabel:`Start Kiosk`."
-msgstr ""
+msgstr "Del lado del usuario del PdV, haz clic en :guilabel:`Iniciar quiosco`."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:206
 msgid ""
@@ -19958,6 +20020,10 @@ msgid ""
 "directly on the connected touchscreen. Otherwise, it opens in a new browser "
 "tab on the device used to access it."
 msgstr ""
+"Si una caja IoT está configurada como quiosco, la interfaz de autopedido se "
+"abrirá directamente en la ventana táctil conectada. De lo contrario, se "
+"abrirá en una nueva ventana de navegador en el dispositivo que se usa para "
+"acceder a él."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:209
 msgid ""
@@ -19973,6 +20039,9 @@ msgid ""
 "interface in a new tab or to refresh the kiosk's IoT Box touchscreen display "
 "if it is already running."
 msgstr ""
+"Haz clic en :guilabel:`Abrir quiosco` en la tarjeta de PdV para volver a "
+"abrir la interfaz de autopedido en una pestaña nueva o para volver a cargar "
+"la pantalla táctil de la caja IoT si ya se está ejecutando."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:216
 msgid ""
@@ -19993,6 +20062,8 @@ msgid ""
 ":ref:`The POS register must be open <pos/use/open-register>` for customers "
 "to place an order."
 msgstr ""
+":ref:`La caja registradora del PdV debe estar abierta <pos/use/open-"
+"register>` para que los clientes puedan hacer una orden."
 
 #: ../../content/applications/sales/point_of_sale/self_order.rst:227
 msgid ""

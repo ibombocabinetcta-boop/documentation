@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-17 23:20+0000\n"
+"PO-Revision-Date: 2026-02-25 23:20+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/productivity/es_419/>\n"
@@ -38,8 +38,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == "
-"0) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n != 0 && n % 1000000 == 0)"
+" ? 1 : 2);\n"
 "X-Generator: Weblate 5.14.3\n"
 
 #: ../../content/applications/productivity.rst:5
@@ -1007,7 +1007,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/ai/document_sort.rst:3
 msgid "AI document sort"
-msgstr ""
+msgstr "Clasificación de documentos con IA"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:7
 msgid ""
@@ -1017,6 +1017,11 @@ msgid ""
 "Disclosure Agreements)`, and insurance files by automatically sorting them "
 "into folders, extracting key information, and triggering business actions."
 msgstr ""
+"La automatización de documentos con IA de Odoo permite clasificar, enrutar y "
+"procesar documentos con inteligencia artificial. Reduce la gestión manual de "
+"documentos como facturas, contratos, acuerdos de confidencialidad y archivos "
+"de seguros, ya que los ordena en carpetas, extrae información importante y "
+"activa acciones de la empresa."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:12
 msgid ""
@@ -1024,6 +1029,10 @@ msgid ""
 "where speed, accuracy, and traceability are critical, while still allowing "
 "human intervention when required."
 msgstr ""
+"Esta función está diseñada para trabajar con flujos de documentos "
+"repetitivos y de alto volumen donde la velocidad, la precisión y la "
+"trazabilidad son indispensables; además de que puedes intervenir de forma "
+"manual en caso de que sea necesario."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:16
 #: ../../content/applications/productivity/appointments.rst:16
@@ -1040,12 +1049,16 @@ msgid ""
 "To use the |AI| document automation, ensure the following requirements are "
 "met:"
 msgstr ""
+"Asegúrate de cumplir con los siguientes requisitos para usar la "
+"automatización de documentos con inteligencia artificial:"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:20
 msgid ""
 "The **Documents** application is installed, and the correct permissions are "
 "applied."
 msgstr ""
+"La aplicación **Documentos** debe estar instalada y es necesario que "
+"configures los permisos correctos."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:21
 msgid ""
@@ -1053,6 +1066,9 @@ msgid ""
 "**Purchase**, **Sales**, etc. The applications installed impact the prompts "
 "that are applied to the documents."
 msgstr ""
+"Las aplicaciones necesarias también deben estar instaladas. Estas pueden "
+"incluir **Contabilidad**, **Compras**, **Ventas** y otras. Las aplicaciones "
+"instaladas influyen en las instrucciones que podrás aplicar a los documentos."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:25
 msgid ""
@@ -1061,10 +1077,15 @@ msgid ""
 "dependent on the other apps installed in the database. For example, to "
 "create an invoice, the **Accounting** app must be installed."
 msgstr ""
+"No necesitas instalar la aplicación **IA** para usar la automatización de "
+"documentos. Sin embargo, los tipos de acciones de automatización con "
+"inteligencia artificial dependen del resto de las aplicaciones instaladas en "
+"la base de datos. Por ejemplo, la aplicación **Contabilidad** debe estar "
+"instalada para poder crear una factura."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:30
 msgid "Documents app overview"
-msgstr ""
+msgstr "Información general de la aplicación Documentos"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:32
 msgid ""
@@ -1072,6 +1093,9 @@ msgid ""
 "system similar to a shared drive. It is organized into the following "
 "workspaces at a minimum, though additional workspaces can be created:"
 msgstr ""
+"La aplicación **Documentos** funciona como un sistema centralizado de "
+"gestión documental, similar a una unidad compartida. Esta permite organizar, "
+"como mínimo, en los siguientes espacios de trabajo, aunque puedes crear más:"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:36
 #: ../../content/applications/productivity/documents.rst:10
@@ -1108,16 +1132,22 @@ msgid ""
 "shared with the user, but are not part of any parent folder they have access "
 "to."
 msgstr ""
+":icon:`fa-users` :guilabel:`Compartido conmigo`: Aquí se encuentran los "
+"archivos que se compartieron con el usuario, pero que no pertenecen a "
+"ninguna carpeta principal a la que el usuario tenga acceso."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:45
 msgid ""
 "Documents typically follow a workflow from the Inbox into structured "
 "folders, where |AI| automation and business actions are applied."
 msgstr ""
+"Los documentos suelen seguir un flujo desde la bandeja de entrada hacia "
+"carpetas estructuradas, donde el sistema aplica la automatización con IA y "
+"las acciones de la empresa."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:49
 msgid "AI auto sort overview"
-msgstr ""
+msgstr "Información general de clasificación automática con IA"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:51
 msgid ""
@@ -1128,14 +1158,21 @@ msgid ""
 "documents enter a folder, |AI| evaluates them according to the folder's "
 "prompt, and then performs the corresponding action."
 msgstr ""
+"La clasificación automática con IA funciona a nivel de carpeta. Cada una de "
+"las carpetas en la aplicación **Documentos** puede tener su propia lógica de "
+"automatización, lo que te permite diseñar flujos de documentos adaptados a "
+"tus procesos internos. En lugar de aplicar una sola regla global, la "
+"automatización avanza por etapas: los documentos entran en una carpeta, la "
+"IA los evalúa con las instrucciones de esa carpeta y luego ejecuta la acción "
+"correspondiente."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:None
 msgid "The AI prompt for a folder in the Documents app."
-msgstr ""
+msgstr "La instrucción para la IA de una carpeta en la aplicación Documentos."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:61
 msgid "Configuring prompts"
-msgstr ""
+msgstr "Configurar instrucciones"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:63
 msgid ""
@@ -1144,10 +1181,15 @@ msgid ""
 "left. Then, click the :icon:`fa-cog` :guilabel:`Actions` icon at the top of "
 "the page. Use the drop-down menu to select :guilabel:`AI Auto-sort`."
 msgstr ""
+"Para configurar una instrucción en una carpeta, ve a "
+":menuselection:`Documentos` y selecciona una carpeta en el árbol del lado "
+"izquierdo. Después, haz clic en el icono :icon:`fa-cog` :guilabel:`Acciones` "
+"ubicado en la parte superior de la página. Usa el menú desplegable y "
+"selecciona :guilabel:`Clasificación automática con IA`."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:None
 msgid "The actions menu in a folder within the Documents app."
-msgstr ""
+msgstr "El menú de acciones en una carpeta dentro de la aplicación Documentos."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:70
 msgid ""
@@ -1155,12 +1197,18 @@ msgid ""
 "agents/prompts-in-odoo>` that explains how documents should be interpreted "
 "and what should happen next."
 msgstr ""
+"En la ventana emergente *¿Qué quieres que haga la IA?*, redacta una :ref:`"
+"instrucción <ai/agents/prompts-in-odoo>` que explique cómo debe interpretar "
+"los documentos y qué debe suceder después."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:74
 msgid ""
 "Type `/` to utilize either :guilabel:`Field Selector` and :guilabel:`Records "
 "Selector` to insert fields or records to enhance the prompt."
 msgstr ""
+"Escribe `/` para usar el :guilabel:`selector de campos` y el :guilabel:`"
+"selector de registros` e insertar campos o registros que mejoren las "
+"instrucciones."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:77
 msgid ""
@@ -1168,6 +1216,9 @@ msgid ""
 "and select one or more actions from the drop-down menu. The available "
 "actions will vary based on the applications installed."
 msgstr ""
+"Abajo de la instrucción, haz clic en el campo :guilabel:`¿Qué acciones puede "
+"realizar la IA?` y selecciona una o más acciones del menú desplegable. Las "
+"acciones disponibles varían según las aplicaciones que estén instaladas."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:81
 msgid ""
@@ -1176,6 +1227,11 @@ msgid ""
 "vendor bills. This makes each folder both a storage location and a decision "
 "point in the workflow."
 msgstr ""
+"Según estas instrucciones, la IA puede mover documentos a otra carpeta, "
+"agregar etiquetas, activar actividades o crear registros empresariales como "
+"facturas de clientes o de proveedores. Así, cada carpeta funciona tanto como "
+"la ubicación de almacenamiento y como un punto de decisión dentro del flujo "
+"de trabajo."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:85
 msgid ""
@@ -1184,6 +1240,10 @@ msgid ""
 "For example, a folder may first verify whether a required value exists in "
 "the document before proceeding with automation."
 msgstr ""
+"Al configurar la instrucción principal puedes incluir instrucciones para "
+"realizar excepciones o gestionar pasos de validación antes de ejecutar la "
+"lógica principal. Por ejemplo, una carpeta puede verificar si existe un "
+"valor obligatorio en el documento antes de continuar con la automatización."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:90
 msgid ""
@@ -1191,6 +1251,10 @@ msgid ""
 "need to be manually split. They add the following instructions to the "
 "beginning their *Inbox* auto-sort prompt."
 msgstr ""
+"Un usuario quiere identificar los archivos PDF que contengan varias páginas "
+"y que requieren separación manual, así que agrega las siguientes "
+"indicaciones al inicio de la instrucción de clasificación automática de su *"
+"bandeja de entrada*."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:93
 msgid ""
@@ -1200,6 +1264,12 @@ msgid ""
 "we'll know we first need to manually split it into different files. If it is "
 "false, continue with the normal process`"
 msgstr ""
+"`Primero, revisa el archivo para confirmar si contiene un solo documento o "
+"si hay varios documentos en uno. Para realizar esta acción, usa el campo: Se "
+"considera de varias páginas. En caso de que sea verdadero, agrega la "
+"etiqueta \"Por dividir\" y detente ahí. Así sabremos que primero debemos "
+"dividirlo en distintos archivos. Si es falso, continúa con el proceso "
+"normal.`"
 
 #: ../../content/applications/productivity/ai/document_sort.rst:98
 msgid ""
@@ -1207,6 +1277,10 @@ msgid ""
 "Selector`. Under the :guilabel:`What actions can the AI take?` "
 "field, :guilabel:`AI: Add Tags` is selected."
 msgstr ""
+"En el :guilabel:`selector de campos`, la opción seleccionada es :guilabel:`"
+"Se considera de varias páginas`, mientras que en el campo :guilabel:`¿Qué "
+"acciones puede realizar la IA?` la opción seleccionada es :guilabel:`IA: "
+"Agregar etiquetas`."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:101
 msgid ""
@@ -1214,10 +1288,13 @@ msgid ""
 "indicating which documents need to be split. Adding this step to the "
 "beginning of the prompt ensures it is the |AI|'s first action."
 msgstr ""
+"Esta acción **no** divide el documento, pero agrega una etiqueta que indica "
+"qué documentos hay que separar. Colocar este paso al inicio de la "
+"instrucción garantiza que sea la primera acción que realiza la IA."
 
 #: ../../content/applications/productivity/ai/document_sort.rst:106
 msgid ":doc:`Documents App <../documents>`"
-msgstr ""
+msgstr ":doc:`Aplicación Documentos <../documents>`"
 
 #: ../../content/applications/productivity/ai/email-templates.rst:3
 msgid "AI in email templates"
@@ -10815,8 +10892,8 @@ msgid ""
 "to."
 msgstr ""
 ":icon:`fa-users` :guilabel:`Compartido conmigo`: Aquí se encuentran los "
-"archivos que se compartieron con el usuario, pero no pertenecen a ninguna "
-"carpeta principal a la que el usuario tenga acceso."
+"archivos que se compartieron con el usuario, pero que no pertenecen a "
+"ninguna carpeta principal a la que el usuario tenga acceso."
 
 #: ../../content/applications/productivity/documents.rst:18
 msgid ""
@@ -32554,11 +32631,11 @@ msgstr ""
 
 #: ../../content/applications/productivity/voip/axivox.rst:5
 msgid "Axivox"
-msgstr ""
+msgstr "Axivox"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:5
 msgid "Odoo Phone with Axivox"
-msgstr ""
+msgstr "Teléfono de Odoo con Avivox"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:7
 msgid ""
@@ -32566,6 +32643,9 @@ msgid ""
 "to work with Odoo **Phone**. An Axivox account is required to use this "
 "service."
 msgstr ""
+"`Axivox <https://www.axivox.com/>`__ es un proveedor de VoIP que se puede "
+"configurar para trabajar con **Teléfono** de Odoo. Se necesita tener una "
+"cuenta de Axivox para usar este servicio."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:10
 msgid ""
@@ -32581,12 +32661,17 @@ msgstr ""
 msgid ""
 "Before setting up an account with Axivox, verify the following requirements:"
 msgstr ""
+"Antes de configurar una cuenta con Axivox, verifica los requisitos a "
+"continuación:"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:17
 msgid ""
 "The business phone numbers are portable to Axivox. Some providers may be "
 "unable to release the phone number due to local or regional guidelines."
 msgstr ""
+"Los números de teléfono empresariales son portables a Axivox. Algunos "
+"proveedores no podrán dar el número de teléfono debido a regulaciones "
+"locales o regionales."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:19
 msgid ""
@@ -32594,16 +32679,21 @@ msgid ""
 "services. Axivox services are based in Europe, so international call "
 "performance may vary."
 msgstr ""
+"Las ubicaciones de la empresa y sus destinatarios de llamada se incluyen en "
+"los servicios de Axivox. Los servicios de Axivox se basan en Europa, por lo "
+"que el rendimiento de las llamadas internacionales puede variar."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:25
 msgid ""
 "To configure Axivox services in the Odoo database, first :ref:`install "
 "<general/install>` the **Phone** app."
 msgstr ""
+"Para configurar los servicios de Axivox en la base de datos de Odoo, primero "
+":ref:`instala <general/install>` la aplicación **Teléfono**."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:31
 msgid "View credentials in Axivox"
-msgstr ""
+msgstr "Ver credenciales en Axivox"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:33
 msgid ""
@@ -32612,6 +32702,10 @@ msgid ""
 "--> Edit`. Click the **SIP Identifiers** tab to see the domain, SIP "
 "username, and SIP password."
 msgstr ""
+"Para ver las credenciales Axivox necesarias, ve a `manage.axivox.com "
+"<https://manage.axivox.com/>`_ e inicia sesión, después ve a :menuselection:`"
+"Usuarios --> Editar`. Haz clic en la pestaña **Identificadores SIP** para "
+"ver el dominio, el nombre de usuario SIP y la contraseña SIP."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:None
 msgid "SIP credentials in the Axivox manager."
@@ -32619,7 +32713,7 @@ msgstr "Credenciales SIP en el gestor Axivox."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:41
 msgid "Add Axivox credentials"
-msgstr ""
+msgstr "Agregar credenciales de Axivox"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:43
 msgid ""
@@ -32627,6 +32721,10 @@ msgid ""
 "the :menuselection:`Phone app --> Configuration --> Providers`. Locate the "
 "*Axivox* provider entry, and enter the following information:"
 msgstr ""
+"Después de :ref:`instalar <general/install>` el móduglo *Teléfono - Axivox* "
+"ve a :menuselection:`la aplicación Teléfono --> Configuración --> "
+"Proveedores`. Ubica el registro del proveedor *Axivox* e ingresa la "
+"información a continuación:"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:47
 msgid ""
@@ -32634,20 +32732,23 @@ msgid ""
 "account on `Axivox <https://manage.axivox.com/>`__. Replace `YOURACCOUNT` "
 "with the company account name."
 msgstr ""
+":guilabel:`Dominio OnSIP`: El dominio que se asignó al crear una cuenta en `"
+"Axivox <https://manage.axivox.com/>`__. Reemplaza `TUCUENTA` con el nombre "
+"de cuenta de la empresa."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:49
 #: ../../content/applications/productivity/voip/didww.rst:92
 #: ../../content/applications/productivity/voip/onsip.rst:54
 msgid ":guilabel:`VoIP Environment`: select :guilabel:`Production`."
-msgstr ""
+msgstr ":guilabel:`Entorno VoIP`: Selecciona :guilabel:`Producción`."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:None
 msgid "Axivox configuration settings in the *Odoo Phone* app."
-msgstr ""
+msgstr "Ajustes de configuración de Axivox en la aplicación *Teléfono de Odoo*."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:55
 msgid "Add user credentials"
-msgstr ""
+msgstr "Agregar las credenciales de los usuarios"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:57
 msgid ""
@@ -32655,28 +32756,37 @@ msgid ""
 "to :menuselection:`Settings app --> Users & Companies --> Users` select the "
 "user, and click the :guilabel:`VoIP` tab."
 msgstr ""
+"Después, las credenciales de cada usuario de Axivox se deben configurar en "
+"Odoo. Ve a :menuselection:`la aplicación Ajustes --> Usuarios y empresas --> "
+"Usuarios` selecciona al usuario y haz clic en la pestaña :guilabel:`VoIP`."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:61
 msgid ""
 "Add the following :ref:`Axivox credentials <productivity/voip/view-axivox-"
 "credentials>` for the user:"
 msgstr ""
+"Agrega las :ref:`credenciales de Axivox <productivity/voip/view-axivox-"
+"credentials>` a continuación para el usuario:"
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:64
 msgid ":guilabel:`Provider`: select :guilabel:`Axivox`."
-msgstr ""
+msgstr ":guilabel:`Proveedor`: Selecciona :guilabel:`Axivox`."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:65
 msgid ":guilabel:`Username`: the Axivox :guilabel:`SIP username`."
 msgstr ""
+":guilabel:`Nombre de usuario`: :guilabel:`El nombre de usuario SIP` de "
+"Axivox."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:66
 msgid ":guilabel:`OnSip Auth Username`: the Axivox :guilabel:`SIP username`."
 msgstr ""
+":guilabel:`Nombre de usuario OnSip Auth`: El :guilabel:`el nombre de usuario "
+"SIP` de Axivox."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:67
 msgid ":guilabel:`Secret`: the Axivox :guilabel:`SIP password`."
-msgstr ""
+msgstr ":guilabel:`Secreto`: La :guilabel:`contraseña SIP` de Axivox."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:70
 msgid ""
@@ -32684,10 +32794,13 @@ msgid ""
 "user's :guilabel:`Preferences` tab. Pasting the value causes a `401 server "
 "rejection error`."
 msgstr ""
+"Asegúrate de escribir de forma manual la :guilabel:`contraseña SIP` en la "
+"pestaña :guilabel:`Preferencias` del usuario. Pegar el valor causará un `"
+"error 401 del servidor`."
 
 #: ../../content/applications/productivity/voip/axivox/axivox_config.rst:None
 msgid "Axivox credentials in the user profile."
-msgstr ""
+msgstr "Las credenciales de Axivox en el perfil del usuario."
 
 #: ../../content/applications/productivity/voip/axivox/call_queues.rst:3
 msgid "Call queues"
@@ -37085,6 +37198,10 @@ msgid ""
 "costs, and employees can work from anywhere in the world, so long as they "
 "have a broadband internet connection."
 msgstr ""
+"La aplicación **Teléfono** se puede usar en varios dispositivos, como una "
+"computadora, tableta, teléfono celular y muchos más. Esto es útil ya que "
+"reduce costos y los empleados pueden trabajar desde cualquier parte del "
+"mundo, siempre y cuado tengan una conexión de banda ancha a internet."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:9
 msgid ""
@@ -37092,24 +37209,35 @@ msgid ""
 "it can be used with *any* :abbr:`SIP (Session Initiation Protocol)` "
 "compatible application."
 msgstr ""
+"La aplicación **Teléfono** de Odoo es compatible con SIP "
+"(Protocolo de inicio de sesión, por sus siglas en inglés), lo que quiere "
+"decir que se puede usar con *cualquier* aplicación compatible con :abbr:`SIP "
+"(Protocolo de inicio de sesión)`."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:12
 msgid ""
 "This document covers the process of setting up *Odoo Phone* across different "
 "devices and integrations."
 msgstr ""
+"Este documento trata sobre el proceso de configuración de la aplicación *"
+"Teléfono de Odoo* en diferentes dispositivos e integraciones."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:15
 msgid ""
 "The **Phone** app is fully integrated with all Odoo apps, allowing users to "
 "click into any app, and schedule a call as an activity in the chatter."
 msgstr ""
+"La aplicación **Teléfono** está completamente integrada con todas las "
+"aplicaciones de Odoo, por lo que los usuarios pueden ingresar a cualquier "
+"aplicación y programar una llamada como actividad en el chatter."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:19
 msgid ""
 "For example, in the **CRM** app, a user can click into an opportunity, and "
 "click on :guilabel:`Activities` in the chatter."
 msgstr ""
+"Por ejemplo, en la aplicación **CRM**, un usuario puede hacer clic en una "
+"oportunidad y luego en :guilabel:`Actividades` en el chatter."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:22
 msgid ""
@@ -37130,15 +37258,19 @@ msgid ""
 "Should the :guilabel:`Due Date` be for today's date, the activity shows up "
 "in the **Phone** widget."
 msgstr ""
+"Si la :guilabel:`Fecha límite` es para la fecha de hoy, la actividad se "
+"mostrará en el widget de **Teléfono**."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:0
 msgid ""
 "View of CRM leads and the option to schedule an activity for *Odoo Discuss*."
 msgstr ""
+"Vista de los leads en CRM y la opción para programar una actividad en la "
+"aplicación *Conversaciones de Odoo*."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:33
 msgid "Use Odoo Phone on a computer"
-msgstr ""
+msgstr "Usar Teléfono de Odoo en una computadora"
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:35
 msgid ""
@@ -37147,16 +37279,23 @@ msgid ""
 "icon icon in the upper-right corner, while in the Odoo database, and the "
 "widget appears."
 msgstr ""
+"La aplicación y el widget de **Teléfono** de Odoo se pueden usar desde "
+"cualquier navegador en una computadora portátil o de escritorio. Solo haz "
+"clic en el icono :icon:`oi-voip` :guilabel:`(Teléfono)` en la esquina "
+"superior derecha dentro de tu base de datos de Odoo para que aparezca el "
+"widget."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:40
 msgid ""
 "To see how to use the *Phone* widget on a desktop/laptop computer, check out "
 "this documentation: :doc:`voip_widget`."
 msgstr ""
+"Para aprender a usar el widget de *Teléfono* en una computadora portátil o "
+"de escritorio, consulta esta documentación: :doc:`voip_widget`."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:44
 msgid "Use Odoo Phone on a mobile device"
-msgstr ""
+msgstr "Usar Teléfono de Odoo en un dispositivo móvil"
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:47
 msgid ""
@@ -37168,10 +37307,17 @@ msgid ""
 "like Zoiper, should be used. Apps like that stay connected in the background "
 "at all times."
 msgstr ""
+"Aunque las llamadas salientes se pueden realizar usando Odoo en un "
+"dispositivo móvil, la aplicación **Teléfono** de Odoo **no** suena con "
+"llamadas entrantes. Si el usuario necesita poder responder llamadas en un "
+"dispositivo en todo momento, se debe usar una aplicación, como Zoiper. Estas "
+"aplicaciones se mantienen conectadas en todo momento."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:53
 msgid "For more information, see :ref:`the Zoiper Lite section <voip/zoiper>`."
 msgstr ""
+"Para más información, consulta :ref:`la sección de Zoiper Lite <voip/"
+"zoiper>`."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:55
 msgid ""
@@ -37179,6 +37325,9 @@ msgid ""
 "Odoo Android or Apple iOS applications. Additionally, a mobile web browser "
 "can be used to access the database."
 msgstr ""
+"La aplicación **Teléfono** de Odoo se puede usar en tabletas y teléfonos "
+"celulares, con la aplicación de Odoo para Android o Apple iOS. Además, se "
+"puede usar un navegador web móvil para acceder a la base de datos."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:59
 msgid ""
@@ -37186,6 +37335,10 @@ msgid ""
 "Odoo on the Android and Apple portals. This means Odoo support only handles "
 "limited scopes of Odoo Android or Apple iOS support tickets."
 msgstr ""
+"La aplicación de Odoo para Android y Apple iOS ya no recibe mantenimiento "
+"por parte de Odoo en los portales de Android y Apple, lo que significa que "
+"nuestro equipo de soporte solo se encarga de un alcance limitado en los "
+"tickets que reciben sobre Odoo en Android o en Apple iOS."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:63
 msgid ""
@@ -37193,6 +37346,10 @@ msgid ""
 "**Phone** widget, by tapping on the :icon:`oi-voip` :guilabel:`(Phone)` icon "
 "in the top-right corner. The widget appears in the lower-left corner."
 msgstr ""
+"En la aplicación móvil desde un dispositivo móvil o tableta para acceder al "
+"widget **Teléfono** presiona el icono :icon:`oi-voip` :guilabel:`(Teléfono)` "
+"en la esquina superior derecha. El widget aparece en la esquina inferior "
+"izquierda."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:67
 msgid ""
@@ -37225,6 +37382,11 @@ msgid ""
 "box next to :guilabel:`Remember ?` should this decision be the default "
 "moving forward."
 msgstr ""
+"Después, Odoo le preguntará cómo realizar la llamada. Las dos opciones "
+"disponibles son :guilabel:`VoIP` o :guilabel:`Teléfono` (en caso de que la "
+"tableta este habilitada para realizar y recibir llamadas). Seleccione la "
+"casilla junto a :guilabel:`Recordar` si desea que esta decisión sea la que "
+"se use de forma predeterminada después."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:None
 msgid ""
@@ -37238,6 +37400,8 @@ msgstr ""
 msgid ""
 "Here is the layout of what the **Phone** app looks like on a mobile device:"
 msgstr ""
+"Este es un diseño de cómo se ve la aplicación **Teléfono** en un dispositivo "
+"móvil:"
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:None
 msgid "Layout of what the VoIP app looks like on the a mobile device."
@@ -37253,12 +37417,18 @@ msgid ""
 "Zoiper Lite is a free :abbr:`VoIP (Voice over Internet Protocol)` :abbr:`SIP "
 "(Session Initiation Protocol)` dialer with voice and video."
 msgstr ""
+"Zoiper Lite es un softphone gratuito de :abbr:`VoIP "
+"(voz sobre protocolo de internet)` y :abbr:`SIP "
+"(Protocolo de inicio de sesión)` que cuenta con funciones de voz y video."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:99
 msgid ""
 "To start using the Zoiper app, download it to the device, via the `Zoiper "
 "download page <https://www.zoiper.com/en/voip-softphone/download/current>`_."
 msgstr ""
+"Para comenzar a usar la aplicación Zoiper deberá descargarla en el "
+"dispositivo desde la `página de descarga de Zoiper <https://www.zoiper.com/"
+"en/voip-softphone/download/current>`_."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:102
 msgid ""
@@ -37266,6 +37436,9 @@ msgid ""
 "how to set up on the Zoiper iOS application. Screenshots and steps may "
 "differ depending on the setup conditions."
 msgstr ""
+"La instalación más común se realiza en dispositivos móviles y este documento "
+"menciona cómo configurar la aplicación Zoiper en iOS. Las capturas de "
+"pantalla y los pasos pueden variar según las condiciones de configuración."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:105
 msgid ""
@@ -37274,6 +37447,9 @@ msgid ""
 "to :menuselection:`Accounts`, and tap on the :guilabel:`+ (plus)` icon to "
 "add an account."
 msgstr ""
+"Después de instalar la aplicación Zoiper en el celular, ábrala y presione "
+":guilabel:`Ajustes`. Vaya a :menuselection:`Cuentas` y toque el icono "
+":guilabel:`+ (más)` para agregar una."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:109
 msgid ""
@@ -37308,6 +37484,8 @@ msgid ""
 "If the provider being configured is Axivox, select :guilabel:`Belgium`. "
 "Then, choose :guilabel:`Axivox` as the provider."
 msgstr ""
+"Si el proveedor que está configurando es Axivox, seleccione "
+":guilabel:`Bélgica` y luego elige :guilabel:`Axivox` como el proveedor."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:None
 msgid "Zoiper account setup, choosing the provider."
@@ -37331,6 +37509,11 @@ msgid ""
 "The :guilabel:`SIP username`, :guilabel:`Domain`, :guilabel:`SIP password`, "
 "and :guilabel:`Address of the proxy server` are all present in this tab."
 msgstr ""
+"Para acceder a esta información desde el portal de Axivox, ve a "
+":menuselection:`Usuarios --> Elige el usuario --> Editar --> Pestaña "
+"Identificadores SIP`. El :guilabel:`Nombre de usuario SIP`, "
+":guilabel:`Dominio`, :guilabel:`Contraseña SIP` y :guilabel:`Dirección del "
+"servidor proxy` se encuentran en esta pestaña."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:141
 msgid "Zoiper Field"
@@ -37386,6 +37569,8 @@ msgid ""
 "At this point, Zoiper can now make phone calls using the :abbr:`VoIP (Voice "
 "over Internet Protocol)` service."
 msgstr ""
+"Ahora Zoiper se puede usar para realizar llamadas de teléfono con el "
+"servicio :abbr:`VoIP (protocolo de voz por internet)`."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:None
 msgid "Zoiper account setup, registration successful."
@@ -37401,6 +37586,10 @@ msgid ""
 "Protocol)` :abbr:`SIP (Session Initiation Protocol)` softphone, used for "
 "voice, video, messaging (group and individual), as well as conference calls."
 msgstr ""
+"Linphone es un softphone de :abbr:`VoIP (Voz sobre protocolo de internet)` y "
+":abbr:`SIP (Protocolo de inicio de sesión)` de código abierto. Se utiliza "
+"para llamadas de voz y video, mensajería (grupal e individual), así como "
+"para conferencias telefónicas."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:170
 msgid ""
@@ -37408,6 +37597,9 @@ msgid ""
 "`Linphone download page <https://new.linphone.org/technical-corner/linphone?"
 "qt-technical_corner=2#qt-technical_corner>`_."
 msgstr ""
+"Para comenzar a usar la aplicación Linphone, descárgala en el dispositivo "
+"desde la `página de descarga de Linphone <https://new.linphone.org/"
+"technical-corner/linphone?qt-technical_corner=2#qt-technical_corner>`_."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:173
 msgid ""
@@ -37415,12 +37607,18 @@ msgid ""
 "how to set up the Linphone iOS application. Screenshots and steps may differ "
 "depending on the circumstances."
 msgstr ""
+"La instalación más común se realiza en dispositivos móviles y este documento "
+"menciona cómo configurar la aplicación Linphone en iOS. Las capturas de "
+"pantalla y los pasos pueden variar según las circunstancias."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:176
 msgid ""
 "To begin configuring Linphone for use with a :abbr:`SIP (Session Initiation "
 "Protocol)` provider, first open Linphone, and an assistant screen appears."
 msgstr ""
+"Para comenzar a configurar Linphone para su uso con un proveedor de :abbr:`"
+"SIP (Protocolo de inicio de sesión)` primero deberás abrir la aplicación y "
+"aparecerá una pantalla de asistente."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:179
 msgid ""
@@ -37441,6 +37639,9 @@ msgid ""
 "green button at the top of the application screen that "
 "reads, :guilabel:`Connected`."
 msgstr ""
+"En ese momento Linphone está listo para realizar llamadas. Debe aparecer un "
+"botón verde en la parte superior de la pantalla de la aplicación con el "
+"texto :guilabel:`Conectado`."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:None
 msgid "Linphone account setup, registration successful."
@@ -37453,6 +37654,10 @@ msgid ""
 "Linphone is an open-source project, many new updates are released on a "
 "regular basis."
 msgstr ""
+"Linphone ofrece una variedad de aplicaciones para dispositivos móviles y de "
+"escritorio en sistemas operativos como Windows, Linux, Apple y Android. "
+"Además, como Linphone es un proyecto de código abierto, con frecuencia hay "
+"nuevas actualizaciones."
 
 #: ../../content/applications/productivity/voip/devices_integrations.rst:195
 msgid ""
@@ -37464,7 +37669,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/voip/didww.rst:6
 msgid "Odoo Phone with DIDWW"
-msgstr ""
+msgstr "Teléfono de Odoo con DIDWW"
 
 #: ../../content/applications/productivity/voip/didww.rst:8
 msgid ""
@@ -37472,31 +37677,41 @@ msgid ""
 "provider that can be set up to work with Odoo **Phone**. A DIDWW account is "
 "required to use this service."
 msgstr ""
+"`DIDWW <https://www.didww.com/>`_ es un proveedor global de canalización "
+"VoIP y SIP que se puede configurar para trabajar con **Teléfono** de Odoo. "
+"Se requiere una cuenta DIDWW para usar este servicio."
 
 #: ../../content/applications/productivity/voip/didww.rst:12
 msgid ""
 "Before setting up an account with DIDWW, verify the following requirements:"
 msgstr ""
+"Antes de configurar una cuenta con DIDWW, verifica las solicitudes a "
+"continuación:"
 
 #: ../../content/applications/productivity/voip/didww.rst:14
 msgid ""
 "The business phone numbers are portable to DIDWW. Some providers may be "
 "unable to release the phone number due to local or regional guidelines."
 msgstr ""
+"Los números telefónicos empresariales se pueden transferir a DIDWW. Es "
+"posible que algunos proveedores no puedan liberar el número telefónico por "
+"normas locales o regionales."
 
 #: ../../content/applications/productivity/voip/didww.rst:16
 msgid ""
 "The locations of the company and its call recipients are covered by DIDWW "
 "services."
 msgstr ""
+"Las ubicaciones de la empresa y los receptores de las llamadas los cubren "
+"los servicios de DIDWW."
 
 #: ../../content/applications/productivity/voip/didww.rst:19
 msgid "Configure credentials in DIDWW"
-msgstr ""
+msgstr "Configura credenciales en DIDWW"
 
 #: ../../content/applications/productivity/voip/didww.rst:21
 msgid "Navigate to the `DIDWW Dashboard <https://my.didww.com/#/dashboard>`_."
-msgstr ""
+msgstr "Ve al `tablero de DIDWW <https://my.didww.com/#/dashboard>`_."
 
 #: ../../content/applications/productivity/voip/didww.rst:23
 msgid ""
@@ -37602,6 +37817,10 @@ msgid ""
 "DIDWW. Contact the DIDWW sales team sales@didww.com to allow traffic "
 "encryption for your account."
 msgstr ""
+"El cifrado de medios SRTP y el transporte SIP TLS están desactivados de "
+"forma predeterminada en DIDWW. Comunícate con el equipo de ventas de DIDWW a "
+"través del correo sales@didww.com para activar el cifrado de tráfico en tu "
+"cuenta."
 
 #: ../../content/applications/productivity/voip/didww.rst:None
 msgid "The settings for a new contact method in DIDWW."
@@ -37626,6 +37845,8 @@ msgid ""
 "Lastly, verify that the DID number is selected in the *Inbound Calls* "
 "section of the |SIP| Device Route settings."
 msgstr ""
+"Por último, verifica que seleccionaste el número DID en la sección *Llamadas "
+"entrantes* de los ajustes de la ruta del dispositivo SIP."
 
 #: ../../content/applications/productivity/voip/didww.rst:None
 msgid "The DID numbers field in DIDWW."
@@ -37633,11 +37854,11 @@ msgstr "El campo de números DID en DIDWW."
 
 #: ../../content/applications/productivity/voip/didww.rst:82
 msgid "Configure DIDWW in Odoo"
-msgstr ""
+msgstr "Configurar DIDWW en Odoo"
 
 #: ../../content/applications/productivity/voip/didww.rst:85
 msgid "Add DIDWW credentials"
-msgstr ""
+msgstr "Agregar credenciales DIDWW"
 
 #: ../../content/applications/productivity/voip/didww.rst:87
 msgid ""
@@ -37645,24 +37866,27 @@ msgid ""
 "to :menuselection:`Phone app --> Configuration --> Providers`. Locate the "
 "*DIDWW* provider entry, and verify the following settings:"
 msgstr ""
+"Para configurar DIDWW como un proveedor de VoIP en Odoo, ve a "
+":menuselection:`la aplicación Teléfono --> Configuración --> Proveedores`. "
+"Ubica el registro *DIDWW* y verifica los ajustes a continuación:"
 
 #: ../../content/applications/productivity/voip/didww.rst:90
 msgid ":guilabel:`OnSIP Domain`: should already be set to `sip.phone.systems`."
-msgstr ""
+msgstr ":guilabel:`Dominio OnSIP`: Ya debería ser `sip.phone.systems`."
 
 #: ../../content/applications/productivity/voip/didww.rst:91
 msgid ""
 ":guilabel:`WebSocket`: should already be set to `wss://sip.phone.systems`."
-msgstr ""
+msgstr ":guilabel:`WebSocket`: Ya debe ser `wss://sip.phone.systems`."
 
 #: ../../content/applications/productivity/voip/didww.rst:None
 msgid "DIDWW configuration settings in the *Odoo Phone* app."
-msgstr ""
+msgstr "Los ajustes de DIDWW en la aplicación *Teléfono de Odoo*."
 
 #: ../../content/applications/productivity/voip/didww.rst:98
 #: ../../content/applications/productivity/voip/onsip.rst:60
 msgid "Configure user settings"
-msgstr ""
+msgstr "Configurar los ajustes del usuario"
 
 #: ../../content/applications/productivity/voip/didww.rst:100
 msgid ""
@@ -37670,18 +37894,21 @@ msgid ""
 "to :menuselection:`Settings app --> Users & Companies --> Users` select the "
 "user, and click the **VoIP** tab."
 msgstr ""
+"Después, las credenciales OnSIP del usuario se deben configurar en Odoo. Ve "
+"a :menuselection:`la aplicación Ajustes --> Usuarios y Empresas --> Usuarios`"
+", selecciona al usuario y abre la pestaña **VoIP**."
 
 #: ../../content/applications/productivity/voip/didww.rst:103
 msgid "Add the following credentials for the user:"
-msgstr ""
+msgstr "Agrega las siguientes credenciales al usuario:"
 
 #: ../../content/applications/productivity/voip/didww.rst:105
 msgid ":guilabel:`Username`: the user's DIDWW username."
-msgstr ""
+msgstr ":guilabel:`Nombre de usuario`: El nombre de usuario de DIDWW."
 
 #: ../../content/applications/productivity/voip/didww.rst:106
 msgid ":guilabel:`Secret`: the user's password."
-msgstr ""
+msgstr ":guilabel:`Secreto`: La contraseña del usuario."
 
 #: ../../content/applications/productivity/voip/didww.rst:108
 msgid ""
@@ -37689,16 +37916,22 @@ msgid ""
 "Odoo **Phone** by clicking the :icon:`oi-voip` :guilabel:`(Show Softphone)` "
 "icon in the top-right corner of Odoo."
 msgstr ""
+"Una vez que hayas guardado las credenciales DIDWW, el usuario podrá hacer "
+"llamadas con la aplicación **Teléfono** de Odoo si hace clic en el icono "
+":icon:`oi-voip` :guilabel:`(Mostrar Softphone)` en la esquina superior "
+"derecha."
 
 #: ../../content/applications/productivity/voip/didww.rst:112
 msgid ""
 "For additional setup and troubleshooting steps, see `DIDWW's documentation "
 "<https://doc.didww.com/>`_."
 msgstr ""
+"Para configuración adicional y pasos para solucionar problemas, consulta la `"
+"documentación de DIDWW <https://doc.didww.com/>`_."
 
 #: ../../content/applications/productivity/voip/onsip.rst:5
 msgid "Odoo Phone with OnSIP"
-msgstr ""
+msgstr "Teléfono de Odoo con OnSIP"
 
 #: ../../content/applications/productivity/voip/onsip.rst:7
 msgid ""
@@ -37706,23 +37939,33 @@ msgid ""
 "set up to work with *Odoo Phone*. An OnSIP account is required to use this "
 "service."
 msgstr ""
+"`OnSIP <https://info.onsip.com/odoo/>`__ es un proveedor de VoIP que se "
+"puede configurar para funcionar con la aplicación *Teléfono de Odoo*. Se "
+"requiere una cuenta OnSIP para usar este servicio."
 
 #: ../../content/applications/productivity/voip/onsip.rst:11
 msgid ""
 "Before setting up an account with OnSIP, verify the following requirements:"
 msgstr ""
+"Antes de configurar una cuenta con OnSIP, verifica los requisitos a "
+"continuación:"
 
 #: ../../content/applications/productivity/voip/onsip.rst:13
 msgid ""
 "The business phone numbers are portable to OnSIP. Some providers may be "
 "unable to release the phone number due to local or regional guidelines."
 msgstr ""
+"Los números de teléfono empresariales se pueden pasar a OnSIP. Algunos "
+"proveedores no podrán liberar un número de teléfono debido a normas locales "
+"o regionales."
 
 #: ../../content/applications/productivity/voip/onsip.rst:15
 msgid ""
 "The locations of the company and its call recipients are covered by OnSIP "
 "services."
 msgstr ""
+"Las ubicaciones de la empresa y todos los destinatarios de las llamadas se "
+"incluyen en los servicios de OnSIP."
 
 #: ../../content/applications/productivity/voip/onsip.rst:17
 msgid ""
@@ -37731,20 +37974,26 @@ msgid ""
 "credit card are required to use the service. Pricing may vary in Alaska or "
 "Hawaii."
 msgstr ""
+"Los servicios de VoIP de OnSIP solo están disponibles en los Estados Unidos, "
+"necesitas tener una dirección de facturación y una tarjeta de crédito de los "
+"Estados Unidos para poder usar este servicio. Los precios pueden cambiar "
+"para Alaska o Hawaii."
 
 #: ../../content/applications/productivity/voip/onsip.rst:22
 msgid "Configure OnSIP in Odoo"
-msgstr ""
+msgstr "Configurar OnSIP en Odoo"
 
 #: ../../content/applications/productivity/voip/onsip.rst:24
 msgid ""
 "To configure OnSIP services in the Odoo database, first :ref:`install "
 "<general/install>` the *Phone* app."
 msgstr ""
+"Para configurar los servicios OnSIP en la base de datos de Odoo, primero "
+":ref:`instala <general/install>` la aplicación *Teléfono*."
 
 #: ../../content/applications/productivity/voip/onsip.rst:30
 msgid "View credentials in OnSIP"
-msgstr ""
+msgstr "Ver credenciales en OnSIP"
 
 #: ../../content/applications/productivity/voip/onsip.rst:32
 msgid ""
@@ -37752,18 +38001,26 @@ msgid ""
 "www.onsip.com/>`__ and log in, then click the :guilabel:`Administrators` "
 "link in the top-right corner of the page."
 msgstr ""
+"Para ver las credenciales OnSIP necesarias, ve a `OnSIP <https://"
+"www.onsip.com/>`__ e inicia sesión. Después, haz clic en el enlace "
+":guilabel:`Administradores` en la esquina superior derecha de la página."
 
 #: ../../content/applications/productivity/voip/onsip.rst:35
 msgid ""
 "Next, in the menu on the left-hand side, click :guilabel:`Users` and select "
 "the user to be configured. The :guilabel:`USER INFO` tab opens to the right."
 msgstr ""
+"Después, en el menú del lado izquierdo, haz clic en los :guilabel:`Usuarios` "
+"y selecciona al usuario que quieras configurar. Se abrirá la pestaña "
+":guilabel:`INFORMACIÓN DEL USUARIO` a la derecha."
 
 #: ../../content/applications/productivity/voip/onsip.rst:38
 msgid ""
 "Click on the :guilabel:`Phone Settings` tab to view OnSIP configuration "
 "credentials."
 msgstr ""
+"Haz clic en la pestaña :guilabel:`Ajustes de Teléfono` para ver la "
+"configuración de credenciales OnSIP."
 
 #: ../../content/applications/productivity/voip/onsip.rst:None
 msgid ""
@@ -37777,7 +38034,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/voip/onsip.rst:46
 msgid "Add OnSIP credentials"
-msgstr ""
+msgstr "Agregar credienciales OnSIP"
 
 #: ../../content/applications/productivity/voip/onsip.rst:48
 msgid ""
@@ -37785,6 +38042,10 @@ msgid ""
 "the :menuselection:`Phone app --> Configuration --> Providers`. Locate the "
 "*OnSIP* provider entry, and enter the following information:"
 msgstr ""
+"Después de :ref:`instalar <general/install>` el módulo *Teléfono - OnSIP*, "
+"ve a :menuselection:`la aplicación Teléfono --> Configuración --> "
+"Proveedores`. Encuentra el registro del proveedor *OnSIP* e ingresa la "
+"información a continuación:"
 
 #: ../../content/applications/productivity/voip/onsip.rst:52
 msgid ""
@@ -37792,10 +38053,13 @@ msgid ""
 "account on `OnSIP <https://www.onsip.com/>`__. Replace `YOURACCOUNT` with "
 "the company account name."
 msgstr ""
+":guilabel:`Dominio OnSIP`: El dominio que se asignó al crear una cuenta en `"
+"OnSIP <https://www.onsip.com/>`__. Reemplaza `TUCUENTA` con el nombre de la "
+"cuenta de la empresa."
 
 #: ../../content/applications/productivity/voip/onsip.rst:None
 msgid "OnSIP configuration settings in the *Odoo Phone* app."
-msgstr ""
+msgstr "Los ajustes de configuración OnSIP en la aplicación *Teléfono de Odoo*."
 
 #: ../../content/applications/productivity/voip/onsip.rst:62
 msgid ""
@@ -37803,28 +38067,36 @@ msgid ""
 "to :menuselection:`Settings app --> Users & Companies --> Users` select the "
 "user, and click the *VoIP* tab."
 msgstr ""
+"Después, las credenciales OnSIP del usuario se deben configurar en Odoo. Ve "
+"a :menuselection:`la aplicación Ajustes --> Usuarios y Empresas --> Usuarios`"
+", selecciona al usuario y abre la pestaña *VoIP*."
 
 #: ../../content/applications/productivity/voip/onsip.rst:65
 msgid ""
 "Add the following :ref:`OnSIP credentials <productivity/voip/view-onsip-"
 "credentials>` for the user:"
 msgstr ""
+"Agrega las :ref:`credenciales OnSIP <productivity/voip/view-onsip-"
+"credentials>` a continuación para el usuario:"
 
 #: ../../content/applications/productivity/voip/onsip.rst:67
 msgid ":guilabel:`Provider`: select :guilabel:`OnSIP`."
-msgstr ""
+msgstr ":guilabel:`Proveedor`: Selecciona :guilabel:`OnSIP`."
 
 #: ../../content/applications/productivity/voip/onsip.rst:68
 msgid ":guilabel:`Username`: the user's :guilabel:`OnSIP username`."
 msgstr ""
+":guilabel:`Nombre de usuario`: El :guilabel:`nombre de usuario de OnSIP`."
 
 #: ../../content/applications/productivity/voip/onsip.rst:69
 msgid ":guilabel:`OnSIP Auth Username`: the user's :guilabel:`Auth Username`."
 msgstr ""
+":guilabel:`Nombre de usuario de OnSIP Auth`: El :guilabel:`nombre de usuario "
+"de Auth`."
 
 #: ../../content/applications/productivity/voip/onsip.rst:70
 msgid ":guilabel:`Secret`: the user's :guilabel:`SIP Password`."
-msgstr ""
+msgstr ":guilabel:`Secreto`: La :guilabel:`contraseña SIP` del usuario."
 
 #: ../../content/applications/productivity/voip/onsip.rst:72
 msgid ""
@@ -37832,16 +38104,21 @@ msgid ""
 "Odoo **Phone** by clicking the :icon:`oi-voip` :guilabel:`(Phone)` icon in "
 "the top-right corner of Odoo."
 msgstr ""
+"Cuando las credenciales OnSIP se hayan guardado, el usuario podrá hacer "
+"llamadas con **Teléfono** de Odoo si hace clic en el icono :icon:`oi-voip` "
+":guilabel:`(Teléfono)` en la esquina superior derecha de Odoo."
 
 #: ../../content/applications/productivity/voip/onsip.rst:76
 msgid ""
 "For additional setup and troubleshooting steps, see `OnSIP's knowledge base "
 "<https://support.onsip.com/hc/en-us>`__."
 msgstr ""
+"Para configuración adicional y pasos adicionales, consulta `la base de "
+"información de OnSIP <https://support.onsip.com/hc/en-us>`__."
 
 #: ../../content/applications/productivity/voip/onsip.rst:80
 msgid "Handle incoming calls"
-msgstr ""
+msgstr "Gestionar llamadas entrantes"
 
 #: ../../content/applications/productivity/voip/onsip.rst:82
 msgid ""
@@ -37849,10 +38126,14 @@ msgid ""
 "green :guilabel:`📞 (phone)` icon to answer the call, or click the "
 "red :guilabel:`📞 (phone)` icon to ignore the call."
 msgstr ""
+"Las llamadas entrantes aparecen en el :doc:`widget de *Teléfono* "
+"<voip_widget>`. Haz clic en el icono :guilabel:`📞 (teléfono)` verde para "
+"responder la llamada, o haz clic en el icono :guilabel:`📞 (teléfono)` rojo "
+"para ignorar la llamada."
 
 #: ../../content/applications/productivity/voip/onsip.rst:None
 msgid "Incoming call in the Odoo **Phone** widget."
-msgstr ""
+msgstr "Las llamadas entrantes en el widget **Teléfono** de Odoo."
 
 #: ../../content/applications/productivity/voip/onsip.rst:91
 #: ../../content/applications/productivity/voip/voip_widget.rst:163
@@ -37868,10 +38149,12 @@ msgid ""
 "If a *Missing Parameters* message appears in the Odoo **Phone** widget, "
 "refresh the browser and try again."
 msgstr ""
+"Si aparece un mensaje de *parámetros faltantes* en el widget **Teléfono** en "
+"Odoo, vuelve a cargar el navegador y vuelve a intentarlo."
 
 #: ../../content/applications/productivity/voip/onsip.rst:None
 msgid "Missing parameter message in the *Odoo Phone* widget."
-msgstr ""
+msgstr "Mensaje de parámetros faltantes en el widget de *Teléfono de Odoo*."
 
 #: ../../content/applications/productivity/voip/onsip.rst:103
 #: ../../content/applications/productivity/voip/voip_widget.rst:174
@@ -37885,14 +38168,18 @@ msgid ""
 "in the phone number `16505555555`, `1` is the international country code for "
 "the United States."
 msgstr ""
+"Si aparece un mensaje de *Número incorrecto* en el widget **Teléfono** de "
+"Odoo, asegúrate de incluir el código internacional del número de teléfono. "
+"Por ejemplo: En el número de teléfono `16505555555`, `1` es el código "
+"internacional de país para los Estados Unidos."
 
 #: ../../content/applications/productivity/voip/onsip.rst:None
 msgid "Incorrect number message in the Odoo **Phone** widget."
-msgstr ""
+msgstr "Mensaje de número incorrecto en el widget **Teléfono** de Odoo."
 
 #: ../../content/applications/productivity/voip/onsip.rst:117
 msgid "OnSIP smartphone app"
-msgstr ""
+msgstr "La aplicación OnSIP para teléfonos inteligentes"
 
 #: ../../content/applications/productivity/voip/onsip.rst:119
 msgid ""
@@ -37900,6 +38187,10 @@ msgid ""
 "softphone app in parallel with Odoo **Phone**. The OnSIP softphone app is "
 "available on Windows, macOS, Linux, iOS, and Android."
 msgstr ""
+"Para hacer y recibir llamadas telefónicas fuera de Odoo, los usuarios pueden "
+"utilizar cualquier aplicación de softphone SIP en paralelo con **Teléfono** "
+"de Odoo. La aplicación de softphone OnSIP está disponible en Windows, macOS, "
+"Linux, iOS y Android."
 
 #: ../../content/applications/productivity/voip/onsip.rst:124
 msgid ":doc:`devices_integrations`"
@@ -37907,11 +38198,11 @@ msgstr ":doc:`devices_integrations`"
 
 #: ../../content/applications/productivity/voip/onsip.rst:125
 msgid "`OnSIP app download <https://www.onsip.com/app/download>`_"
-msgstr ""
+msgstr "`Descarga la aplicación OnSIP <https://www.onsip.com/app/download>`_"
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:5
 msgid "Sales calls with Odoo Phone"
-msgstr ""
+msgstr "Llamadas de ventas con Teléfono de Odoo"
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:7
 msgid ""
@@ -37920,6 +38211,11 @@ msgid ""
 "on a separate phone for sales calls, a salesperson can make calls directly "
 "from the Odoo database."
 msgstr ""
+"Usar la aplicación **Teléfono** de Odoo aumenta la eficacia de todas las "
+"llamadas, reduce los costos y permite que el vendedor acceda a la base de "
+"datos de Odoo mientras está en una llamada. En lugar de depender de un "
+"teléfono por separado para las llamadas de venta, un vendedor puede hacer "
+"llamadas desde la base de datos de Odoo."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:11
 msgid ""
@@ -37927,6 +38223,10 @@ msgid ""
 "already has the **Phone** app configured. If it is **not** configured, refer "
 "to the :doc:`Phone <../voip>` documentation to get started."
 msgstr ""
+"En esta documentación hablaremos configuraremos **Teléfono** de Odoo para un "
+"equipo de ventas que ya tenga la aplicación **Teléfono** configurada. Si "
+"**no** está configurada, consulta la documentación :doc:`Teléfono <../voip>` "
+"para hacer la configuración inicial."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:16
 msgid ""
@@ -38002,6 +38302,12 @@ msgid ""
 "the customer, or pulling up their profile. Learn more about :doc:`the "
 "documents a salesperson can access <voip_widget>` during a call."
 msgstr ""
+"Una vez que la llamada con el cliente empiece, el vendedor todavía podrá "
+"navegar por la base de datos de Odoo. Además, el widget de *Teléfono* cuenta "
+"con iconos de atajos que el vendedor podrá usar para realizar acciones "
+"frecuentes, como enviar un correo electrónico al cliente o acceder a su "
+"perfil. Obtén más información sobre :doc:`los documentos a los que puede "
+"acceder un vendedor <voip_widget>` durante una llamada."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:44
 msgid "The salesperson can also take some actions during the call:"
@@ -38038,6 +38344,8 @@ msgid ""
 "salesperson has access\n"
 "to."
 msgstr ""
+"El widget de *Teléfono* abierto para hacer una llamada, donde se muestran "
+"los iconos a los que un vendedor tiene acceso."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:55
 #: ../../content/applications/productivity/voip/support_calls.rst:81
@@ -38049,6 +38357,9 @@ msgid ""
 "The *Phone* widget can handle some common follow-up tasks, but salespeople "
 "can still navigate Odoo for tasks not available in the widget."
 msgstr ""
+"El widget *Teléfono* puede gestionar algunas tareas de seguimiento comunes, "
+"pero el vendedor todavía puede navegar por Odoo para las tareas que no estén "
+"disponibles en el widget."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:60
 #: ../../content/applications/productivity/voip/support_calls.rst:86
@@ -38056,6 +38367,8 @@ msgid ""
 "Here are some of the common follow-up tasks that can be managed from the "
 "*Phone* widget:"
 msgstr ""
+"Estas son algunas de las tareas de seguimiento que se pueden gestionar desde "
+"el widget *Teléfono*:"
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:62
 msgid ""
@@ -38130,6 +38443,10 @@ msgid ""
 "phone` :guilabel:`(phone)` icon in the lower-right corner of the *Phone* "
 "widget. When they do, the call is logged in the opportunity's chatter."
 msgstr ""
+"El vendedor debe hacer clic en el icono :icon:`fa-phone` :guilabel:`"
+"(teléfono)` que se encuentra en la esquina inferior derecha del widget de "
+"*Teléfono* cuando sea momento de terminar la llamada. Cuando lo haga, la "
+"llamada se registrará en el chatter de la oportunidad."
 
 #: ../../content/applications/productivity/voip/sales_calls.rst:90
 msgid ""
@@ -38139,10 +38456,16 @@ msgid ""
 "check` :guilabel:`Mark Done` on the planned call to remove it from "
 "the :guilabel:`Next Activities` tab in the *Phone* widget."
 msgstr ""
+"El vendedor marcará la actividad correspondiente a la llamada como hecha si "
+"es que no lo hizo antes. Para ello, debe ir al chatter de la oportunidad, "
+"buscar la sección :guilabel:`Actividades planeadas` y hacer clic en :icon"
+":`fa-check` :guilabel:`Marcar como hecho` en la llamada programada para "
+"quitarla de la pestaña :guilabel:`Siguientes actividades` del widget de "
+"*Teléfono*."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:5
 msgid "Support calls with Odoo Phone"
-msgstr ""
+msgstr "Llamadas de soporte con Teléfono de Odoo"
 
 #: ../../content/applications/productivity/voip/support_calls.rst:7
 msgid ""
@@ -38151,12 +38474,21 @@ msgid ""
 "improve customer satisfaction, reduce support costs, and allows support "
 "agents to navigate an Odoo database while on a call."
 msgstr ""
+"Una herramienta útil para equipos de soporte, la aplicación **Teléfono** de "
+"Odoo es una increíble forma de ponerte en contacto con clientes que "
+"necesitan ayuda. Con la aplicación **Teléfono** puedes mejorar la "
+"satisfacción del cliente, reducir los costos de soporte y permitir que los "
+"agentes de soporte naveguen por la base de datos mientras están en una "
+"llamada."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:11
 msgid ""
 "Instead of being tied to their desks, support agents can take calls from "
 "anywhere they have access to the Odoo :doc:`Phone <../voip>` app."
 msgstr ""
+"En lugar de tener que quedarse en sus escritorios todo el tiempo, los "
+"agentes pueden tomar llamadas desde cualquier lugar que tenga acceso a la "
+"aplicación :doc:`Teléfono <../voip>` de Odoo."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:15
 msgid ""
@@ -38193,6 +38525,10 @@ msgid ""
 "o` :guilabel:`(keyboard)`, then dial the *agent connection* number and "
 "click :icon:`fa-phone` :guilabel:`(phone)`."
 msgstr ""
+"Primero haz clic en :icon:`oi-voip` :guilabel:`(mostrar teléfono)` en la "
+"esquina superior derecha de la base de datos de Odoo. Aquí, haz clic en :icon"
+":`fa-keyboard-o` :guilabel:`(teclado)`, marca el *número de conexión al "
+"agente* y haz clic en :icon:`fa-phone` :guilabel:`(teléfono)`."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:31
 msgid ""
@@ -38204,6 +38540,14 @@ msgid ""
 "the caller's phone number, as well as their name if the number is tied to a "
 "customer profile."
 msgstr ""
+"El agente de soporte escuchará un breve mensaje que le indicará que está "
+"conectado a la cola cuando marque su *código de conexión de agente*. A "
+"partir de este momento recibirá llamadas de soporte según la :doc:`"
+"estrategia de cola de llamadas del administrador <axivox/call_queues>`. "
+"Cuando un agente de soporte recibe una llamada, el widget de *Teléfono* de "
+"Odoo aparece en la esquina inferior derecha de la pantalla con el número de "
+"teléfono de la persona que llama y su nombre si el número está vinculado al "
+"perfil de un cliente."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:38
 msgid ""
@@ -38225,6 +38569,10 @@ msgid ""
 "customers with open support tickets. With Odoo **Phone**, the support agent "
 "can stay in the Odoo database throughout the entire workflow."
 msgstr ""
+"Es posible que una de las tareas del agente de soporte sea llamarle a los "
+"clientes con tickets de soporte abiertos. Con **Teléfono** de Odoo, el "
+"agente de soporte no tiene que salir de la base de datos de Odoo para "
+"realizar todo el flujo de trabajo."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:48
 msgid ""
@@ -38271,6 +38619,10 @@ msgid ""
 "tab, select the call, and finally click the :icon:`fa-"
 "phone` :guilabel:`(phone)` icon near the bottom of the widget."
 msgstr ""
+"En la esquina superior derecha, haz clic en el icono :icon:`oi-voip` "
+":guilabel:`(teléfono)` para abrir el widget *Teléfono*. En la pestaña "
+":guilabel:`Actividades`, selecciona la llamada y haz clic en el icono :icon"
+":`fa-phone` :guilabel:`(teléfono)` cerca de la parte inferior del widget."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:68
 msgid ""
@@ -38281,6 +38633,12 @@ msgid ""
 "about :doc:`the documents a support agent can access <voip_widget>` during a "
 "call."
 msgstr ""
+"Una vez que la llamada con el cliente empiece, el agente de soporte todavía "
+"podrá navegar por la base de datos de Odoo. Además, el widget de *Teléfono* "
+"cuenta con iconos de atajos que el agente de soporte podrá usar para "
+"realizar acciones frecuentes, como enviar un correo electrónico al cliente o "
+"acceder a su perfil. Obtén más información sobre :doc:`los documentos a los "
+"que puede acceder un agente de soporte <voip_widget>` durante una llamada."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:73
 msgid "The support agent can also take some actions during the call:"
@@ -38301,6 +38659,9 @@ msgid ""
 "The *Phone* widget can handle some common follow-up tasks, but support "
 "agents can still navigate Odoo for tasks not available in the widget."
 msgstr ""
+"El widget de *Teléfono* puede gestionar algunas tareas comunes de "
+"seguimiento, pero los agentes de soporte pueden seguir navegando por la base "
+"de datos para tareas que no estén disponibles en el widget."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:88
 msgid ""
@@ -38321,6 +38682,10 @@ msgid ""
 "phone` :guilabel:`(phone)` icon in the lower-right corner of the *Phone* "
 "widget. When they do, the call is logged in the ticket's chatter."
 msgstr ""
+"Cuando sea momento de colgar una llamada, el agente de soporte debe hacer "
+"clic en el icono rojo de :icon:`fa-phone` :guilabel:`(teléfono)` en la "
+"esquina inferior derecha del widget *Teléfono*. Cuando lo hagan, la llamada "
+"se registrará en el chatter del ticket."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:103
 msgid ""
@@ -38330,6 +38695,11 @@ msgid ""
 "check` :guilabel:`Mark Done` on the planned call to remove it from "
 "the :guilabel:`Next Activities` tab in the *Phone* widget."
 msgstr ""
+"Si todavía no lo han hecho, el agente de soporte marca la actividad de la "
+"llamada como hecha. Para hacerlo, ve al chatter del ticket, en la sección "
+":guilabel:`Actividades planeadas`, haz clic en :icon:`fa-check` :guilabel:`"
+"Marcar como hecho` en la llamada planeada para eliminarla de la pestaña "
+":guilabel:`Próximas actividades` en el widget de *Teléfono*."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:109
 msgid "Log out of a support queue"
@@ -38350,6 +38720,10 @@ msgid ""
 "o` :guilabel:`(keyboard)`, then dial the *agent disconnection* number and "
 "click :icon:`fa-phone` :guilabel:`phone`."
 msgstr ""
+"Primero haz clic en :icon:`oi-voip` :guilabel:`(mostrar teléfono)` en la "
+"esquina superior derecha de la base de datos de Odoo. Aquí, haz clic en :icon"
+":`fa-keyboard-o` :guilabel:`(teclado)`, marca el *número de desconexión al "
+"agente* y haz clic en :icon:`fa-phone` :guilabel:`(teléfono)`."
 
 #: ../../content/applications/productivity/voip/support_calls.rst:118
 msgid ""
@@ -38364,7 +38738,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:5
 msgid "Phone widget"
-msgstr ""
+msgstr "Widget de teléfono"
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:7
 msgid ""
@@ -38374,10 +38748,15 @@ msgid ""
 "room to handle a conference call, utilize the **Phone** widget to tackle any "
 "of these business needs."
 msgstr ""
+"El widget **Teléfono** es un complemento disponible para todos los usuarios "
+"de Odoo cuando instalen la aplicación **Teléfono**. En lugar de gestionar "
+"los dispositivos móviles para todos los vendedores, batallar con "
+"transferencias de llamadas con clientes molestos, utiliza el widget de "
+"**Teléfono** para solucionar todas tus necesidades empresariales."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:13
 msgid "Navigate the Phone widget"
-msgstr ""
+msgstr "Widget de Teléfono"
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:15
 msgid ""
@@ -38386,16 +38765,22 @@ msgid ""
 "and :guilabel:`Activities`, which are used for managing calls and day-to-day "
 "activities in Odoo. Use the search bar to find contacts faster."
 msgstr ""
+"El widget **Teléfono** contiene cuatro pestañas: :guilabel:`teclado`, "
+":guilabel:`recientes`, :guilabel:`contactos` y :guilabel:`actividades`, que "
+"se usan para gestionar llamadas y actividades diarias desde Odoo. Usa la "
+"barra de búsqueda para encontrar los contactos más rápido."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:None
 msgid ""
 "The **Phone** widget has four tabs: **Keypad**, **Recent**, **Contacts**, "
 "and **Activities**."
 msgstr ""
+"El widget **Teléfono** tiene cuatro pestañas: **Teclado**, **Recientes**, "
+"**Contactos** y **Actividades**."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:23
 msgid "Keypad tab"
-msgstr ""
+msgstr "Pestaña de Teclado"
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:25
 msgid ""
@@ -38403,6 +38788,9 @@ msgid ""
 "a name or number to make a call. There is also a numeric keypad for the user "
 "to enter the phone number."
 msgstr ""
+"En la pestaña :guilabel:`Teclado` del widget **Teléfono** el usuario puede "
+"escribir un nombre o número para realizar una llamada. También hay un "
+"teclado numérico para que el usuario ingrese un número telefónico."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:29
 msgid "Recent tab"
@@ -38414,6 +38802,9 @@ msgid ""
 "for the user is available. This includes incoming and outgoing calls. Any "
 "number can be clicked to begin a call."
 msgstr ""
+"En la pestaña :guilabel:`Reciente` del widget **Teléfono** podrás ver el "
+"historial de llamada del usuario. Esto incluye las llamadas entrantes y "
+"salientes. Puedes hacer clic en cualquier número para comenzar una llamada."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:35
 msgid "Contacts tab"
@@ -38424,12 +38815,17 @@ msgid ""
 "Under the :guilabel:`Contacts` tab of the **Phone** widget, the user can "
 "access a contact in the **Contacts** app."
 msgstr ""
+"En la pestaña :guilabel:`Contactos` del widget de **Teléfono**, el usuario "
+"puede acceder a un contacto en la aplicación **Contactos**."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:40
 msgid ""
 "Any contact that has a saved phone number can be called by clicking into the "
 "contact from the *Phone* widget's :guilabel:`Contacts` tab."
 msgstr ""
+"Se puede llamar a cualquier contacto que tenga un número de teléfono "
+"guardado si haces clic en el contacto desde la pestaña :guilabel:`Contactos` "
+"en el widget *Teléfono*."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:43
 msgid ""
@@ -38444,7 +38840,7 @@ msgstr ""
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:48
 msgid "Activities tab"
-msgstr ""
+msgstr "Pestaña Actividades"
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:50
 msgid ""
@@ -38452,6 +38848,9 @@ msgid ""
 "any calls assigned to them, and which ones are due to be completed for the "
 "day."
 msgstr ""
+"En la pestaña :guilabel:`Actividades` del widget **Teléfono** el usuario "
+"puede ver todas las llamadas que se le asignaron y cuáles debe completar "
+"antes del final del día."
 
 #: ../../content/applications/productivity/voip/voip_widget.rst:53
 msgid ""

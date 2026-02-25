@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-20 23:21+0000\n"
+"PO-Revision-Date: 2026-02-25 17:51+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19-doc/sales/"
 "ko/>\n"
@@ -9094,7 +9094,7 @@ msgstr "Epson 프린터를 블루투스로 연결할 경우에는 **호환되지
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:66
 #: ../../content/applications/sales/point_of_sale/configuration/epos_ssc.rst:19
 msgid ":doc:`pos_lna`"
-msgstr ""
+msgstr ":doc:`pos_lna`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/epos_printers.rst:67
 msgid ":doc:`epos_ssc`"
@@ -9831,7 +9831,7 @@ msgstr ""
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:24
 msgid "Activation"
-msgstr ""
+msgstr "활성화"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:26
 msgid ""
@@ -9853,11 +9853,11 @@ msgstr ""
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:33
 msgid ":guilabel:`Key`: `point_of_sale.use_lna`"
-msgstr ""
+msgstr ":guilabel:`키`: `point_of_sale.use_lna`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:34
 msgid ":guilabel:`Value`: `True`"
-msgstr ""
+msgstr ":guilabel:`값`: `예`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:36
 #: ../../content/applications/sales/point_of_sale/payment_methods/terminals.rst:20
@@ -9873,7 +9873,7 @@ msgstr ":guilabel:`저장`을 클릭합니다."
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:39
 msgid "Browser permission"
-msgstr ""
+msgstr "브라우저 사용 권한"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:41
 msgid ""
@@ -9899,7 +9899,7 @@ msgstr ""
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:53
 msgid "Brave: `brave://flags/#local-network-access-check`"
-msgstr ""
+msgstr "Brave: `brave://flags/#local-network-access-check`"
 
 #: ../../content/applications/sales/point_of_sale/configuration/pos_lna.rst:54
 msgid "Google Chrome: `chrome://flags/#local-network-access-check`"
@@ -22270,6 +22270,10 @@ msgid ""
 "after accepting the down payment, trusting that the remaining amount will be "
 "paid later on."
 msgstr ""
+"계약금은 판매 거래를 확정할 때 최초로 지급하는 선불 금액입니다. 계약금을 통해"
+" 구매자는 총 금액 증 일부를 지불하고 나머지 금액은 추후 지급하기로 합의하게 "
+"됩니다. 이에 따라 판매자는 계약금을 수령하는 즉시 혹은 이후에 상품이나 서비스"
+"를 제공하며, 나중에 잔금이 지급될 것임을 신뢰할 수 있습니다."
 
 #: ../../content/applications/sales/sales/invoicing/down_payment.rst:10
 msgid ""
@@ -22625,6 +22629,12 @@ msgid ""
 "status from :guilabel:`Draft` to :guilabel:`Posted`. It also reveals a new "
 "series of buttons at the top of the page."
 msgstr ""
+"다음으로 :guilabel:`청구서 초안 생성` 을 클릭하여 청구서 초안을 생성합니다. "
+"그러면 청구서 초안이 화면에 표시되며, :guilabel:`청구서 항목` 탭의 :guilabel:"
+"`계약금` 섹션 아래에 :guilabel:`계약금` 이 나타나 있는 것을 볼 수 있습니다. "
+"이제 :guilabel:`확인` 을 클릭하여 청구서를 확정하고 게시할 수 있습니다. 청구"
+"서를 확정하면 상태가 :guilabel:`초안` 에서 :guilabel:`게시됨` 으로 변경됩니다"
+". 또한 페이지 상단에 새로운 버튼 모음이 표시됩니다."
 
 #: ../../content/applications/sales/sales/invoicing/down_payment.rst:200
 msgid ""

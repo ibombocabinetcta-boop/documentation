@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: Odoo 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-23 23:20+0000\n"
+"PO-Revision-Date: 2026-02-25 17:51+0000\n"
 "Last-Translator: \"Chloe Wang (chwa)\" <chwa@odoo.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.odoo.com/"
 "projects/odoo-19-doc/websites/zh_Hans/>\n"
@@ -1084,7 +1084,7 @@ msgstr "客户账户"
 msgid ""
 "Control access to the shop, the checkout, and the customer portal, and use "
 "customer accounts to support B2B and B2C operations."
-msgstr ""
+msgstr "控制对商店、结账和客户门户的访问，使用客户账户支持 B2B 和 B2C 业务。"
 
 #: ../../content/applications/websites/ecommerce/configuration.rst:42
 #: ../../content/applications/websites/ecommerce/configuration/b2b_b2c.rst:3
@@ -1095,7 +1095,8 @@ msgstr "B2B 和 B2C"
 msgid ""
 "Configure separate websites and shops for B2B and B2C businesses and "
 "customize them to meet the specific needs of each business model."
-msgstr ""
+msgstr "为 B2B 与 B2C 业务分别配置独立的网站与店铺，并进行个性化定制，以满足每种业务"
+"模式的特定需求。"
 
 #: ../../content/applications/websites/ecommerce/configuration/b2b_b2c.rst:5
 msgid ""
@@ -1105,6 +1106,10 @@ msgid ""
 "and :ref:`customize the website <ecommerce/b2b_b2c/multiple-websites>` to "
 "support B2B, B2C, or both business models."
 msgstr ""
+"Odoo 电子商务模块专为满足 B2B 与 B2C 两类企业的需求而设计。您可以配置 :doc:`"
+"价格 <prices>`、管理特定客户的 :doc:`访问权限 <customer_accounts>`，并 :ref:`"
+"定制网站 <ecommerce/b2b_b2c/multiple-websites>`，以支持 B2B、B2C 或混合业务模"
+"式。"
 
 #: ../../content/applications/websites/ecommerce/configuration/b2b_b2c.rst:15
 msgid ""
@@ -1173,6 +1178,13 @@ msgid ""
 "it, and in the :guilabel:`Action` field, select :guilabel:`Create a "
 "customer`."
 msgstr ""
+"在运营 B2B 业务时，通常需要在网店中 :ref:`隐藏价格 <ecommerce/b2b_b2c/"
+"prices>`，仅对 :ref:`已登录用户 <ecommerce/customer_accounts/shop-access>`展"
+"示。若要禁止用户自由注册，可将 :ref:`客户账户 <ecommerce/customer_accounts/"
+"account-creation>`设置项设为 :guilabel:`仅邀请注册`。如需创建一个供客户申请访"
+"问权限的页面，可打开 :doc:`网站编辑器 </applications/websites/website/"
+"web_design>`，:ref:`创建表单 <website/building_blocks/form>` 并进行自定义，然"
+"后在 :guilabel:`操作` 字段中选择 :guilabel:`创建客户`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/b2b_b2c.rst:53
 msgid ""
@@ -1283,6 +1295,12 @@ msgid ""
 "<ecommerce/prices/pricelists>` to customers, and deactivate "
 "the :ref:`Selectable <ecommerce/prices/selectable-pricelists>` option."
 msgstr ""
+"若您同时开展 B2B 与 B2C 业务，我们强烈建议创建 :doc:`两个独立网站 </"
+"applications/websites/website/configuration/multi_website>`，为 B2B 网站分配 "
+":ref:`零价格价目表 <ecommerce/b2b_b2c/prices>`，为 B2C 网站分配常规价目表。如"
+"果您更倾向于使用单一网站，可通过 :ref:`国家/地区组 <ecommerce/prices/country-"
+"groups>` 进行配置，为客户分配 :ref:`价目表 <ecommerce/prices/pricelists>`，并"
+"关闭 :ref:`可选择 <ecommerce/prices/selectable-pricelists>`选项。"
 
 #: ../../content/applications/websites/ecommerce/configuration/b2b_b2c.rst:111
 #: ../../content/applications/websites/ecommerce/ecommerce_design.rst:30
@@ -1322,6 +1340,10 @@ msgid ""
 "additional fields like :guilabel:`VAT` or :guilabel:`Company Name` during "
 "the :ref:`delivery <ecommerce/checkout/delivery>` step."
 msgstr ""
+"在 :guilabel:`订单摘要`页面，打开 :doc:`网站编辑器 </applications/websites/"
+"website/web_design>`，进入 :guilabel:`样式` 标签页，开启 :guilabel:`显示 B2B "
+"字段` 开关，即可在 :ref:`配送 <ecommerce/checkout/delivery>` 步骤中显示 B2B "
+"专用的额外字段，如 :guilabel:`增值税号` 或 :guilabel:`公司名称`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:5
 msgid ""
@@ -1330,6 +1352,9 @@ msgid ""
 "customers while organizing products by category for a better overview and "
 "smoother navigation."
 msgstr ""
+"Odoo 电子商务提供多种方式来配置、:doc:`展示 <../../ecommerce/"
+"ecommerce_design/catalog>` 及向客户销售不同产品选项，同时可按分类管理产品，以"
+"便提供更清晰的概览与更流畅的导航体验。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:12
 msgid "Product variants"
@@ -1415,6 +1440,8 @@ msgid ""
 "the following options on the attribute form to control where and/or how they "
 "appear on the website:"
 msgstr ""
+"一旦您的属性被 :ref:`创建 <products/variants/attributes>`，请在属性表单上设置"
+"以下选项，以控制它们在网站上的显示位置和方式："
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:48
 msgid ""
@@ -1431,13 +1458,17 @@ msgid ""
 "page. These options are only available when :ref:`variants are created "
 "instantly for the attribute <products/variants/attributes>`."
 msgstr ""
+":guilabel:`产品卡片上`：将此字段设置为 :guilabel:`显示` 或 :guilabel:`悬停`显"
+"示，即可在店铺页面的产品卡片上展示属性。仅当为该属性 :ref:`立即创建变体 <"
+"products/variants/attributes>` 时，这些选项才可用。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:54
 msgid ""
 "When the field is set to :guilabel:`Visible`, the :guilabel:`Show "
 "Thumbnails` option can be toggled to show a product variant image instead of "
 "the attribute values."
-msgstr ""
+msgstr "当字段设置为 :guilabel:`显示` 时，可切换 :guilabel:`显示缩略图` 选项，以显示"
+"产品变体图像，而不是属性值。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:57
 msgid ""
@@ -1449,14 +1480,19 @@ msgid ""
 "that the :ref:`Show Thumbnails <ecommerce/categories_variants/attributes>` "
 "option is enabled on the attribute form."
 msgstr ""
+"您也可以在店铺页面的产品卡片上添加变体图片。操作方法：进入产品表单，点击 "
+":icon:`fa-sitemap` :guilabel:`变体`:ref:`智能按钮 <products/variants/"
+"variants-smart-button>`，选择一个变体，然后点击 :icon:`fa-pencil` :guilabel:`"
+"(编辑)` 图标，为每个变体添加图片。请确保在属性表单中已启用 :ref:`显示缩略图 <"
+"ecommerce/categories_variants/attributes>` 选项。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:None
 msgid "Variant thumbnails on product card."
-msgstr ""
+msgstr "产品卡片上的变体缩略图。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:69
 msgid "Attribute categories"
-msgstr ""
+msgstr "属性分类"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:71
 msgid ""
@@ -1466,38 +1502,42 @@ msgid ""
 "Click the :icon:`fa-arrow-right` :guilabel:`(internal link)` icon next to "
 "the category name to:"
 msgstr ""
+"在 :ref:`对比产品 <ecommerce/products/additional_features/product-"
+"comparison>` 时，如需将相似属性归到同一组下，请选择对应的 :guilabel:`电商分类"
+"` 或新建一个分类。点击分类名称旁的 :icon:`fa-arrow-right` :guilabel:`(内部链"
+"接)` 图标，可执行以下操作："
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:76
 msgid "Rename the category."
-msgstr ""
+msgstr "重命名分类。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:77
 msgid "Change its :guilabel:`Sequence`."
-msgstr ""
+msgstr "修改分类的 :guilabel:`排序`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:78
 msgid ""
 "Reorder the :guilabel:`Related Attributes` to define the order in which they "
 "are displayed in the comparison summary."
-msgstr ""
+msgstr "调整 :guilabel:`关联属性` 的顺序，以定义它们在对比摘要中的显示顺序"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:80
 msgid "Add attributes to the category by clicking :guilabel:`Add a line`."
-msgstr ""
+msgstr "点击 :guilabel:`添加行`，为分类添加属性"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:None
 msgid "Comparison summary page with attribute categories."
-msgstr ""
+msgstr "带属性分类的对比摘要页面。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:88
 msgid "E-commerce categories"
-msgstr ""
+msgstr "电商分类"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:90
 msgid ""
 "E-commerce categories are used to organize products into groups, making it "
 "easier for customers to browse the online store."
-msgstr ""
+msgstr "电商分类用于将产品分组管理，方便客户在网店中浏览商品。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:None
 #: ../../content/applications/websites/ecommerce/ecommerce_design/catalog.rst:None
@@ -1513,6 +1553,10 @@ msgid ""
 "a :guilabel:`Description`, if needed. You can also add a :guilabel:`Cover "
 "Image` for the category."
 msgstr ""
+"如需创建电商分类，请前往 :menuselection:`网站 --> 电商 --> 电商分类`，然后点"
+"击 :guilabel:`新建`。在分类表单中，填写 :guilabel:`名称`，按需选择 :guilabel:"
+"`上级` 分类、限定适用的 :guilabel:`网站`，并编写 :guilabel:`描述`。您还可以为"
+"分类添加 :guilabel:`封面图片`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:102
 msgid ""
@@ -1521,25 +1565,28 @@ msgid ""
 "the :guilabel:`Sales` tab, navigate to the :guilabel:`Ecommerce shop` "
 "section, and select the :guilabel:`Categories` it belongs to."
 msgstr ""
+"如需使用 :guilabel:`电商分类`，请前往 :menuselection:`网站 --> 电商 --> 产品`"
+"，选择要修改的产品，进入 :guilabel:`销售` 标签页，找到 :guilabel:`电商店铺` "
+"区域，选择该产品所属的 :guilabel:`分类`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:107
 msgid "A single product can belong to multiple e-commerce categories."
-msgstr ""
+msgstr "一个产品可以属于多个电子商务类别。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:108
 msgid ""
 "Define how to :ref:`display categories <ecommerce/catalog/categories>` on "
 "the shop page."
-msgstr ""
+msgstr "定义如何在商店页面上 :ref:`显示 <ecommerce/catalog/categories>` 类别。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:109
 msgid ""
 "Categories that do not contain any products are not visible on the shop page."
-msgstr ""
+msgstr "不包含任何产品的类别在商店页面上不可见。"
 
 #: ../../content/applications/websites/ecommerce/configuration/categories_variants.rst:112
 msgid ":doc:`products`"
-msgstr ""
+msgstr ":doc:`产品`"
 
 #: ../../content/applications/websites/ecommerce/configuration/customer_accounts.rst:5
 msgid ""
@@ -1833,6 +1880,9 @@ msgid ""
 "unit>`, offer :ref:`discounts <ecommerce/prices/discounts>`, and set "
 "up :ref:`pricelists <ecommerce/prices/pricelists>`."
 msgstr ""
+"Odoo 提供多种配置电子商务价格的选项。例如，您可以应用 :ref:`单位价格 <"
+"ecommerce/prices/price-per-unit>`，提供 :ref:`折扣 <ecommerce/prices/"
+"discounts>`，并设置 :ref:`价目表 <ecommerce/prices/pricelists>`。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:12
 msgid "Taxes"
@@ -2070,10 +2120,13 @@ msgid ""
 "catalog's pricelist selector located next to the :ref:`search bar <ecommerce/"
 "catalog/toolbar-and-filters>`."
 msgstr ""
+"例如，在以 :doc:`多种货币</applications/sales/sales/products_prices/prices/cu"
+"rrenies>`销售产品时，可选择的价目表非常有用，客户可以使用位于 :ref:`搜索栏<"
+"ecommerce/catalog/toolbar-and-filters>`旁边的目录价目表选择器，选择价目表。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:None
 msgid "Pricelist selector on the e-commerce."
-msgstr ""
+msgstr "电子商务上的价目表选择器。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:130
 msgid "To make a pricelist selectable, enable :guilabel:`Selectable`."
@@ -2109,6 +2162,9 @@ msgid ""
 "It is strongly recommended to disable the :guilabel:`Selectable` option when "
 "using pricelists with country groups on the e-commerce."
 msgstr ""
+"存在多个可选价目表，但只显示与客户的 :ref:`国家/地区组 <ecommerce/prices/"
+"country-groups>` 匹配的价格表。强烈建议在电子商务中使用带有国家/地区组的价格"
+"表时禁用 :guilabel:`可选` 选项。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:145
 #, fuzzy
@@ -2173,7 +2229,8 @@ msgstr "用于创建国家/地区组的筛选条件。"
 msgid ""
 "When using GeoIP to determine the appropriate pricelist, **all** pricelists "
 "used on the e-commerce must have a country group assigned."
-msgstr ""
+msgstr "使用 GeoIP 确定适当的价目表时，电子商务上使用的**所有**价目表都必须指定一个国"
+"家/地区组。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:180
 msgid ""
@@ -2184,22 +2241,26 @@ msgid ""
 "pricelists>`, the others will disappear as soon as customers select the "
 "selectable pricelist."
 msgstr ""
+"强烈建议在使用带有国家/地区组的价目表时禁用 :guilabel:`可选` 选项。事实上，带"
+"有相关国家/地区组的所有价目表都会自动应用到目录中，但如果其中一个价目表被标记"
+"为 :ref:`可选 <ecommerce/prices/selectable-pricelists>`，一旦客户选择了可选价"
+"目表，其他价目表就会消失。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:187
 msgid "Imagine you create three pricelists:"
-msgstr ""
+msgstr "假设您创建了三个价目表："
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:189
 msgid "`EU regular prices` with the `EU` country group assigned"
-msgstr ""
+msgstr "`欧盟常规价格`：分配 `欧盟` 国家/地区组"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:190
 msgid "`EU prices with discounts` with the `EU` country group assigned"
-msgstr ""
+msgstr "`欧盟折扣价格`：分配 `欧盟` 国家/地区组"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:191
 msgid "`US prices` with the `US` country group assigned"
-msgstr ""
+msgstr "`美国价格`：分配 `美国` 国家/地区组"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:193
 msgid ""
@@ -2211,10 +2272,14 @@ msgid ""
 "prices` list and prices will be displayed based on the `EU regular prices` "
 "pricelist on the catalog."
 msgstr ""
+"如果为 `欧盟常规价格 `和 `美国价格 `启用了 :guilabel: `可选择 ` 选项，且客户"
+"来自欧盟，那么只有 `欧盟常规价格` 和 `欧盟折扣价格` 可用。但由于 `欧盟折扣价"
+"格` 不可被客户选择，因此当客户选择 欧盟常规价格 后，该折扣价目表会隐藏，产品"
+"目录将按照 `欧盟常规价格`显示。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:201
 msgid "Pricelist application"
-msgstr ""
+msgstr "价目表应用规则"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:203
 msgid ""
@@ -2229,13 +2294,20 @@ msgid ""
 "available pricelist assigned to the website and without a country group, "
 "following the sequence order)."
 msgstr ""
+"在电子商务中，如果未指定国家/地区组，则会自动为未登录的公共用户选择*默认*价目"
+"表。如果使用了 :ref:`GeoIP 和国家/地区组 <ecommerce/prices/geoip>`，则公众用"
+"户默认看到其国家/地区组的价目表。已分配价目表的 :ref:`登录用户<ecommerce/"
+"customer_accounts/shop-access>`，默认会显示为其分配的价目表，前提是该价目表已"
+"分配至当前访问的网站。若未分配，则应用网站的默认价目表（即按顺序，第一个分配"
+"给该网站且未设置国家组的可用价目表）。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:212
 msgid ""
 "Assigned pricelists take precedence over country-based pricelists, when "
 "applicable, unless the assigned pricelist is linked to a different country "
 "group."
-msgstr ""
+msgstr "在适用情况下，已分配的价目表优先于基于国家/地区的价目表，除非该已分配价目表关"
+"联的是其他国家/地区组。"
 
 #: ../../content/applications/websites/ecommerce/configuration/prices.rst:216
 msgid ""

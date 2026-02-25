@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-20 18:30+0000\n"
-"PO-Revision-Date: 2026-02-20 23:21+0000\n"
+"PO-Revision-Date: 2026-02-25 17:51+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
 "Language-Team: Korean <https://translate.odoo.com/projects/odoo-19-doc/hr/ko/"
 ">\n"
@@ -2495,6 +2495,12 @@ msgid ""
 "attendance logs (records with a check in and check out time) appear in the "
 "summary of the logged time."
 msgstr ""
+"색상 막대는 직원이 당일 총 예상 근무 시간 대비 실제 근무한 시간을 나타냅니다."
+" 막대 위에 마우스를 올리면 현재 날짜에 대한 직원의 세부 정보가 표시됩니다. 진"
+"한 색상은 기록 시간(시작 시간 및 종료 시간 포함)을 의미하고, 연한 색상은 직원"
+"이 로그인 이후 아직 로그아웃하지 않았다는 의미입니다. 기록 시간에 대한 요약 "
+"내용에는 *완료* 된 근태 기록(체크인 및 체크아웃 기록이 모두 있는 경우)만 표시"
+"됩니다."
 
 #: ../../content/applications/hr/attendances/attendance_logs.rst:36
 msgid ""
@@ -6148,7 +6154,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:50
 msgid "Work"
-msgstr ""
+msgstr "업무"
 
 #: ../../content/applications/hr/employees/new_employee.rst:52
 msgid ""
@@ -6210,7 +6216,7 @@ msgstr ""
 #: ../../content/applications/hr/employees/new_employee.rst:77
 #: ../../content/applications/hr/employees/new_employee.rst:493
 msgid "Location"
-msgstr ""
+msgstr "위치"
 
 #: ../../content/applications/hr/employees/new_employee.rst:79
 msgid ""
@@ -6343,7 +6349,7 @@ msgstr "모든 필드가 입력되어 있는 새로운 근무지 양식"
 
 #: ../../content/applications/hr/employees/new_employee.rst:136
 msgid "Note"
-msgstr ""
+msgstr "메모"
 
 #: ../../content/applications/hr/employees/new_employee.rst:138
 msgid "Enter any relevant notes in this field."
@@ -6351,7 +6357,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:141
 msgid "Organization chart"
-msgstr ""
+msgstr "조직도"
 
 #: ../../content/applications/hr/employees/new_employee.rst:143
 msgid ""
@@ -6621,7 +6627,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:289
 msgid "Certifications tab"
-msgstr ""
+msgstr "자격증 탭"
 
 #: ../../content/applications/hr/employees/new_employee.rst:291
 msgid ""
@@ -6724,7 +6730,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:342
 msgid "Private contact"
-msgstr ""
+msgstr "개인 연락처"
 
 #: ../../content/applications/hr/employees/new_employee.rst:344
 msgid ":guilabel:`Email`: Enter the employee's personal email address."
@@ -6820,7 +6826,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:393
 msgid "Emergency contact"
-msgstr ""
+msgstr "비상 연락처"
 
 #: ../../content/applications/hr/employees/new_employee.rst:395
 msgid ""
@@ -6840,7 +6846,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:402
 msgid "Citizenship"
-msgstr ""
+msgstr "국적"
 
 #: ../../content/applications/hr/employees/new_employee.rst:404
 msgid ""
@@ -6880,7 +6886,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:417
 msgid "Family"
-msgstr ""
+msgstr "가족 관계"
 
 #: ../../content/applications/hr/employees/new_employee.rst:419
 msgid ""
@@ -6919,7 +6925,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:435
 msgid "Documents"
-msgstr ""
+msgstr "문서"
 
 #: ../../content/applications/hr/employees/new_employee.rst:437
 msgid ""
@@ -6968,7 +6974,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:458
 msgid "Personal information"
-msgstr ""
+msgstr "개인 정보"
 
 #: ../../content/applications/hr/employees/new_employee.rst:460
 msgid "This section houses information used for payroll and tax purposes."
@@ -7080,7 +7086,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:505
 msgid "Education"
-msgstr ""
+msgstr "학력"
 
 #: ../../content/applications/hr/employees/new_employee.rst:507
 msgid ""
@@ -7130,7 +7136,7 @@ msgstr ":doc:`급여 현지화 <../payroll/payroll_localizations>`"
 
 #: ../../content/applications/hr/employees/new_employee.rst:532
 msgid "Contract overview"
-msgstr ""
+msgstr "계약서 전체보기"
 
 #: ../../content/applications/hr/employees/new_employee.rst:534
 msgid ""
@@ -7141,7 +7147,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:539
 msgid "Employer costs"
-msgstr ""
+msgstr "고용주 부담액"
 
 #: ../../content/applications/hr/employees/new_employee.rst:541
 msgid ""
@@ -7171,7 +7177,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:554
 msgid "Schedule"
-msgstr ""
+msgstr "일정"
 
 #: ../../content/applications/hr/employees/new_employee.rst:556
 msgid ""
@@ -7275,7 +7281,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:606
 msgid "User"
-msgstr ""
+msgstr "사용자"
 
 #: ../../content/applications/hr/employees/new_employee.rst:608
 msgid ""
@@ -7444,7 +7450,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:688
 msgid "Application settings"
-msgstr ""
+msgstr "애플리케이션 설정"
 
 #: ../../content/applications/hr/employees/new_employee.rst:690
 msgid ""
@@ -7476,7 +7482,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:706
 msgid "Appraisal"
-msgstr ""
+msgstr "인사 평가"
 
 #: ../../content/applications/hr/employees/new_employee.rst:708
 msgid ""
@@ -7494,7 +7500,7 @@ msgstr ""
 
 #: ../../content/applications/hr/employees/new_employee.rst:715
 msgid "Planning"
-msgstr ""
+msgstr "일정 관리"
 
 #: ../../content/applications/hr/employees/new_employee.rst:717
 msgid ""
@@ -34549,6 +34555,11 @@ msgid ""
 "the :guilabel:`Approve` or :guilabel:`Refuse` buttons to approve or refuse "
 "the request."
 msgstr ""
+"신청한 휴가를 승인하기 위해서 더 자세한 정보가 필요한 경우, :guilabel:`휴가` "
+"필드의 항목 위에 마우스를 올려놓은 후 줄 끝에 나타나는 :icon:`fa-external-"
+"link` :guilabel:`(내부 링크)` 아이콘을 클릭합니다. 그러면 휴가 신청 세부 정보"
+"를 모두 담은 :guilabel:`열기: 휴가` 팝업 창이 로드됩니다. 신청을 승인하거나 "
+"반하려면 :guilabel:`승인` 또는 :guilabel:`반려` 버튼을 클릭합니다."
 
 #: ../../content/applications/hr/payroll/work_entries.rst:154
 msgid ""
