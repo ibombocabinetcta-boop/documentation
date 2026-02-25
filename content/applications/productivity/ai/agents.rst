@@ -116,6 +116,8 @@ Sources can be in the following formats:
    If the :guilabel:`Restrict to Sources` option is enabled on an agent, the agent can **only**
    utilize information from the uploaded and active sources.
 
+.. _ai/create-agent:
+
 Create a new agent
 ==================
 
