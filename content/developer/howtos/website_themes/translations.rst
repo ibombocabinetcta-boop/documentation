@@ -115,6 +115,21 @@ And then we need to call it in different locations:
 Here we just called the translatable content into a non-translatable attribute (`t-att-title`). So
 the `t-att-title` is not translatable but the casted variable is.
 
+.. _website_themes/translations/frontend/strings/t-call:
+
+t-call
+~~~~~~
+
+As parameters can be passed to a `t-call` , the `*.translate` function can be called to make its
+value translatable.
+
+.. code-block:: xml
+
+    <t t-call="website.layout" additional_title.translate="My Page" />
+
+.. seealso::
+   :ref:`Set parameters of a t-call <website_themes/layout/qweb>`
+
 .. _website_themes/translations/backend:
 
 Backend
