@@ -64,9 +64,9 @@ The following are fields found on an event form:
      pop-up window appears, displaying various pre-configured language translation options available
      in the database.
 
-- :guilabel:`Date`: when the event is scheduled to take place (expressed in your local timezone).
+- :guilabel:`Date`: when the event is scheduled to take place (expressed in the local timezone).
   This field is auto-populated, but modifiable, and is **required**.
-- :guilabel:`Display Timezone`: the timezone in which the event dates/times will be displayed on the
+- :guilabel:`Display Timezone`: the timezone in which the event dates/times is displayed on the
   website. This field is auto-populated, but modifiable, and is **required**.
 - :guilabel:`Language`: designate a specific language for all event communications to be translated
   into, if necessary. This field is blank, by default, so if event-related communications are being
