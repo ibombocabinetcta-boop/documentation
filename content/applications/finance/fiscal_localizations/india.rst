@@ -49,9 +49,16 @@ Services India Private Limited` as the :abbr:`GSP (GST Suvidha Provider)`. To do
 :menuselection:`Accounting --> Configuration --> Settings`, scroll down to the :guilabel:`Select
 GSP Provider` section, and set the :guilabel:`GSP` field to :guilabel:`BVM IT Consulting`.
 
-.. note::
-   If you do not see this option in the Accounting settings, :ref:`upgrade <general/upgrade>` the
-   :guilabel:`Indian - Accounting` (`l10n_in`) module.
+.. image:: india/gsp-configuration.png
+   :alt: GSP configuration
+
+Please follow the steps below:
+
+#. Upgrade the :guilabel:`Indian - Accounting` (`l10n_in`) module from App menu.
+#. Visit the E-Invoice portal and follow the steps mentioned in the :ref:`NIC e-Invoice registration section <india/e-invoicing-api>` to get API credentials
+   for e-Invoicing and configure it in odoo :ref:`e-invoice configuration <india/e-invoicing-configuration>`.
+#. Visit the E-Way bill portal and follow the steps mentioned in the :ref:`API registration on NIC E-Way bill section <india/e-waybill-api>` to get API credentials
+   for E-Way bill and configure it in odoo :ref:`e-waybill configuration <india/e-waybill-configuration>`.
 
 .. _india/e-invoicing:
 
