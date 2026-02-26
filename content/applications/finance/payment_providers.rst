@@ -24,6 +24,7 @@ Online payments
    payment_providers/razorpay
    payment_providers/redsys
    payment_providers/stripe
+   payment_providers/tosspayments
    payment_providers/worldline
    payment_providers/xendit
    payment_providers/bank_payments
@@ -167,6 +168,12 @@ Online payment providers
      - |V|
      - Full only
      - Full and partial
+     - |V|
+   * - :doc:`Toss Payments <payment_providers/tosspayments>`
+     - Odoo
+     -
+     -
+     -
      - |V|
    * - :doc:`Worldline <payment_providers/worldline>`
      - The provider's website
@@ -516,6 +523,7 @@ payments from other payments.
    - :doc:`payment_providers/razorpay`
    - :doc:`payment_providers/redsys`
    - :doc:`payment_providers/stripe`
+   - :doc:`payment_providers/tosspayments`
    - :doc:`payment_providers/worldline`
    - :doc:`payment_providers/xendit`
    - :doc:`payment_providers/bank_payments`
