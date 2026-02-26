@@ -2,15 +2,15 @@
 Create events
 =============
 
-With the **Events** application, event organizers can create and configure in-person or online-only
-events in Odoo. Each new event contains a number of customizable options that are geared around
-specific event logistics, as needed per event, such as ticket sales and registration desk, booths,
-tracks, sponsors, rooms, and more.
+With the **Events** application, event organizers can create and configure in-person or online
+events in Odoo. Each new event contains a number of options to customize specific logistics
+for events, such as ticket sales, registration desk, booths, tracks, sponsors, rooms,
+and more.
 
-Events can be manually created from scratch or built off of pre-made templates. Once launched, the
-**Events** application then integrates with the **Website** app for the front-end promotion and
-registration of the event for attendees, the **Sales** app for the purchasing ability of paid tickets,
-as well the **CRM** application through customizable lead generation rules.
+Events can be manually created from scratch or built from pre-made templates. Once launched, the
+**Events** application integrates with the **Website** app for promoting events and allowing
+attendees to register for events, the **Sales** app for selling paid tickets, as well the
+**CRM** application for generate leads through customizable lead generation rules.
 
 .. _events/new-event:
 
@@ -18,10 +18,32 @@ New event
 =========
 
 To create a new event, begin by navigating to the :menuselection:`Events app` to land on the default
-:guilabel:`Events` dashboard, in the :icon:`oi-view-kanban` :guilabel:`Kanban` view. From there, or
-alternatively from the :icon:`oi-view-list` :guilabel:`List` or :icon:`fa-tasks` :guilabel:`Gantt`
-views, click the :guilabel:`New` button in the upper-left corner of the dashboard to open up a new
-event form.
+:guilabel:`Events` dashboard.
+
+The dashboard can be viewed with a number of different view options via a series of icon buttons in
+the upper-right corner. By default, the :guilabel:`Events` dashboard is displayed in the
+:icon:`oi-view-kanban` :guilabel:`Kanban` view, which populates the page with multiple pipeline
+stages.
+
+.. image:: kanban-dashboard.png
+   :align: center
+   :alt: Overview of Events dashboard with the Kanban view in Odoo Events.
+
+This view showcases all events in the database in their respective stages. By default, the stages
+are: :guilabel:`New`, :guilabel:`Booked`, :guilabel:`Announced`, :guilabel:`Ended`, and
+:guilabel:`Cancelled`.
+
+.. note::
+   The :guilabel:`Ended` and :guilabel:`Cancelled` stages are folded, by default, and located to the
+   right of the other stages.
+
+Each event card displays the name of the event, its scheduled date, location, number of expected
+:guilabel:`Attendees`, any scheduled activities related to the event, and the person responsible.
+The cards can be dragged-and-dropped into any stage on the Kanban pipeline.
+
+To create a new event from the default dashboard view, or alternatively from the
+:icon:`oi-view-list` :guilabel:`List` or :icon:`fa-tasks` :guilabel:`Gantt` views, click the
+:guilabel:`New` button in the upper-left corner of the dashboard to open up a new event form.
 
 .. image:: create_events/blank-event-template.png
    :align: center
@@ -31,8 +53,8 @@ event form.
    If certain fields do not readily appear on the event form, that means an additional application
    needs to be installed, or the database is not operating in a multi-company environment.
 
-   For example, the :guilabel:`Twitter Wall` field **only** appears if the **Social Marketing** app is
-   installed, and the :guilabel:`Company` field **only** appears if the database is working in a
+   For example, the :guilabel:`Twitter Wall` field **only** appears if the **Social Marketing** app
+   is installed, and the :guilabel:`Company` field **only** appears if the database is working in a
    multi-company environment.
 
    These are just additional elements that can be used for an event. They are **not** required to
@@ -426,7 +448,8 @@ recipients to quickly register.
 
 .. tip::
    Sending emails from Odoo is subject to a daily limit, which, by default, is 200. To learn more
-   about daily limits, visit the :ref:`email-issues-outgoing-delivery-failure-messages-limit` documentation.
+   about daily limits, visit the :ref:`email-issues-outgoing-delivery-failure-messages-limit`
+   documentation.
 
 .. seealso::
    :doc:`track_manage_talks`
