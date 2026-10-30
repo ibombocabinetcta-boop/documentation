@@ -11,7 +11,8 @@ main{max-width:1100px;margin:auto}h1{font-size:1.3rem}
 .card b{display:block;font-size:1.5rem}
 button{background:#714b67;color:#fff;border:0;border-radius:6px;padding:8px 14px;cursor:pointer}
 .tbl{overflow-x:auto}table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd)}
-th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap;vertical-align:middle}
+td.err{white-space:normal;min-width:240px;font-size:.85rem}
 .certified{color:var(--ok)}.pending{color:var(--warn)}.rejected,.error{color:var(--bad)}
 .note{font-size:.85rem;opacity:.75}
 </style></head><body><main>
@@ -21,11 +22,11 @@ th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-s
 <div class="card"><b class="{{ s }}">{{ counts.get(s,0) }}</b>{{ l }}</div>{% endfor %}
 </div>
 <p><button onclick="sync(this)">Synchroniser maintenant</button> <span id="msg" class="note"></span></p>
-<div class="tbl"><table><thead><tr><th>N°</th><th>Client</th><th>Date</th><th>Total</th><th>Statut</th><th>UID SFEC</th><th>Détail</th></tr></thead><tbody>
-{% for i in invoices %}<tr><td>{{ i.number }}</td><td>{{ i.partner_name }}</td><td>{{ i.invoice_date }}</td>
-<td>{{ "%.2f"|format(i.amount_total) }} {{ i.currency }}</td><td class="{{ i.status }}">{{ i.status }}</td>
-<td>{{ i.sfec_uid }}</td><td>{{ i.error }}{% if i.status in ("rejected","error") %} <a href="#" onclick="retry({{ i.id }});return false">réessayer</a>{% endif %}</td></tr>
-{% else %}<tr><td colspan="7">Aucune facture. Cliquez sur « Synchroniser ».</td></tr>{% endfor %}
+<div class="tbl"><table><thead><tr><th>N°</th><th>Type</th><th>Client</th><th>Date</th><th>Total</th><th>Statut</th><th>Signature SFEC</th><th>QR</th><th>Détail</th></tr></thead><tbody>
+{% for i in invoices %}<tr><td>{{ i.number }}</td><td>{{ {"salesInvoice":"Facture","creditNote":"Avoir","creditNoteOnAccount":"Avoir s/compte"}.get(i.invoice_type, i.invoice_type) }}</td><td>{{ i.partner_name }}</td><td>{{ i.invoice_date }}</td>
+<td>{{ "{:,.0f}".format(i.amount_total).replace(",", " ") if i.currency == "XAF" else "{:,.2f}".format(i.amount_total).replace(",", " ") }} {{ i.currency }}</td><td class="{{ i.status }}">{{ {"pending":"En attente","certified":"Certifiée","rejected":"Rejetée","error":"En erreur"}.get(i.status, i.status) }}</td>
+<td><code>{{ i.short_signature }}</code></td><td>{% if i.qr_code %}<img src="{{ i.qr_code }}" alt="QR" width="40" height="40">{% endif %}</td><td class="err">{{ i.error }}{% if i.status in ("rejected","error") %} <a href="#" onclick="retry({{ i.id }});return false">réessayer</a>{% endif %}</td></tr>
+{% else %}<tr><td colspan="9">Aucune facture. Cliquez sur « Synchroniser ».</td></tr>{% endfor %}
 </tbody></table></div>
 <script>
 const H={};{% if protected %}H["X-API-Key"]=prompt("Clé API de la plateforme");{% endif %}

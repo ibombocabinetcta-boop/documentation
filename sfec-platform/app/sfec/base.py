@@ -1,26 +1,26 @@
-"""Contrat du connecteur SFEC.
-
-Toute la plateforme ne dépend que de `SfecClient`. Quand la documentation officielle
-sera disponible, seul `http.py` doit être adapté.
-"""
+"""Contrat du connecteur SFEC. Toute la plateforme ne dépend que de `SfecClient`."""
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Protocol
 
 
 class SfecRejected(Exception):
-    """La facture a été refusée par le SFEC (erreur de données : ne pas réessayer telle quelle)."""
+    """Refus du SFEC sur les données (400, 404, 409) : corriger la facture avant de renvoyer."""
 
 
 class SfecUnavailable(Exception):
-    """Erreur transitoire (réseau, 5xx) : la facture sera renvoyée plus tard."""
+    """Erreur transitoire (réseau, 429, 5xx) : la facture sera renvoyée plus tard."""
+
+
+class SfecAuthError(SfecUnavailable):
+    """Clé API absente, invalide ou inactive (401) : on interrompt tout le lot."""
 
 
 @dataclass
 class CertificationResult:
-    uid: str
-    qr_code: str
     signature: str
+    short_signature: str
+    qr_code: str  # data URI PNG en base64
     certified_at: datetime
 
 
