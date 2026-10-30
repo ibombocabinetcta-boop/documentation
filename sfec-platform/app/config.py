@@ -21,7 +21,13 @@ class Settings(BaseSettings):
     sfec_cent_tax_keyword: str = "centime"
 
     database_url: str = "sqlite:///./sfec.db"
+    # Accès au tableau de bord (authentification HTTP Basic) ; obligatoire hors mock
+    admin_user: str = "admin"
+    admin_password: str = ""
+    # Accès machine aux routes /api via l'en-tête X-API-Key (facultatif)
     platform_api_key: str = ""
+    # Synchronisation automatique Odoo -> SFEC toutes les N minutes (0 = désactivée)
+    sync_interval_minutes: int = 0
     # Ne jamais envoyer au SFEC les factures antérieures à cette date (AAAA-MM-JJ)
     sync_from_date: str = ""
     sync_batch_size: int = 50

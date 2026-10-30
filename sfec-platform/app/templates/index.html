@@ -22,6 +22,9 @@ td.err{white-space:normal;min-width:240px;font-size:.85rem}
 <div class="card"><b class="{{ s }}">{{ counts.get(s,0) }}</b>{{ l }}</div>{% endfor %}
 </div>
 <p><button onclick="sync(this)">Synchroniser maintenant</button> <span id="msg" class="note"></span></p>
+<p class="note">{% if interval %}Synchronisation automatique toutes les {{ interval }} min.{% else %}Synchronisation automatique désactivée.{% endif %}
+{% if last_run.at %} Dernière : {{ last_run.at.strftime("%d/%m/%Y %H:%M") }} UTC —
+{% if last_run.error %}<span class="error">échec : {{ last_run.error }}</span>{% else %}{{ last_run.result.imported }} importée(s), {{ last_run.result.processed }} envoyée(s){% endif %}{% endif %}</p>
 <div class="tbl"><table><thead><tr><th>N°</th><th>Type</th><th>Client</th><th>Date</th><th>Total</th><th>Statut</th><th>Signature SFEC</th><th>QR</th><th>Détail</th></tr></thead><tbody>
 {% for i in invoices %}<tr><td>{{ i.number }}</td><td>{{ {"salesInvoice":"Facture","creditNote":"Avoir","creditNoteOnAccount":"Avoir s/compte"}.get(i.invoice_type, i.invoice_type) }}</td><td>{{ i.partner_name }}</td><td>{{ i.invoice_date }}</td>
 <td>{{ "{:,.0f}".format(i.amount_total).replace(",", " ") if i.currency == "XAF" else "{:,.2f}".format(i.amount_total).replace(",", " ") }} {{ i.currency }}</td><td class="{{ i.status }}">{{ {"pending":"En attente","certified":"Certifiée","rejected":"Rejetée","error":"En erreur"}.get(i.status, i.status) }}</td>
@@ -29,7 +32,7 @@ td.err{white-space:normal;min-width:240px;font-size:.85rem}
 {% else %}<tr><td colspan="9">Aucune facture. Cliquez sur « Synchroniser ».</td></tr>{% endfor %}
 </tbody></table></div>
 <script>
-const H={};{% if protected %}H["X-API-Key"]=prompt("Clé API de la plateforme");{% endif %}
+const H={};
 async function call(u,b){const m=document.getElementById("msg");m.textContent="…";
  const r=await fetch(u,{method:"POST",headers:H});const j=await r.json();
  if(!r.ok){m.textContent=j.detail||"Erreur";return}location.reload()}

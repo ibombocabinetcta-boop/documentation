@@ -12,7 +12,7 @@ Odoo Online --XML-RPC--> [ Plateforme : FastAPI + SQLite ] --POST /api/v1/invoic
 
 ## Démarrage
 ```bash
-python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements-dev.txt
 cp .env.example .env      # renseigner ODOO_*, SFEC_*, SYNC_FROM_DATE
 uvicorn app.main:app --reload
 ```
@@ -27,7 +27,7 @@ Tableau de bord : http://localhost:8000 · Tests : `pytest`
    - NIU des clients dans le champ **N° TVA / NIF** du contact (16 ou 17 caractères pour une société ou une administration).
    - Taux de TVA reconnus : 18 % (normal), 5 % (réduit), 0 % (exonéré). Les centimes additionnels doivent être une taxe dont le nom contient « centime ».
    - Clients publics : étiquette de contact `Administration`. Clients hors Congo : pays renseigné.
-5. **Automatisation** : appeler `POST /api/sync` périodiquement (cron). Définir `PLATFORM_API_KEY` et servir en HTTPS.
+5. **Mise en ligne** : voir [DEPLOIEMENT.md](DEPLOIEMENT.md) (Render ou VPS). Synchronisation automatique via `SYNC_INTERVAL_MINUTES`, tableau de bord protégé par `ADMIN_PASSWORD`.
 
 ## Correspondance Odoo → SFEC
 | Odoo | SFEC |
