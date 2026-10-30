@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connecteur SFEC</title>
+<style>
+:root{--bg:#f6f7f9;--fg:#1c2330;--card:#fff;--bd:#e1e5ea;--ok:#157347;--warn:#b26a00;--bad:#b42318}
+@media(prefers-color-scheme:dark){:root{--bg:#12161c;--fg:#e6e9ee;--card:#1b212a;--bd:#2c3440;--ok:#4cc38a;--warn:#e8a33d;--bad:#f06d62}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px system-ui,sans-serif;padding:16px}
+main{max-width:1100px;margin:auto}h1{font-size:1.3rem}
+.cards{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 16px;min-width:110px}
+.card b{display:block;font-size:1.5rem}
+button{background:#714b67;color:#fff;border:0;border-radius:6px;padding:8px 14px;cursor:pointer}
+.tbl{overflow-x:auto}table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd)}
+th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+.certified{color:var(--ok)}.pending{color:var(--warn)}.rejected,.error{color:var(--bad)}
+.note{font-size:.85rem;opacity:.75}
+</style></head><body><main>
+<h1>Connecteur Odoo ⇄ SFEC <span class="note">(mode : {{ mode }})</span></h1>
+<div class="cards">
+{% for s,l in [("pending","En attente"),("certified","Certifiées"),("rejected","Rejetées"),("error","En erreur")] %}
+<div class="card"><b class="{{ s }}">{{ counts.get(s,0) }}</b>{{ l }}</div>{% endfor %}
+</div>
+<p><button onclick="sync(this)">Synchroniser maintenant</button> <span id="msg" class="note"></span></p>
+<div class="tbl"><table><thead><tr><th>N°</th><th>Client</th><th>Date</th><th>Total</th><th>Statut</th><th>UID SFEC</th><th>Détail</th></tr></thead><tbody>
+{% for i in invoices %}<tr><td>{{ i.number }}</td><td>{{ i.partner_name }}</td><td>{{ i.invoice_date }}</td>
+<td>{{ "%.2f"|format(i.amount_total) }} {{ i.currency }}</td><td class="{{ i.status }}">{{ i.status }}</td>
+<td>{{ i.sfec_uid }}</td><td>{{ i.error }}{% if i.status in ("rejected","error") %} <a href="#" onclick="retry({{ i.id }});return false">réessayer</a>{% endif %}</td></tr>
+{% else %}<tr><td colspan="7">Aucune facture. Cliquez sur « Synchroniser ».</td></tr>{% endfor %}
+</tbody></table></div>
+<script>
+const H={};{% if protected %}H["X-API-Key"]=prompt("Clé API de la plateforme");{% endif %}
+async function call(u,b){const m=document.getElementById("msg");m.textContent="…";
+ const r=await fetch(u,{method:"POST",headers:H});const j=await r.json();
+ if(!r.ok){m.textContent=j.detail||"Erreur";return}location.reload()}
+function sync(){call("/api/sync")}function retry(id){call("/api/invoices/"+id+"/retry")}
+</script></main></body></html>
