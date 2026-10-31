@@ -1,0 +1,27 @@
+# Déploiement sur VPS : application + Caddy (HTTPS automatique via Let's Encrypt).
+# Prérequis : DOMAIN=sfec.votre-entreprise.com dans .env, et l'enregistrement DNS pointant vers le serveur.
+services:
+  app:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: sqlite:////data/sfec.db
+    volumes:
+      - sfec-data:/data
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2.8
+    command: caddy reverse-proxy --from ${DOMAIN} --to app:8000
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy-data:/data
+    depends_on:
+      - app
+    restart: unless-stopped
+
+volumes:
+  sfec-data:
+  caddy-data:
